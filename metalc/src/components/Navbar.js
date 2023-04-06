@@ -10,27 +10,27 @@ export function Navbar() {
   return (
     <header className="flex justify-between py-4 border-b-2 border-white text-lg">
       <div className="flex">
-        <div className="px-8">
+        <div className="px-6">
           <Image src={logo} width={72} height={72} alt="Metalc Logo"/>
         </div>
         <div className="flex items-center px-6 mx-10  max-h-14">
-          <Link href={"/"} className="px-10 hover:border-b-4 border-cyan-800 font-semibold">
+          <Link href={"/"} className="px-6 hover:border-b-4 border-cyan-800 font-semibold">
             <h1 className="my-4">Servicios</h1>
           </Link>
-          <Link href={"/"} className="px-10 hover:border-b-4 border-cyan-800 font-semibold">
+          <Link href={"/"} className="px-6 hover:border-b-4 border-cyan-800 font-semibold">
             <h1 className="my-4">Cotizador</h1>
           </Link>
-          <Link href={"/"} className="px-10 hover:border-b-4 border-cyan-800 font-semibold">
+          <Link href={"/"} className="px-6 hover:border-b-4 border-cyan-800 font-semibold">
             <h1 className="my-4">¿Quienes somos?</h1>
           </Link>
-          <Link href={"/"} className="px-10 hover:border-b-4 border-cyan-800 font-semibold">
+          <Link href={"/"} className="px-6 hover:border-b-4 border-cyan-800 font-semibold">
             <h1 className="my-4">Preguntas frecuentes</h1>
           </Link>
         </div>
       </div>
       <div className="flex items-center mx-10">
         <Link href="/">
-          <Image src={mapa} height={32} width={32} />
+          <Image src={mapa} height={32} width={32} className="mx-2"/>
         </Link>
         <Link href="/">
           <Image src={lupa} height={32} width={32} />
