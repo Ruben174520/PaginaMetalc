@@ -1,10 +1,11 @@
-"use client"
+"use client";
 import { Navbar } from "@/components/Navbar";
 import "./globals.css";
 import { TaskProvider } from "@/context/TaskContext";
 import Video from "@/components/Video";
-import styles from "../components/Video.module.css"
+import styles from "../components/Video.module.css";
 import Mapa from "@/components/Mapa";
+import { MaterialProvider } from "@/context/MaterialContext";
 
 export const metadata = {
   title: "Create Next App",
@@ -17,12 +18,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="bg-stone-300">
         <div className={"mx-14"}>
-          {/* <TaskProvider> */}
+          <MaterialProvider>
             <Navbar />
-            {children}  
-          {/* </TaskProvider> */}
+            {children}
+          </MaterialProvider>
         </div>
-        <Video />  
       </body>
     </html>
   );

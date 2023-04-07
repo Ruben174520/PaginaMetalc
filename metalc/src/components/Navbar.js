@@ -8,11 +8,14 @@ import mapa from "../icon/boxicons/svg/regular/bx-map.svg";
 import styles from "./Video.module.css"
 
 export function Navbar() {
+
+    const router = useRouter();
+
   return (
     <header className="flex justify-between py-4 border-b-2 border-cyan-800 text-lg mb-4">
       <div className="flex">
-        <div className="px-6">
-          <Image src={logo} width={72} height={72} alt="Metalc Logo"/>
+        <div className="px-6 cursor-pointer" onClick={() => router.push("/")}>
+          <Image src={logo} width={72} height={72} alt="Metalc Logo" />
         </div>
         <div className="flex items-center px-6 mx-10  max-h-14">
           <Link href={"/"} className="px-6 hover:border-b-4 border-cyan-800 font-semibold">
