@@ -8,7 +8,7 @@ import mapa from "../icon/boxicons/svg/regular/bx-map.svg";
 
 export function Navbar() {
   return (
-    <header className="flex justify-between py-4 border-b-2 border-white text-lg">
+    <header className="flex justify-between py-4 border-b-2 border-cyan-800 text-lg mb-4">
       <div className="flex">
         <div className="px-6">
           <Image src={logo} width={72} height={72} alt="Metalc Logo"/>
