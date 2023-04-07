@@ -5,6 +5,7 @@ import Image from "next/image";
 import logo from "../icon/logo.png";
 import lupa from "../icon/boxicons/svg/regular/bx-search-alt.svg";
 import mapa from "../icon/boxicons/svg/regular/bx-map.svg";
+import styles from "./Video.module.css"
 
 export function Navbar() {
   return (

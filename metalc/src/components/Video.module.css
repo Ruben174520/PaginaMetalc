@@ -1,12 +1,19 @@
 .videoWrapper {
-    max-width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
+    z-index: -1;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    opacity: 0.8;
   }
+
   
-video.video-bg {
-    width: 100%;
-    height: auto;
-    max-height: 500px;
+.video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    
   }
