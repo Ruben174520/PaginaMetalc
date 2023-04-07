@@ -19,31 +19,31 @@ export const useMaterials = () => {
 export const MaterialProvider = ({ children }) => {
   const [materials, setMaterials] = useState([
     {
-      nombre: "Aceros Inoxidables",
+      nombre: "ACEROS INOXIDABLES",
       icono: acerosI,
     },
     {
-      nombre: "Alumninos",
+      nombre: "ALUMINIOS",
       icono: aluminios,
     },
     {
-      nombre: "Bronces",
+      nombre: "BRONCES",
       icono: bronces,
     },
     {
-      nombre: "Cobres",
+      nombre: "COBRES",
       icono: cobres,
     },
     {
-      nombre: "Chatarra",
+      nombre: "CHATARRA",
       icono: chatarra,
     },
     {
-      nombre: "Rebabas",
+      nombre: "REBABAS",
       icono: rebabas,
     },
     {
-      nombre: "Metales Raros",
+      nombre: "METALES RAROS",
       icono: metalesR,
     },
   ]);
