@@ -1,6 +1,6 @@
 import React from "react";
 import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
-
+import style from "../app/page.module.css";
 function Mapa() {
   const zoom = 2;
   const AnyReactComponent = ({ text }) => <div>{text}</div>;
@@ -37,13 +37,16 @@ function Mapa() {
       onLoad={onLoad}
       onUnmount={unMount}
       id="place"
-      zoom={zoom}
+      zoom={12}
       options={{
         mapTypeControl: true,
         mapTypeControlOptions: {
           position: window.google.maps.ControlPosition.TOP_RIGHT,
           style: window.google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
-          mapTypeIds: [google.maps.MapTypeId.ROADMAP, google.maps.MapTypeId.SATELLITE],
+          mapTypeIds: [
+            google.maps.MapTypeId.ROADMAP,
+            google.maps.MapTypeId.SATELLITE,
+          ],
         },
       }}
     >
@@ -52,16 +55,13 @@ function Mapa() {
         label={"Metalc"}
       ></Marker>
       <div
-        style={{
-          position: "absolute",
-          top: "20px",
-          left: "20px",
-          backgroundColor: "white",
-          padding: "10px",
-        }}
+        className="items-center align-middle
+            absolute mx-6 my-6 transition-all
+            font-Roboto font-bold text-4xl border-b-8
+            hover:border-b-cyan-800 bg-white rounded-md cursor-pointer
+            border-b-white"
       >
-        <h1>Título</h1>
-        <p>Contenido</p>
+        <h1 className="mx-4 my-4">UBICA NUESTRA SUCURSAL</h1>
       </div>
     </GoogleMap>
   ) : (

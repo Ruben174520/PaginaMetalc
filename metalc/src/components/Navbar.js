@@ -29,7 +29,7 @@ export function Navbar() {
         </div>
       </div>
       <div className="flex items-center mx-10">
-        <Link href="/">
+        <Link href="/mapa">
           <Image src={mapa} height={32} width={32} className="mx-2"/>
         </Link>
         <Link href="/">
