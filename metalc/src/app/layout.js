@@ -2,7 +2,8 @@
 import { Navbar } from "@/components/Navbar";
 import "./globals.css";
 import { TaskProvider } from "@/context/TaskContext";
-import { Video } from "@/components/Video";
+import Video from "@/components/Video";
+import styles from "../components/Video.module.css"
 import Mapa from "@/components/Mapa";
 
 export const metadata = {
@@ -15,13 +16,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="bg-stone-300">
-        <div className="mx-14">
+        <div className={"mx-14"}>
           <TaskProvider>
-            <Navbar />
-            {/* <Video /> */}
-            <Mapa />
+            <Navbar />  
           </TaskProvider>
         </div>
+        <Video />  
       </body>
     </html>
   );
