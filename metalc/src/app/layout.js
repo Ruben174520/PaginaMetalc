@@ -1,6 +1,9 @@
+"use client"
 import { Navbar } from "@/components/Navbar";
 import "./globals.css";
 import { TaskProvider } from "@/context/TaskContext";
+import { Video } from "@/components/Video";
+import Mapa from "@/components/Mapa";
 
 export const metadata = {
   title: "Create Next App",
@@ -15,6 +18,8 @@ export default function RootLayout({ children }) {
         <div className="mx-14">
           <TaskProvider>
             <Navbar />
+            {/* <Video /> */}
+            <Mapa />
           </TaskProvider>
         </div>
       </body>
