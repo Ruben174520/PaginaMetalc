@@ -8,19 +8,19 @@ function Footer(){
             <div className={styles.hijo}>
               <li className={styles.titulo + "font-weight:bold" }>MENU</li>
                 <li><Link href="#">Inicio</Link></li>
-                <li><Link href="#">Logros</Link></li>
-                <li><Link href="#">Publicaciones</Link></li>
+                <li><Link href="#">Servicios</Link></li>
+                <li><Link href="#">Cotizador</Link></li>
             </div>
             <div className={styles.hijo}>
               <li className={styles.titulo + "font-weight:bold" }>ACERCA DE</li>
-                <li><Link href="#">Inicio</Link></li>
-                <li><Link href="#">Logros</Link></li>
-                <li><Link href="#">Publicaciones</Link></li>
+                <li><Link href="#">¿Quienes somos?</Link></li>
+                <li><Link href="#">Preguntas Frecuentes</Link></li>
+                <li><Link href="#">Ubicacion</Link></li>
             </div>
             <div className={styles.hijo}>
               <li className={styles.titulo + "font-weight:bold" }>CONTACTO</li>
-              <li className={"color: gray"}>Email: rafael.llamas@upslp.edu.mx</li>
-              <li className={"color: gray"}><Link href="https://www.upslp.edu.mx/">Universidad Politécnica de San Luis Potosí</Link></li>
+              <li className={"color: gray"}>Email: vero.metalce@gmail.com</li>
+              <li className={"color: gray"}><Link href="https://metalc.com.mx">Metalc San Luis Potosí</Link></li>
             </div>
           </div>
           <div className={styles.redes}>
