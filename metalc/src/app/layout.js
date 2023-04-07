@@ -5,6 +5,7 @@ import { TaskProvider } from "@/context/TaskContext";
 import Video from "@/components/Video";
 import styles from "../components/Video.module.css";
 import Mapa from "@/components/Mapa";
+import Foot from "@/components/Footer"
 import { MaterialProvider } from "@/context/MaterialContext";
 
 export const metadata = {
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
             {children}
           </MaterialProvider>
         </div>
+        <Foot />
       </body>
     </html>
   );
