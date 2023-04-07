@@ -12,11 +12,16 @@ function page() {
   // const { task } = useTasks()
   // console.log(task)
   return (
-    <div className="flex"> 
+    <div className="flex flex-wrap"> 
       <div className={styles.videoWrapper}>
         <Video />
       </div>
-      <div className="w-screen h-2/4 mt-56">
+      <div  className="w-screen h-16 text-5xl text-center my-4" >
+        <h1>
+          ESPECIALIZADOS EN EL RECICLAJE 
+        </h1>
+      </div>
+      <div className="w-screen h-2/4 flex items-stretch flex-wrap justify-evenly" >
         {materials.map((material) => (
           <TarjetaMaterial material={material} />
         ))}
