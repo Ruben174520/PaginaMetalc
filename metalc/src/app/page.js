@@ -19,7 +19,7 @@ function page() {
     setObjeto(objeto);
   };
   return (
-    <div className="flex flex-wrap">
+    <div className="flex flex-wrap relative">
       <div className={styles.videoWrapper}>
         <Video />
       </div>

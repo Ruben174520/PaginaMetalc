@@ -34,6 +34,7 @@
 
 .redes{
     background-color: black;
+    color: white;
     align-items: center;
     text-align: center;
 }
@@ -45,4 +46,8 @@
     text-decoration: none;
     list-style: none;
     display: inline;
+}
+
+#f{
+    fill: white;
 }

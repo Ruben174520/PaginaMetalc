@@ -1,5 +1,10 @@
 import Link from "next/link"
+import Image from "next/image";
 import styles from "./Footer.module.css"
+import face from "../icon/boxicons/svg/logos/bxl-facebook-circle.svg";
+import insta from "../icon/boxicons/svg/logos/bxl-instagram.svg";
+import twitter from "../icon/boxicons/svg/logos/bxl-twitter.svg";
+
 
 function Footer(){
     return(
@@ -26,9 +31,9 @@ function Footer(){
           <div className={styles.redes}>
             Siguenos en nuestras redes:
             <div className={styles.redHijo}>
-              <li><Link href=""><box-icon name='facebook-circle' type='logo' className={"color='#ffffff'"} ></box-icon></Link></li>
-              <li><Link href=""><box-icon name='instagram' type='logo' className={"color='#ffffff'"} ></box-icon></Link></li>
-              <li><Link href=""><box-icon name='twitter' type='logo' className={"color='#ffffff'"} ></box-icon></Link></li>
+              <li><Link href=""><Image src={face} typeof="logo" height={25} width={25} className={styles.logo} /></Link></li>
+              <li><Link href=""><Image src={insta} height={25} width={25} className={"color='#ffffff'"} /></Link></li>
+              <li><Link href=""><Image src={twitter} height={25} width={25} className={"color='#ffffff'"} /></Link></li>
             </div>
           </div>
         </footer>
