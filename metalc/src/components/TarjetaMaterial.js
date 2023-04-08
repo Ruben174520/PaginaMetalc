@@ -1,17 +1,21 @@
 import React from 'react'
 import { useRouter } from "next/navigation";
 import Image from 'next/image';
-export const TarjetaMaterial = ({material}) =>{
+import { useState } from 'react';
+export const TarjetaMaterial = ({material, handleMostrar}) =>{
+    
     return (
-        <div className='border-l-green-500 border w-1/3  mx-0 m-auto p-5'>
+        <div className=' w-1/3 h-2/3 mx-0 m-auto p-5'>
             <div className='flex items-center justify-center'>
                 <Image src={material.icono} width={50} height={50} className=''/>
             </div>
-            <div className='flex items-center justify-center m-3'>
+            <div className='flex items-center justify-center m-2 font-bold'>
                 <h1>{material.nombre}</h1>
             </div>
-            <div className='bg-emerald-500 p-3 flex items-center justify-center'>
-                <button className='bg-emerald-500 block'>
+            <div className=' p-3 m-2 flex items-center justify-center border-2 border-zinc-500 rounded self-center'>
+                <button className='block font-bmw text-gray-600 font-semibold'
+                onClick={handleMostrar}
+                >
                     DETALLES
                 </button>
             </div>

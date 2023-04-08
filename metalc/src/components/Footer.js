@@ -3,7 +3,7 @@ import styles from "./Footer.module.css"
 
 function Footer(){
     return(
-        <footer>
+        <footer className="font-bmw">
         <div className={styles.containerFather}>
             <div className={styles.hijo}>
               <li className={styles.titulo + "font-weight:bold" }>MENU</li>

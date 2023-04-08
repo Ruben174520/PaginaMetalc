@@ -1,30 +1,41 @@
 "use client";
 
 import { TarjetaMaterial } from "@/components/TarjetaMaterial";
+import MaterialSeleccionado from "@/components/MaterialSeleccionado";
 import Video from "@/components/Video";
+
 import { useMaterials } from "@/context/MaterialContext";
-// import { useTasks } from "@/context/TaskContext"
-// import { TaskCard } from "@/components/TaskCard"
+import { useState } from "react";
 import styles from "../components/Video.module.css";
 function page() {
   const { materials } = useMaterials();
   console.log(materials);
-  // const { task } = useTasks()
-  // console.log(task)
+  const [materialselect, setMaterialSelecto] = useState(false);
+  const [objeto, setObjeto] = useState(null);
+
+  const materialSelecto = (objeto) => {
+    console.log("si");
+    setMaterialSelecto(true);
+    setObjeto(objeto);
+  };
   return (
-    <div className="flex flex-wrap"> 
+    <div className="flex flex-wrap">
       <div className={styles.videoWrapper}>
         <Video />
       </div>
-      <div  className="w-screen h-16 text-5xl text-center my-4" >
-        <h1>
-          ESPECIALIZADOS EN EL RECICLAJE 
-        </h1>
+      <div className="w-screen h-16 text-5xl text-center my-3">
+        <h1>ESPECIALIZADOS EN EL RECICLAJE</h1>
       </div>
-      <div className="w-screen h-2/4 flex items-stretch flex-wrap justify-evenly" >
-        {materials.map((material) => (
-          <TarjetaMaterial material={material} />
-        ))}
+      <div className="w-screen h-2/4 flex items-stretch flex-wrap justify-evenly">
+        {!materialselect
+          ? materials.map((material) => (
+              <TarjetaMaterial
+                material={material}
+                handleMostrar={materialSelecto}
+              />
+            ))
+          : <MaterialSeleccionado materials={materials} materialSelecto={materialSelecto}/>
+          }
       </div>
     </div>
   );

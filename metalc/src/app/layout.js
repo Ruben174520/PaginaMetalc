@@ -17,7 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-white">
+      <body className="bg-white font-bmw">
         <div className={"mx-14 z-0 relative"}>
           <MaterialProvider>
             <Navbar />

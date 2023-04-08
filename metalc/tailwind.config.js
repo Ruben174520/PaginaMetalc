@@ -10,7 +10,8 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'Roboto': ["Roboto"],
+      // 'Roboto': ["Roboto"],
+      'bmw':["./fonts/new/new.ttf","Roboto"]
     },
     extend: {},
   },
