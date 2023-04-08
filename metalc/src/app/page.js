@@ -19,14 +19,14 @@ function page() {
     setObjeto(objeto);
   };
   return (
-    <div className="flex flex-wrap relative">
+    <div className="flex flex-wrap">
       <div className={styles.videoWrapper}>
         <Video />
       </div>
-      <div className="w-screen h-16 text-5xl text-center my-3">
+      <div className="w-screen h-16 text-5xl text-center mt-8">
         <h1>ESPECIALIZADOS EN EL RECICLAJE</h1>
       </div>
-      <div className="w-screen h-2/4 flex items-stretch flex-wrap justify-evenly">
+      <div className="w-screen h-2/4 mx-9 flex items-stretch flex-wrap justify-evenly">
         {!materialselect
           ? materials.map((material) => (
               <TarjetaMaterial
