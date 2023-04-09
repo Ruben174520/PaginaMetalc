@@ -8,7 +8,7 @@
     padding-left: 200px;
     padding-top: 50px;
     padding-bottom: 130px;
-    border: solid 1pt white;
+    /*border: solid 1pt white;*/
 }
 
 .hijo{
@@ -16,7 +16,7 @@
     margin-left: 200px;
     margin-top: 50px;*/
     
-   border: solid 1pt white;
+   /*border: solid 1pt white;*/
     color:white;
 }
 
@@ -25,9 +25,15 @@
     text-decoration: none;
 }
 
+.a:hover {
+    color: cyan;
+}
+
 .hijo a{
     text-decoration: none;
 }
+
+.hijo
 
 .titulo{
     padding-bottom: 6px;

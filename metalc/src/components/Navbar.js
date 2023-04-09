@@ -12,13 +12,12 @@ export function Navbar() {
     const router = useRouter();
 
   return (
-    <header className="flex w-10/12 z-0 font-bmw justify-between py-4 border-b-2 border-cyan-800 text-lg mb-4 absolute left-1/2 -translate-x-1/2">
-       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"/>
+    <header className="flex w-10/12 z-0 font-bmw justify-between py-4 pt-6 border-b-2 border-cyan-800 text-lg mb-4 absolute left-1/2 -translate-x-1/2">
       <div className="flex">
         <div className="px-6 cursor-pointer" onClick={() => router.push("/")}>
-          <Image src={logo} width={72} height={72} alt="Metalc Logo" />
+          <Image src={logo} width={80} height={80} alt="Metalc Logo" />
         </div>
-        <div className="flex items-center px-6 mx-10  max-h-14">
+        <div className="flex items-center px-6 mx-10  max-h-14 text-white">
           <Link href={"/"} className="px-6 hover:border-b-4 border-cyan-800 font-semibold">
             <h1 className="my-4">Servicios</h1>
           </Link>

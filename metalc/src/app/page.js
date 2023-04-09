@@ -21,6 +21,7 @@ function page() {
   return (
     <div className="flex flex-wrap">
       <div className={styles.videoWrapper}>
+        <div className={styles.negro}></div>
         <Video />
       </div>
       <div className="w-screen h-16 text-5xl text-center mt-8">

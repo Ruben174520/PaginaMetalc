@@ -12,15 +12,15 @@ function Footer(){
         <div className={styles.containerFather}>
             <div className={styles.hijo}>
               <li className={styles.titulo + "font-weight:bold" }>MENU</li>
-                <li><Link href="#">Inicio</Link></li>
-                <li><Link href="#">Servicios</Link></li>
-                <li><Link href="#">Cotizador</Link></li>
+                <li><Link className={styles.a} href="#">Inicio</Link></li>
+                <li><Link className={styles.a} href="#">Servicios</Link></li>
+                <li><Link className={styles.a} href="#">Cotizador</Link></li>
             </div>
             <div className={styles.hijo}>
               <li className={styles.titulo + "font-weight:bold" }>ACERCA DE</li>
-                <li><Link href="#">¿Quienes somos?</Link></li>
-                <li><Link href="#">Preguntas Frecuentes</Link></li>
-                <li><Link href="#">Ubicacion</Link></li>
+                <li><Link className={styles.a} href="#">¿Quienes somos?</Link></li>
+                <li><Link className={styles.a} href="#">Preguntas Frecuentes</Link></li>
+                <li><Link className={styles.a} href="#">Ubicacion</Link></li>
             </div>
             <div className={styles.hijo}>
               <li className={styles.titulo + "font-weight:bold" }>CONTACTO</li>
