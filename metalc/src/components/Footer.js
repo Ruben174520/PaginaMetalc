@@ -31,9 +31,9 @@ function Footer(){
           <div className={styles.redes}>
             Siguenos en nuestras redes:
             <div className={styles.redHijo}>
-              <li><Link href=""><Image src={face} typeof="logo" height={25} width={25} className={styles.logo} /></Link></li>
-              <li><Link href=""><Image src={insta} height={25} width={25} className={"color='#ffffff'"} /></Link></li>
-              <li><Link href=""><Image src={twitter} height={25} width={25} className={"color='#ffffff'"} /></Link></li>
+              <li className={styles.redHijoli}><Link href=""><Image src={face} typeof="logo" height={25} width={25} className={styles.logo} /></Link></li>
+              <li className={styles.redHijoli}><Link href=""><Image src={insta} height={25} width={25} className={"color='#ffffff'"} /></Link></li>
+              <li className={styles.redHijoli}><Link href=""><Image src={twitter} height={25} width={25} className={"color='#ffffff'"} /></Link></li>            
             </div>
           </div>
         </footer>

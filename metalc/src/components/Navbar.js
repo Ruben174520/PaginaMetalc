@@ -13,6 +13,7 @@ export function Navbar() {
 
   return (
     <header className="flex w-10/12 z-0 font-bmw justify-between py-4 border-b-2 border-cyan-800 text-lg mb-4 absolute left-1/2 -translate-x-1/2">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"/>
       <div className="flex">
         <div className="px-6 cursor-pointer" onClick={() => router.push("/")}>
           <Image src={logo} width={72} height={72} alt="Metalc Logo" />
