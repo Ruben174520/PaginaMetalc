@@ -3,7 +3,7 @@
 import { TarjetaMaterial } from "@/components/TarjetaMaterial";
 import MaterialSeleccionado from "@/components/MaterialSeleccionado";
 import Video from "@/components/Video";
-
+import Call from "@/components/callToAction"
 import { useMaterials } from "@/context/MaterialContext";
 import { useState } from "react";
 import styles from "../components/Video.module.css";
@@ -38,6 +38,7 @@ function page() {
           : <MaterialSeleccionado materials={materials} materialSelecto={materialSelecto}/>
           }
       </div>
+      <Call />
     </div>
   );
 }

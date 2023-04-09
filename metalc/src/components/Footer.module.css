@@ -1,20 +1,25 @@
 .containerFather{
     width: 100%;
-    height: 100px;
+    height: 120px;
     background-color: #1a7ab6;
     display: flex;
     justify-content: space-between;
     padding-right: 200px;
     padding-left: 200px;
-    padding-top: 50px;
-    padding-bottom: 130px;
+    padding-top: 15px;
+    padding-bottom: 50px;
+    
     /*border: solid 1pt white;*/
+}
+
+.footer{
+    height: 150px;
 }
 
 .hijo{
     /*margin-right: 200px;
-    margin-left: 200px;
-    margin-top: 50px;*/
+    margin-left: 200px;*/
+    margin-bottom: 30px;
     
    /*border: solid 1pt white;*/
     color:white;
@@ -46,12 +51,11 @@
     text-align: center;
 }
 .redHijo{
-    padding-bottom: 20px;
     z-index: -1;
     /*background-color: white;*/
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 3px;
 
 }
 

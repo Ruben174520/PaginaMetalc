@@ -1,0 +1,47 @@
+.call{
+    background-image: url(../img/chatarra.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    image-rendering: auto;
+    background-size: cover;    
+    width: 100%;
+    background-color: gray;
+    text-align: center;
+}
+
+.titulo{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.titulo2{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 3px;
+    padding: 3px;
+}
+
+.father{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 50px;
+}
+
+.hijo{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: center;
+    padding: 25px;
+}
+
+.boton:hover{
+    background-color: #8bba1f;
+}

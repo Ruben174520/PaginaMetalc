@@ -8,7 +8,7 @@ import twitter from "../icon/boxicons/svg/logos/bxl-twitter.svg";
 
 function Footer(){
     return(
-        <footer className="font-bmw">
+        <footer className={"font-bmw" + styles.footer}>
         <div className={styles.containerFather}>
             <div className={styles.hijo}>
               <li className={styles.titulo + "font-weight:bold" }>MENU</li>
