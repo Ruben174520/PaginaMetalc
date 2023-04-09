@@ -9,11 +9,11 @@ export const TarjetaMaterial = ({material, handleMostrar}) =>{
             <div className='flex items-center justify-center'>
                 <Image src={material.icono} width={50} height={50} className=''/>
             </div>
-            <div className='flex items-center justify-center m-2 font-bold'>
+            <div className='flex items-center  justify-center m-2 font-bold'>
                 <h1>{material.nombre}</h1>
             </div>
-            <div className=' p-3 m-2 flex items-center justify-center border-2 border-zinc-500 rounded self-center'>
-                <button className='block font-bmw text-gray-600 font-semibold'
+            <div className='h-9 p-3 m-2 flex items-center justify-center border-2  rounded self-center border-blue-500 bg-blue-500 hover:bg-lime-500 hover:border-lime-500'>
+                <button className='rounded-lg text-stone-950 block font-bmw font-semibold'
                 onClick={handleMostrar}
                 >
                     DETALLES
