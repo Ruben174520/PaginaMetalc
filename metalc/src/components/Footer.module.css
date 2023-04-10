@@ -19,7 +19,7 @@
 .hijo{
     /*margin-right: 200px;
     margin-left: 200px;*/
-    margin-bottom: 30px;
+    padding-bottom: 30px;
     
    /*border: solid 1pt white;*/
     color:white;
@@ -52,10 +52,10 @@
 }
 .redHijo{
     z-index: -1;
-    /*background-color: white;*/
+    background-color: #1a7ab6;
     display: flex;
     justify-content: center;
-    margin-top: 3px;
+    
 
 }
 
