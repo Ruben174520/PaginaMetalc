@@ -5,7 +5,7 @@ import { useState } from 'react';
 export const TarjetaMaterial = ({material, handleMostrar}) =>{
     
     return (
-        <div className=' w-2/6 h-2/3 mx-0 m-auto p-5'>
+        <div className=' w-1/3 h-2/3 mx-15 m-auto p-5'>
             <div className='flex items-center justify-center'>
                 <Image src={material.icono} width={50} height={50} className=''/>
             </div>

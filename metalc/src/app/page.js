@@ -24,10 +24,10 @@ function page() {
         <div className={styles.negro}></div>
         <Video />
       </div>
-      <div className="w-screen h-16 text-5xl text-center mt-8">
+      <div className="w-screen h-16 text-5xl text-center mt-20">
         <h1>ESPECIALIZADOS EN EL RECICLAJE</h1>
       </div>
-      <div className="w-screen h-2/4 mx-9 flex items-stretch flex-wrap justify-evenly">
+      <div className="w-screen h-2/4 mx-9 flex items-stretch flex-wrap justify-evenly mb-20">
         {!materialselect
           ? materials.map((material) => (
               <TarjetaMaterial
