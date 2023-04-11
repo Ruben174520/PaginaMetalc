@@ -54,15 +54,17 @@
     z-index: -1;
     background-color: #1a7ab6;
     display: flex;
-    justify-content: center;
-    
-
+    justify-content: flex-start;
+    padding-left: 200px;
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
 
 .redHijoli{
     text-decoration: none;
     list-style: none;
     display: inline;
+    padding-right: 7px;
 }
 
 #f{
