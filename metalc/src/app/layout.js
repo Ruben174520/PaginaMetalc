@@ -5,8 +5,9 @@ import { TaskProvider } from "@/context/TaskContext";
 import Video from "@/components/Video";
 import styles from "../components/Video.module.css";
 import Mapa from "@/components/Mapa";
-import Foot from "@/components/Footer"
+import Foot from "@/components/Footer";
 import { MaterialProvider } from "@/context/MaterialContext";
+import Head from "next/head";
 
 export const metadata = {
   title: "Create Next App",
@@ -17,12 +18,25 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+        <link
+          rel="stylesheet"
+          type="text/css"
+          charSet="UTF-8"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+        />
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+        />
+      </Head> 
       <body className="bg-white font-bmw">
-          <MaterialProvider>
-            <Navbar />
-            {children}
-          </MaterialProvider>
-          <Foot />
+        <MaterialProvider>
+          <Navbar />
+          {children}
+        </MaterialProvider>
+        <Foot />
       </body>
     </html>
   );
