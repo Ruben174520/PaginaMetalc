@@ -3,21 +3,35 @@
 import { TarjetaMaterial } from "@/components/TarjetaMaterial";
 import MaterialSeleccionado from "@/components/MaterialSeleccionado";
 import Video from "@/components/Video";
-import Call from "@/components/callToAction"
+import Call from "@/components/callToAction";
 import { useMaterials } from "@/context/MaterialContext";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "../components/Video.module.css";
-function page() {
+import SliderComponent from "@/components/SlideComponent";
+
+
+
+export function page() {
   const { materials } = useMaterials();
   console.log(materials);
-  const [materialselect, setMaterialSelecto] = useState(false);
-  const [objeto, setObjeto] = useState(null);
+  const [mostrarGaleria, setMostrarGaleria] = useState(false);
+  const [materialSeleccionado, setMaterialSeleccionado] = useState(null);
 
-  const materialSelecto = (objeto) => {
-    console.log("si");
-    setMaterialSelecto(true);
-    setObjeto(objeto);
+  const mostrarGaleriaHandler = (material) => {
+    setMostrarGaleria(true);
+    setMaterialSeleccionado(material);
   };
+  const tarjetaMaterial = mostrarGaleria ? null : (
+    <div className="w-screen h-2/4  flex items-stretch flex-wrap justify-evenly mb-20">
+      {materials.map((material) => (
+        <TarjetaMaterial
+          key={material.nombre}
+          material={material}
+          mostrarGaleriaHandler={mostrarGaleriaHandler}
+        />
+      ))}
+    </div>
+  );
   return (
     <div className="flex flex-wrap">
       <div className={styles.videoWrapper}>
@@ -27,16 +41,11 @@ function page() {
       <div className="w-screen h-16 text-5xl text-center mt-20">
         <h1>ESPECIALIZADOS EN EL RECICLAJE</h1>
       </div>
+      {tarjetaMaterial}
       <div className="w-screen h-2/4 mx-9 flex items-stretch flex-wrap justify-evenly mb-20">
-        {!materialselect
-          ? materials.map((material) => (
-              <TarjetaMaterial
-                material={material}
-                handleMostrar={materialSelecto}
-              />
-            ))
-          : <MaterialSeleccionado materials={materials} materialSelecto={materialSelecto}/>
-          }
+        {mostrarGaleria && (
+          <MaterialSeleccionado materialSelecto={materialSeleccionado} materials={materials}></MaterialSeleccionado>
+        )}
       </div>
       <Call />
     </div>

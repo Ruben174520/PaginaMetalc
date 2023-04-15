@@ -2,7 +2,7 @@ import React from 'react'
 import { useRouter } from "next/navigation";
 import Image from 'next/image';
 import { useState } from 'react';
-export const TarjetaMaterial = ({material, handleMostrar}) =>{
+export const TarjetaMaterial = ({material, mostrarGaleriaHandler}) =>{
     
     return (
         <div className=' w-1/3 h-2/3 mx-15 m-auto p-5'>
@@ -14,7 +14,7 @@ export const TarjetaMaterial = ({material, handleMostrar}) =>{
             </div>
             <div className='h-9 p-3 m-2 flex items-center justify-center border-2  rounded self-center border-blue-500 bg-blue-500 hover:bg-lime-500 hover:border-lime-500'>
                 <button className='rounded-lg text-stone-950 block font-bmw font-semibold'
-                onClick={handleMostrar}
+                onClick={() => mostrarGaleriaHandler(material)}
                 >
                     DETALLES
                 </button>
