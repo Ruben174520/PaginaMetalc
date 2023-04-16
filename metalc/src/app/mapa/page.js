@@ -1,4 +1,4 @@
-"use client";
+<"use client";
 import Mapa from "@/components/Mapa";
 import React from "react";
 import { useState, useEffect } from "react";
