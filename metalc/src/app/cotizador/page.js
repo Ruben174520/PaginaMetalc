@@ -1,7 +1,15 @@
 "use client"
 import React from 'react'
 import { useEffect } from 'react';
-const page = ()=> {
+import { useMaterials } from '@/context/MaterialContext';
+import TarjetaCotizacion from '@/components/TarjetaCotizacion';
+import { Form } from 'react-bootstrap';
+import Formulario from '@/components/Formulario';
+
+
+export function page (){
+    const {materials} = useMaterials();
+
     useEffect(() => {
         // Obtener la altura de otro-div
         const navbar = document.getElementById('div_navbar')
@@ -9,9 +17,29 @@ const page = ()=> {
         for (var i = 0; i < a.length; i++) a[i].classList.add('text-stone-950');
         // Actualizar el estado con el valor de padding-top
         navbar.classList.add('bg-sky-500')
-      }, []);
+    }, []);
+
     return (
-        <div className='pt-52'>Que deseas vender?</div>
+        <div className='pt-48 w-5/6 mx-auto mb-5'>
+            <div className=''>
+                <h1 className='text-4xl'>¿QUE DESEAS VENDER?</h1>
+                <p>RELLENA EL FORMULARIO PARA RECIBIR UNA COTIZACION POR CORREO O TELÉFONO</p>
+                <p className='mt-5'>*SELECCIONA UN MATERIAL PARA AUTORELLENAR EL FORMULARIO</p>
+            </div>
+            <div className='flex border-t-2 m-1'> 
+                <div className='w-3/5 flex flex-wrap p-6 justify-start'>
+                    {
+                        materials.map((material) =>(
+                            <TarjetaCotizacion material={material} key={material.id}/>
+                        ))
+                    }
+                </div>
+                <div className=' w-2/3 my-6'>
+                    <Formulario />
+                </div>
+            </div>
+        </div>
+
     );
 };
 

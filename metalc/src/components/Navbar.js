@@ -59,52 +59,5 @@ export function Navbar() {
         </Link>
       </div>
     </header>
-    //   <nav class="menu">
-    //   <div class="centralizar">
-    //     <label class="logo">
-    //       <img src="../img/logo.png" class="img-logo"></img>
-    //     </label>
-    //     <ul class="lista-nav">
-    //       <li>Servicios</li>
-    //       <li>Cotizador</li>
-    //       <li>¿Quienes somos?</li>
-    //       <li>Preguntas frecuentes</li>
-    //     </ul>
-    //     <div class="icons">
-    //       <ul class="iconos">
-    //         <li>
-    //           <box-icon name="search-alt" size="md"></box-icon>
-    //         </li>
-    //         <li>
-    //           <box-icon name="map" size="md"></box-icon>
-    //         </li>
-    //       </ul>
-    //     </div>
-    //   </div>
-    // </nav>
-
-    // <div class="vdmp4">
-    //   <video
-    //     src="../video/videoRecicle.mp4"
-    //     width="100%"
-    //     height="100%"
-    //     autoplay
-    //     loop
-    //   ></video>
-    // </div>
   );
 }
-// export function Navbar() {
-//   const router = useRouter();
-
-//   return (
-//     <header>
-//       <Link href="/">
-//         <h1>Task App</h1>
-//       </Link>
-//       <div>
-//         <button onClick={() => router.push("/new")}>Add Task</button>
-//       </div>
-//     </header>
-//   );
-// }
