@@ -11,7 +11,7 @@ module.exports = {
   theme: {
     fontFamily: {
       // 'Roboto': ["Roboto"],
-      'bmw':["./fonts/new/new.ttf","Roboto"]
+      'bmw':["BMW","Roboto"]
     },
     extend: {},
   },

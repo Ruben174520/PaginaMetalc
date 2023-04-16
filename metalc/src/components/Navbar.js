@@ -44,7 +44,7 @@ export function Navbar() {
             <h1 className="my-4 h1_navbar">Servicios</h1>
           </Link>
           <Link
-            href={"/"}
+            href={"/cotizador"}
             className="px-6 hover:border-b-4 border-cyan-800 font-semibold"
           >
             <h1 className="my-4 h1_navbar">Cotizador</h1>

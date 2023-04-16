@@ -7,7 +7,7 @@ export const TarjetaMaterial = ({material, mostrarGaleriaHandler}) =>{
     return (
         <div className=' w-1/3 h-2/3 mx-15 m-auto p-5'>
             <div className='flex items-center justify-center'>
-                <Image src={material.icono} width={50} height={50} className=''/>
+                <Image src={material.icono} width={50} height={50} className='' alt=''/>
             </div>
             <div className='flex items-center  justify-center m-2 font-bold'>
                 <h1>{material.nombre}</h1>
