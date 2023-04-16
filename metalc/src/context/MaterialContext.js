@@ -94,12 +94,7 @@ export const useMaterials = () => {
 
 export const MaterialProvider = ({ children }) => {
   const [materials, setMaterials] = useState([
-    {
-      nombre: "ACEROS INOXIDABLES",
-      icono: acerosI,
-      descripcion: "Compra de Acero Inoxidable Tipos: Serie 201, 301, 316, 316 L,hastelloy, inconel y monel.",
-      imagenes:imagenesInoxidables
-    },
+
     {
       nombre: "ALUMINIOS",
       icono: aluminios,
@@ -136,6 +131,12 @@ export const MaterialProvider = ({ children }) => {
       descripcion: "Compra de Metales Raros Tipos: Carburo de tungsteno, estaño, niquel, zinc, titanio, etc.",
       imagenes:imagenesRaros
     },
+    {
+      nombre: "ACEROS INOXIDABLES",
+      icono: acerosI,
+      descripcion: "Compra de Acero Inoxidable Tipos: Serie 201, 301, 316, 316 L,hastelloy, inconel y monel.",
+      imagenes:imagenesInoxidables
+    }
   ]);
   return (
     <MaterialsContext.Provider
