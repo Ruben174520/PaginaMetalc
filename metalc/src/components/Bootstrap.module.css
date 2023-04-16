@@ -1,5 +1,7 @@
 /* Start Bootstrap carousel */
+
 .itemP {
+  font-family: 'BMW';
     height: 40rem;
   }
   .itemP > img {
@@ -9,11 +11,13 @@
   }
   
   .caption {
+    font-family: 'BMW';
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 15px;
   }
   
   .caption h3 {
+    font-family: 'BMW';
     font-size: 35px;
     color: rgb(255, 255, 255);
   }
