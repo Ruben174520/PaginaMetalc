@@ -16,7 +16,6 @@ export function page (){
         const a = document.getElementsByClassName("h1_navbar");
         for (var i = 0; i < a.length; i++) a[i].classList.add('text-stone-950');
         // Actualizar el estado con el valor de padding-top
-        navbar.classList.add('bg-sky-500')
     }, []);
 
     return (

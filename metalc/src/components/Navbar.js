@@ -14,12 +14,14 @@ export function Navbar() {
     const a = document.getElementsByClassName("h1_navbar");
     console.log(a);
     for (var i = 0; i < a.length; i++) a[i].classList.remove("text-stone-950");
-    var pos = document.querySelector('#div_navbar');
+    var pos = document.getElementById('div_navbar');
+    const navbar = document.getElementById('div_navbar')
     var url = window.location.pathname;
     if(url == "/"){
-      setPosition('absolute');
+      pos.classList.add('absolute');
     }else{
-      setPosition('relative');
+      pos.classList.add('relative');
+      navbar.classList.add('bg-sky-500')
     }
     console.log(pos.getAttribute('position'));
   });
