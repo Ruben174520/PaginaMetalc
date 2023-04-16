@@ -7,13 +7,12 @@ import Call from "@/components/callToAction";
 import { useMaterials } from "@/context/MaterialContext";
 import { useState, useEffect } from "react";
 import styles from "../components/Video.module.css";
-import SliderComponent from "@/components/SlideComponent";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export function page() {
   const { materials } = useMaterials();
-  console.log(materials);
   const [mostrarGaleria, setMostrarGaleria] = useState(false);
   const [materialSeleccionado, setMaterialSeleccionado] = useState(null);
 
@@ -21,6 +20,7 @@ export function page() {
     setMostrarGaleria(true);
     setMaterialSeleccionado(material);
   };
+
   const tarjetaMaterial = mostrarGaleria ? null : (
     <div className="w-screen h-2/4  flex items-stretch flex-wrap justify-evenly mb-20">
       {materials.map((material) => (
