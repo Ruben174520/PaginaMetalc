@@ -21,6 +21,15 @@ export function page() {
     setMaterialSeleccionado(material);
   };
 
+  useEffect(() => {
+    // Obtener la altura de otro-div
+    const navbar = document.getElementById('div_navbar')
+    const a = document.getElementsByClassName("h1_navbar");
+    for (var i = 0; i < a.length; i++) a[i].classList.remove('text-stone-950');
+    // Actualizar el estado con el valor de padding-top
+    navbar.classList.remove('bg-sky-500')
+  }, []);
+
   const tarjetaMaterial = mostrarGaleria ? null : (
     <div className="w-screen h-2/4  flex items-stretch flex-wrap justify-evenly mb-20">
       {materials.map((material) => (
@@ -42,7 +51,7 @@ export function page() {
         <h1>ESPECIALIZADOS EN EL RECICLAJE</h1>
       </div>
       {tarjetaMaterial}
-      <div className="w-screen h-2/4 mx-9 flex items-stretch flex-wrap justify-evenly mb-20">
+      <div className="w-screen h-2/4 flex items-stretch flex-wrap justify-evenly mb-20">
         {mostrarGaleria && (
           <MaterialSeleccionado materialSelecto={materialSeleccionado} materials={materials}></MaterialSeleccionado>
         )}

@@ -19,7 +19,7 @@ function page() {
   }, []);
   return (
     <div
-      className="h-2/4 flex flex-wrap pt-52 my-0 mx-auto"
+      className="h-2/4 flex flex-wrap pt-52 my-0 mx-auto "
       style={{ paddingTop: paddingTop, width: ancho }}
     >
       <div className="w-screen h-2/4 flex flex-wrap">
