@@ -5,18 +5,31 @@ import Image from "next/image";
 import logo from "../icon/logo.png";
 import lupa from "../icon/boxicons/svg/regular/bx-search-alt.svg";
 import mapa from "../icon/boxicons/svg/regular/bx-map.svg";
-import styles from "./Video.module.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+var position;
 export function Navbar() {
   const router = useRouter();
+  const [ posicion, setPosition] = useState(0);
   useEffect(() => {
     const a = document.getElementsByClassName("h1_navbar");
     console.log(a);
     for (var i = 0; i < a.length; i++) a[i].classList.remove("text-stone-950");
+    var pos = document.querySelector('#div_navbar');
+    var url = window.location.pathname;
+    if(url == "/"){
+      setPosition('absolute');
+    }else{
+      setPosition('relative');
+    }
+    console.log(pos.getAttribute('position'));
   });
+
+  
+
+  
   return (
-    <header
-      className="flex w-10/12 z-0 font-bmw justify-between py-4 pt-6 border-b-2 border-cyan-800 text-lg mb-4 absolute left-1/2 -translate-x-1/2 div_navbar"
+    <header 
+      className="flex w-10/12 z-0 font-bmw justify-between py-4 pt-6 border-b-2 border-cyan-800 absolute text-lg mb-4 left-1/2 -translate-x-1/2 div_navbar" 
       id="div_navbar"
     >
       <div className="flex">
@@ -59,6 +72,7 @@ export function Navbar() {
         </Link>
       </div>
     </header>
+    
     //   <nav class="menu">
     //   <div class="centralizar">
     //     <label class="logo">
