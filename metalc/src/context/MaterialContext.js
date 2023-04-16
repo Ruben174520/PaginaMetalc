@@ -20,7 +20,46 @@ import aluminio1 from "|/imagesSlide/aluminio1.png";
 import aluminio2 from "|/imagesSlide/aluminio2.png";
 import aluminio3 from "|/imagesSlide/aluminio3.png";
 import aluminio4 from "|/imagesSlide/aluminio4.jpg";
-
+import rebabas1 from "|/imagesSlide/rebabas1.jpg";
+import rebabas2 from "|/imagesSlide/rebabas2.jpg";
+import rebabas3 from "|/imagesSlide/rebabas3.jpg";
+import rebabas4 from "|/imagesSlide/rebabas4.jpg";
+import bronce1 from "|/imagesSlide/bronce1.png";
+import bronce2 from "|/imagesSlide/bronce2.jpg";
+import bronce3 from "|/imagesSlide/bronce3.jpg";
+import bronce4 from "|/imagesSlide/bronce4.jpg";
+import cobre1 from "|/imagesSlide/cobre1.jpg";
+import cobre2 from "|/imagesSlide/cobre2.jpg";
+import cobre3 from "|/imagesSlide/cobre3.jpg";
+import cobre4 from "|/imagesSlide/cobre4.jpg";
+import raros1 from "|/imagesSlide/raros1.jpg";
+import raros2 from "|/imagesSlide/raros2.jpg";
+import raros3 from "|/imagesSlide/raros3.jpg";
+import raros4 from "|/imagesSlide/raros4.jpg";
+const imagenesRaros = [
+  raros1,
+  raros2,
+  raros3,
+  raros4
+]
+const imagenesCobre = [
+  cobre1,
+  cobre2,
+  cobre3,
+  cobre4
+]
+const imagenesBronce = [
+  bronce1,
+  bronce2,
+  bronce3, 
+  bronce4
+]
+const imagenesRebabas = [
+  rebabas1,
+  rebabas2,
+  rebabas3,
+  rebabas4
+]
 const imagenesChatarra = [
   chattara1,
   chattara2,
@@ -71,13 +110,13 @@ export const MaterialProvider = ({ children }) => {
       nombre: "BRONCES",
       icono: bronces,
       descripcion: "Compra de Bronce Tipos: Amarillo, rojo, contaminado y al manganeso.",
-      imagenes:imagenesChatarra
+      imagenes:imagenesBronce
     },
     {
       nombre: "COBRES",
       icono: cobres,
       descripcion: "Compra de Cobre Tipos: Cobre de primera, segunda, molidos y candy",
-      imagenes:imagenesChatarra
+      imagenes:imagenesCobre
     },
     {
       nombre: "CHATARRA",
@@ -89,13 +128,13 @@ export const MaterialProvider = ({ children }) => {
       nombre: "REBABAS",
       icono: rebabas,
       descripcion: "Compra de Rebaba Tipos: Rebaba de cobre, bronce, acero inoxidable y fierro.",
-      imagenes:imagenesChatarra
+      imagenes:imagenesRebabas
     },
     {
       nombre: "METALES RAROS",
       icono: metalesR,
       descripcion: "Compra de Metales Raros Tipos: Carburo de tungsteno, estaño, niquel, zinc, titanio, etc.",
-      imagenes:imagenesChatarra
+      imagenes:imagenesRaros
     },
   ]);
   return (
