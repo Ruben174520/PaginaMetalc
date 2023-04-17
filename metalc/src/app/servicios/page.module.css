@@ -1,6 +1,9 @@
 .fondoImage{
-    background-image: url("../../img/cobre.jpg");
+    background-image: url("../../img/aluminio.jpg");
+    
     width: 100%;
-    height: 35%;
+    border: solid 2pt black;
+    height: 400px;
+    background-repeat: no-repeat;
 }
 
