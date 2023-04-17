@@ -19,7 +19,7 @@ export function page (){
     }, []);
 
     return (
-        <div className='pt-48 w-5/6 mx-auto mb-5'>
+        <div className='pt-46 w-5/6 mx-auto mb-5'>
             <div className=''>
                 <h1 className='text-4xl'>¿QUE DESEAS VENDER?</h1>
                 <p>RELLENA EL FORMULARIO PARA RECIBIR UNA COTIZACION POR CORREO O TELÉFONO</p>

@@ -18,8 +18,10 @@ export function Navbar() {
     const navbar = document.getElementById('div_navbar')
     var url = window.location.pathname;
     if(url == "/"){
+      pos.classList.remove('relative')
       pos.classList.add('absolute');
     }else{
+      pos.classList.remove('absolute')
       pos.classList.add('relative');
       navbar.classList.add('bg-sky-500')
     }
