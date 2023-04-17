@@ -15,7 +15,9 @@ export function Navbar() {
     console.log(a);
     for (var i = 0; i < a.length; i++) a[i].classList.remove("text-stone-950");
     var pos = document.getElementById('div_navbar');
-    const navbar = document.getElementById('div_navbar')
+    const navbar = document.getElementById('div_navbar');
+    const logo = document.getElementById('logoNav');
+    const icon = document.getElementById('iconos')
     var url = window.location.pathname;
     if(url == "/"){
       pos.classList.remove('relative')
@@ -23,7 +25,13 @@ export function Navbar() {
     }else{
       pos.classList.remove('absolute')
       pos.classList.add('relative');
-      navbar.classList.add('bg-sky-500')
+      navbar.classList.add('bg-sky-500');
+      pos.classList.add('w-full');
+      pos.classList.add('px-10');
+      logo.classList.add('mb-5');
+      pos.classList.remove('py-4');
+      icon.classList.add('mb-5');
+      pos.classList.add('items-center');
     }
     console.log(pos.getAttribute('position'));
   });
@@ -33,11 +41,11 @@ export function Navbar() {
   
   return (
     <header 
-      className="flex w-10/12 z-0 font-bmw justify-between py-4 pt-6 border-b-2 border-cyan-800 absolute text-lg mb-4 left-1/2 -translate-x-1/2 div_navbar" 
+      className="flex w-10/12 z-0 font-bmw justify-between py-4 pt-6 border-b-2 border-cyan-800 absolute text-lg left-1/2 -translate-x-1/2 div_navbar" 
       id="div_navbar"
     >
       <div className="flex">
-        <div className="px-6 cursor-pointer" onClick={() => router.push("/")}>
+        <div className="px-6 cursor-pointer" id="logoNav" onClick={() => router.push("/")}>
           <Image src={logo} width={80} height={80} alt="Metalc Logo" />
         </div>
         <div className="flex items-center px-6 mx-10  max-h-14 text-white">
@@ -67,7 +75,7 @@ export function Navbar() {
           </Link>
         </div>
       </div>
-      <div className="flex items-center mx-10">
+      <div className="flex items-center mx-10 border-2" id="iconos">
         <Link href="/mapa">
           <Image src={mapa} height={32} width={32} className="mx-2" />
         </Link>

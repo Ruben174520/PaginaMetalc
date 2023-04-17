@@ -3,7 +3,7 @@ function page(){
    return(
         <div className={servicios.tamanio}>
             <div className={servicios.fondoImage}>
-                <h1>SERVICIOS</h1>
+                <div className="font-bmw col">SERVICIOS</div>
             </div>
         </div>
    ) 
