@@ -44,9 +44,11 @@ export function Navbar() {
       className="flex w-10/12 z-0 font-bmw justify-between py-4 pt-6 border-b-2 border-cyan-800 absolute text-lg left-1/2 -translate-x-1/2 div_navbar" 
       id="div_navbar"
     >
+      
       <div className="flex">
-        <div className="px-6 cursor-pointer" id="logoNav" onClick={() => router.push("/")}>
+        <div className="cursor-pointer" id="logoNav" onClick={() => router.push("/")}>
           <Image src={logo} width={80} height={80} alt="Metalc Logo" />
+          
         </div>
         <div className="flex items-center px-6 mx-10  max-h-14 text-white">
           <Link

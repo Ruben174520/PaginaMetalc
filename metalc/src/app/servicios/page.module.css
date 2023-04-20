@@ -25,9 +25,18 @@
 .scrap{
     border:solid 2pt green;
     margin: 10%;
+    margin-top: 4%;
     display: flex;
-    flex: auto;
+    justify-content: space-between;
+    
 
+}
+
+.titulo{
+    margin-left: 10%;
+    margin-top: 5%;
+    font-family: "font-bmw";
+    font-size: 40px;
 }
 
 .imagen{
@@ -46,15 +55,15 @@
     margin-left: 20px;
     width: 100%;
     margin: 10px;
+    display: flex;
 }
 
 /*Slider*/
 
 .slider{
-    border:solid 2pt purple;
-   
+    width: 500px;
     height: 400px;
-    margin: 0px 50px 0px 50px;
+    margin-left: 50px;
 }
 
 .imagenSlider{

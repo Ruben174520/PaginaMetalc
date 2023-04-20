@@ -8,6 +8,7 @@ import { useMaterials } from "@/context/MaterialContext";
 import { useState, useEffect } from "react";
 import styles from "../components/Video.module.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Resp from "../components/RespSocial";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
@@ -43,9 +44,11 @@ export function page() {
   );
   return (
     <div className="flex flex-wrap">
+      <h1 className="flex w-10/12 z-0 font-bmw text-white justify-between py-4 pt-6 absolute  left-1/2 -translate-x-1/2 div_navbar mt-[8%] font-['Oswald'] text-xl">Gente como tú, por un futuro sustentable.</h1>
       <div className={styles.videoWrapper}>
         <div className={styles.negro}></div>
         <Video />
+        
       </div>
       <div className="w-screen h-16 text-5xl text-center mt-20">
         <h1>ESPECIALIZADOS EN EL RECICLAJE</h1>
@@ -57,6 +60,9 @@ export function page() {
         )}
       </div>
       <Call />
+      <div className="w-screen p-[10px] h-[650px]">
+          <Resp />
+      </div>
     </div>
   );
 }
