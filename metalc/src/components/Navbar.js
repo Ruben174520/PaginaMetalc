@@ -20,8 +20,10 @@ export function Navbar() {
     const icon = document.getElementById('iconos')
     var url = window.location.pathname;
     if(url == "/"){
+      pos.classList.remove('relative')
       pos.classList.add('absolute');
     }else{
+      pos.classList.remove('absolute')
       pos.classList.add('relative');
       navbar.classList.add('bg-[#1a7ab6]');
       pos.classList.add('w-full');
