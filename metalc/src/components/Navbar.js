@@ -23,7 +23,7 @@ export function Navbar() {
       pos.classList.add('absolute');
     }else{
       pos.classList.add('relative');
-      navbar.classList.add('bg-sky-500');
+      navbar.classList.add('bg-[#1a7ab6]');
       pos.classList.add('w-full');
       pos.classList.add('px-10');
       logo.classList.add('mb-5');
@@ -32,7 +32,7 @@ export function Navbar() {
       pos.classList.add('items-center');
     }
     console.log(pos.getAttribute('position'));
-  });
+  }), [];
 
   
 
@@ -73,7 +73,7 @@ export function Navbar() {
           </Link>
         </div>
       </div>
-      <div className="flex items-center mx-10 border-2" id="iconos">
+      <div className="flex items-center mx-10" id="iconos">
         <Link href="/mapa">
           <Image src={mapa} height={32} width={32} className="mx-2" />
         </Link>
