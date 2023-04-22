@@ -1,0 +1,8 @@
+.arrow button{
+    color:blue;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: red!important;
+}
