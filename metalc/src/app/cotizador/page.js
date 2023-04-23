@@ -15,7 +15,16 @@ export function page (){
         const navbar = document.getElementById('div_navbar')
         const a = document.getElementsByClassName("h1_navbar");
         for (var i = 0; i < a.length; i++) a[i].classList.add('text-stone-950');
+        const pos = document.getElementById('div_navbar');
+        const letra = document.getElementById('text');
+        const logo = document.getElementById('logoNav');
+        const icon = document.getElementById('iconos')
         // Actualizar el estado con el valor de padding-top
+        pos.classList.remove('absolute')
+        pos.classList.add('relative');
+        navbar.classList.add('bg-[#1a7ab6]');
+        letra.classList.add('text-white');
+        
     }, []);
 
     return (

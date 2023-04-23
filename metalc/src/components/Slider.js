@@ -1,46 +1,103 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
+import estilo from './Bootstrap.module.css';
+import { lazy } from 'react';
 
 function Slider() {
   return (
-    <Carousel variant="dark" style={{height: '100%', display:'flex', flexDirection:'column'}} >
-      <Carousel.Item  style={{height: '400px'}}>
+    <Carousel variant="dark" style={{height: '400px'}} >
+      <Carousel.Item  className={estilo.itemP} style={{height: '400px'}} interval={4000}>
         <img
           src="https://aluminioindustrial.mx/blog/wp-content/uploads/2019/09/perfiles-aluminio-varios.jpg"
           alt="First slide"
-          style={{ border: 'solid 3pt green', objectFit: 'contain'}}
+          style={{ height: '400px', width: '500px',borderRadius: '10px' }}
+          loading='lazy'
+          decoding='async'
         />
-        <Carousel.Caption>
-          <h5>First slide label</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        <Carousel.Caption style={{backgroundColor: 'rgba(0,0,0,0.4)', borderRadius: '5px', marginBottom: '3%'}}>
+            <h5 className='text-white font-bmw font-bold text-xl'>Aluminio</h5>
         </Carousel.Caption>
       </Carousel.Item>
 
-      <Carousel.Item style={{height: '400px', boxSizing:'inherit'}}>
+      <Carousel.Item className={estilo.itemP} style={{height: '400px'}} interval={4000}>
         <img      
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH4rF_6ZqA0PtDxX9G8iENwAlR9zGaQUO6VA&usqp=CAU"
+          src="https://www.aceromafe.com/wp-content/uploads/2021/10/composicion-del-bronce.png"
           alt="Second slide"
-          style={{ border: 'solid 3pt green', objectFit: 'contain'}}
+          style={{  height: '400px', width: '500px', borderRadius: '10px'}}
+          loading='lazy'
+          decoding='async'
         />
-        <Carousel.Caption>
-          <h5>Second slide label</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <Carousel.Caption style={{backgroundColor: 'rgba(0,0,0,0.4)', borderRadius: '5px', marginBottom: '3%'}}>
+            <h5 className='text-white font-bmw font-bold text-xl'>Bronce</h5>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item style={{height: '400px'}}>
+      <Carousel.Item className={estilo.itemP} style={{height: '400px'}} interval={4000}>
         <img
           src="https://i.blogs.es/14d603/cobre1/1366_2000.jpeg"
           alt="Third slide"
-          style={{ border: 'solid 3pt green', objectFit: 'contain'}}
+          style={{  height: '400px', width: '500px',borderRadius: '10px'}}
+          loading='lazy'
+          decoding='async'
         />
-        <Carousel.Caption>
-          <h5>Third slide label</h5>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+        <Carousel.Caption style={{backgroundColor: 'rgba(0,0,0,0.4)', borderRadius: '5px', marginBottom: '3%'}}>
+            <h5 className='text-white font-bmw font-bold text-xl'>Cobre</h5>
+        </Carousel.Caption>
+      </Carousel.Item>
+
+      <Carousel.Item className={estilo.itemP} style={{height: '400px'}} interval={4000}>
+        <img
+          src="https://media.istockphoto.com/id/868926884/es/foto/viejas-partes-de-coches-oxidados-oxidados-en-desguace-de-coches-coche-reciclado-piezas-de.jpg?s=612x612&w=0&k=20&c=hyTIObkdAxG-bMxWATlMNcY6F5_cIGdwtpFB-wU5pTU="
+          alt="Third slide"
+          style={{  height: '400px', width: '500px', borderRadius: '10px'}}
+          loading='lazy'
+          decoding='async'
+        />
+        <Carousel.Caption style={{backgroundColor: 'rgba(0,0,0,0.4)', borderRadius: '5px', marginBottom: '3%'}}>
+            <h5 className='text-white font-bmw font-bold text-xl'>Chatarra</h5>
+        </Carousel.Caption>
+      </Carousel.Item>
+
+      <Carousel.Item className={estilo.itemP} style={{height: '400px'}} interval={4000}>
+        <img
+          src="https://gtaambiental.com/wp-content/uploads/rebaba-larga-de-acero-1.jpg"
+          alt="Third slide"
+          style={{  height: '400px', width: '500px',borderRadius: '10px'}}
+          loading='lazy'
+          decoding='async'
+        />
+        <Carousel.Caption style={{backgroundColor: 'rgba(0,0,0,0.4)', borderRadius: '5px', marginBottom: '3%'}}>
+            <h5 className='text-white font-bmw font-bold text-xl'>Rebabas</h5>
+        </Carousel.Caption>
+      </Carousel.Item>
+
+      <Carousel.Item className={estilo.itemP} style={{height: '400px'}} interval={4000}>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc3awL11Mn9j-DPSo500_AEBKS1IlGyojC2Q&usqp=CAU"
+          alt="Third slide"
+          style={{  height: '400px', width: '500px', borderRadius: '10px'}}
+          loading='lazy'
+          decoding='async'
+        />
+        <Carousel.Caption style={{backgroundColor: 'rgba(0,0,0,0.4)', borderRadius: '5px', marginBottom: '3%'}}>
+            <h5 className='text-white font-bmw font-bold text-xl'>Metales raros</h5>
+        </Carousel.Caption>
+      </Carousel.Item>
+
+      <Carousel.Item className={estilo.itemP} style={{height: '400px'}} interval={4000}>
+        <img
+          src="https://acerossuecos.com/wp-content/uploads/2017/04/INOXIDABLES-304L.jpg"
+          alt="Third slide"
+          style={{  height: '400px', width: '500px', borderRadius: '10px'}}
+          loading='lazy'
+          decoding='async'
+        />
+        <Carousel.Caption style={{backgroundColor: 'rgba(0,0,0,0.4)', borderRadius: '5px', marginBottom: '3%'}}>
+            <h5 className='text-white font-bmw font-bold text-xl'>Aceros Inoxidables</h5>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+
+    
   );
 }
 

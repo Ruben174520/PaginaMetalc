@@ -14,27 +14,15 @@ export function Navbar() {
     const a = document.getElementsByClassName("h1_navbar");
     console.log(a);
     for (var i = 0; i < a.length; i++) a[i].classList.remove("text-stone-950");
-    var pos = document.getElementById('div_navbar');
+    /*var pos = document.getElementById('div_navbar');*/
+    
     const navbar = document.getElementById('div_navbar');
     const logo = document.getElementById('logoNav');
-    const icon = document.getElementById('iconos')
+    const icon = document.getElementById('iconos');
+    const texto = document.getElementById('text');
     var url = window.location.pathname;
-    if(url == "/"){
-      pos.classList.remove('relative')
-      pos.classList.add('absolute');
-    }else{
-      pos.classList.remove('absolute')
-      pos.classList.add('relative');
-      navbar.classList.add('bg-[#1a7ab6]');
-      pos.classList.add('w-full');
-      pos.classList.add('px-10');
-      logo.classList.add('mb-5');
-      pos.classList.remove('py-4');
-      icon.classList.add('mb-5');
-      pos.classList.add('items-center');
-    }
-    console.log(pos.getAttribute('position'));
-  }), [];
+    
+  }, []);
 
   
 
@@ -45,14 +33,14 @@ export function Navbar() {
       id="div_navbar"
     >
       
-      <div className="flex">
+      <div className="flex px-[3%]">
         <div className="cursor-pointer" id="logoNav" onClick={() => router.push("/")}>
           <Image src={logo} width={80} height={80} alt="Metalc Logo" />
           
         </div>
-        <div className="flex items-center px-6 mx-10  max-h-14 text-white">
+        <div className="flex items-center px-6 mx-10  max-h-14 text-white" id="text">
           <Link
-            href={"/"}
+            href={"/servicios"}
             className="px-6 hover:border-b-4 border-cyan-800 font-semibold"
           >
             <h1 className="my-4 h1_navbar">Servicios</h1>

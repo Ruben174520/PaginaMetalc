@@ -29,6 +29,16 @@ export function page() {
     for (var i = 0; i < a.length; i++) a[i].classList.remove('text-stone-950');
     // Actualizar el estado con el valor de padding-top
     navbar.classList.remove('bg-sky-500')
+    const pos = document.getElementById('div_navbar');
+    const letra = document.getElementById('text');
+    const logo = document.getElementById('logoNav');
+    const icon = document.getElementById('iconos')
+    var url = window.location.pathname;
+    pos.classList.remove('relative')
+    pos.classList.add('absolute');
+    navbar.classList.remove('bg-[#1a7ab6]');
+    letra.classList.add('text-white');
+
   }, []);
 
   const tarjetaMaterial = mostrarGaleria ? null : (
