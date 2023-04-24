@@ -1,7 +1,7 @@
 "use client";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+import { Card } from 'react-bootstrap';
 import Foto from '../img/cobre.jpg';
 function RespSocial() {
   return (

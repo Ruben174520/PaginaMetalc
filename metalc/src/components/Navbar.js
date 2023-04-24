@@ -58,7 +58,7 @@ export function Navbar() {
             <h1 className="my-4 h1_navbar">¿Quienes somos?</h1>
           </Link>
           <Link
-            href={"/"}
+            href={"/preguntas"}
             className="px-6 hover:border-b-4 border-cyan-800 font-semibold"
           >
             <h1 className="my-4 h1_navbar">Preguntas frecuentes</h1>
