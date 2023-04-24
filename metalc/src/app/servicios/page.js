@@ -10,6 +10,8 @@ import Slider from "../../components/Slider";
 import Carrusel from "@/components/ImageCarousel";
 import ImageCarousel from "../../components/ImageCarousel";
 import { Button } from "react-bootstrap";
+import Mapa from "@/components/Mapa";
+
 
 function page() {
   useEffect(() => {
@@ -97,58 +99,56 @@ function page() {
     },
   ];
 
-  return (
-    <div>
-      <div className={servicios.tamanio}></div>
-      <div className="font-bmw text-white text-7xl z-2 absolute w-10/12 h-[200px] border-2 border-blue-500">
-        SERVICIOS
-      </div>
-      <div className={servicios.fondoImage}></div>
-
-      <div className={servicios.contenido}>
-        <div className={servicios.titulo}>SERVICIOS QUE OFRECEMOS</div>
-        <div className={servicios.scrap}>
-          <div className={servicios.textoScrap}>
-            <div className=" w-[50%] ">
-              <h1 className="font-bmw text-2xl ">RECOLECCIÓN DE SCRAPT</h1>
-              <br />
-              <p className="justify-text-left">
-                En METALC nos comprometemos a satisfacer plenamente las
-                necesidades y expectativas de nuestros clientes y proveedores,
-                en la compra y venta de metales
-                <br />
-                Uno de los principales servicios que Metalc puede brindarte, es
-                la compra de scrap. Puedes acudir directamente a la empresa a
-                realizar una cotizacion del material que tienes disponible.{" "}
-                <br />
-                <br />
-                Consulta mas información sobre los materiales que recolectamos
-                aqui:
-              </p>
-              <br />
-              <br />
-              <br />
-              <br />
-              <div className="d-grid gap-2 h-[35px] m-[2%] align-center ">
-                <Button
-                  variant="primary"
-                  size="sm"
-                  className="text-black font-bmw bg-[#1a7ab6] hover:bg-[#8bba1f] align-center"
-                >
-                  Materiales que recolectamos
-                </Button>
-              </div>
+  
+    return (
+        <div>
+            
+            <div className={servicios.fondoImage}>
+                <div className="font-bmw text-white text-7xl z-2">SERVICIOS</div>
             </div>
-            <div
-              className="align-middle justify-center rounded-md"
-              style={{ width: "500px", height: "400px" }}
-            >
-              <Slider />
+            
+            <div className={servicios.contenido}>
+                <div className={servicios.titulo}>
+                    SERVICIOS QUE OFRECEMOS
+                </div>
+                <div className={servicios.scrap}>
+                    <div className={servicios.textoScrap}>
+                        <div className=" w-[50%] ">
+                            <h1 className="font-bmw text-2xl ">RECOLECCIÓN DE SCRAPT</h1><br />
+                            <p className="justify-text-left">En METALC nos comprometemos a satisfacer plenamente las necesidades y expectativas de nuestros clientes y proveedores, en la compra y venta de metales<br/>
+                                Uno de los principales servicios que Metalc puede brindarte, es la compra de scrap.
+                                Puedes acudir directamente a la empresa a realizar una cotizacion del material que tienes disponible. <br /><br/><br/><br/><br/>
+                                Consulta mas información sobre los materiales que recolectamos aqui: 
+                            </p><br/>
+                            <div className="d-grid gap-2 h-[35px] m-[2%] align-center ">
+                                <Button variant="primary" size='sm' className='text-white font-bmw bg-[#1a7ab6] hover:bg-[#8bba1f] align-center'>Materiales que recolectamos</Button>
+                            </div>
+                            
+                        </div>
+                        <div className="align-middle justify-center rounded-md" style={{width: '500px', height: '400px'}}>
+                            <Slider />
+                        </div>
+                    </div>
+                    <div className={servicios.textoScrap}>
+                        <div className="w-[50%] border-2 border-blue-500">
+                            <Form />
+                        </div>
+                        <div className="w-[500px] border-2 border-yellow-500">
+                            <h1 className="font-bmw text-2xl ">ADEMÁS ...</h1><br />
+                            <p className="justify-text-left">
+                                Puedes realizar tu cotización correspondiente en el siguiente formulario.<br/> 
+                                Recuerda colocar correctamente tus datos para que uno de nuestros colaboradores se contacte contigo.
+                                <br/><br/><br/>
+                            </p>
+                            <h1 className="font-bmw text-2xl">UBICACIÓN</h1><br/><br/>
+                            <div className="w-[100%] h-[150px]">
+                                <Mapa h='200px'/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
   );
 }
 

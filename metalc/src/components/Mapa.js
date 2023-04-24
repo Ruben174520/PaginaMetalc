@@ -1,8 +1,9 @@
 import React from "react";
 import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
-
+import style from "../app/page.module.css";
 function Mapa() {
   const zoom = 10;
+  const AnyReactComponent = ({ text }) => <div>{text}</div>;
   const center = {
     lat: 22.120930754655156,
     lng: -100.9050073762789,

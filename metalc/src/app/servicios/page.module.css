@@ -1,13 +1,12 @@
 .fondoImage{
-    background-image: url("../../img/chatarra2.jpg");
+    background-image: url("../../img/chatarra2.png");
     
     
     width: 100%;
-    border: solid 2pt black;
     height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: -2;
+    z-index: -1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,8 +15,6 @@
 
 .tamanio{
     /*background-image: radial-gradient(circle at center, rgb(0, 0, 0) 0%, rgba(40,40,40,0.86) 70%), url("../../img/chatarra2.jpg");*/
-    background-color: black;
-    opacity: 0.5;
     background-repeat: no-repeat;
     display: flex;
     
@@ -35,10 +32,10 @@
 }
 
 .scrap{
-    /*border:solid 2pt green;*/
+    border:solid 2pt green;
     margin: 7%;
     margin-top: 4%;
-    display: flex;
+    display: inline-block;
     justify-content: space-between;
     
 
