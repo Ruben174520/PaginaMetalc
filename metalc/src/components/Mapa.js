@@ -23,8 +23,8 @@ function Mapa() {
   const onLoad = React.useCallback(function callback(map) {
     const bounds = new window.google.maps.LatLngBounds(center);
     map.fitBounds(bounds);
+    console.log(map.getZoom())
     setMap(map);
-    map.setZoom(zoom)
   }, []);
 
   const unMount = React.useCallback(function callback(map) {
@@ -36,9 +36,10 @@ function Mapa() {
       center={center}
       onLoad={onLoad}
       onUnmount={unMount}
+      zoom={14}
       id="place"
-      zoom={22}
       options={{
+        zoom:14,
         mapTypeControl: true,
         mapTypeControlOptions: {
           position: window.google.maps.ControlPosition.TOP_LEFT,

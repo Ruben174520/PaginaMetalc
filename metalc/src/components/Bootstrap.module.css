@@ -24,8 +24,8 @@
   /* End Bootstrap carousel */
 
 
-  .background-image {
-    background-image: url('/images/background.jpg');
+  .backgroundImage {
+    background-image: url('/src/icon/background/image.png');
     background-repeat: no-repeat;
     background-size: cover;
   }

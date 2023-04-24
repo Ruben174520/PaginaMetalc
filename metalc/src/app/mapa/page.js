@@ -11,6 +11,8 @@ import whats from "|/boxicons/svg/logos/bxl-whatsapp.svg";
 import casa from "|/boxicons/svg/solid/bxs-building-house.svg";
 import correo from "|/boxicons/svg/solid/bxs-envelope.svg";
 import mark from "|/boxicons/svg/solid/bxs-bookmark.svg";
+import background from "|/background/image.png"
+import style from "../../components/Bootstrap.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function page() {
@@ -34,7 +36,9 @@ function page() {
   return (
     <div className="w-5/6 mx-auto mb-5 mt-7 ">
       <div className="w-screen h-2/4 flex flex-wrap">
-      <div ></div>
+        {/* <div className="bg-cover bg-center h-screen">
+          <Image src={background} height={100} width={100}/>
+        </div> */}
         <div className="w-1/3 flex justify-center align-middle h-full">
           <Mapa />
         </div>
@@ -80,7 +84,7 @@ function page() {
                 </Card.Title>
                 <div>
                   <div className="flex fle-wrap align-middle ">
-                    <Image src={mark} height={25} width={25} className=""/>
+                    <Image src={mark} height={25} width={25} className="" />
                     <p className="ml-2">vero.metalc@gmail.com </p>
                   </div>
                 </div>
