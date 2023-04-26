@@ -40,7 +40,7 @@ function page() {
           <Image src={background} height={100} width={100}/>
         </div> */}
         <div className="w-1/3 flex justify-center align-middle h-full">
-          <Mapa />
+          <Mapa tam='400px' />
         </div>
         <div className="w-3/6 p-6">
           <h1 className="text-4xl border-b-2 border-gray-900">Contactanos</h1>

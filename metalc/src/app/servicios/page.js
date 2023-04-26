@@ -11,6 +11,7 @@ import Carrusel from "@/components/ImageCarousel";
 import ImageCarousel from "../../components/ImageCarousel";
 import { Button } from "react-bootstrap";
 import Mapa from "@/components/Mapa";
+import NavSecond from "@/components/Tabs";
 
 
 function page() {
@@ -30,7 +31,7 @@ function page() {
     letra.classList.add("text-white");
   }, []);
 
-  const images = [
+  /*const images = [
     {
       id: 1,
       url: "https://aluminioindustrial.mx/blog/wp-content/uploads/2019/09/perfiles-aluminio-varios.jpg",
@@ -97,7 +98,7 @@ function page() {
       estilo: "font-bmw",
       posicion: "display: 'flex' align-text: 'end'",
     },
-  ];
+  ];*/
 
   
     return (
@@ -142,10 +143,20 @@ function page() {
                             </p>
                             <h1 className="font-bmw text-2xl">UBICACIÓN</h1><br/><br/>
                             <div className="w-[100%] h-[150px]">
-                                <Mapa h='200px'/>
+                                <Mapa tam='200px'/>
                             </div>
                         </div>
+                        
                     </div>
+                    <div className={servicios.textoScrap}>
+                      <h1 className="font-bmw text-2xl">¿QUÉ MÁS HACEMOS?</h1>
+                    </div>
+                    <div className={servicios.textoScrap}>
+                      <div className={servicios.navSecundario}>
+                          <NavSecond />
+                      </div>
+                    </div>
+                    
                 </div>
             </div>
           </div>

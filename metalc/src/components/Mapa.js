@@ -1,7 +1,7 @@
 import React from "react";
 import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
 import style from "../app/page.module.css";
-function Mapa() {
+function Mapa(promps) {
   const zoom = 10;
   const AnyReactComponent = ({ text }) => <div>{text}</div>;
   const center = {
@@ -11,7 +11,7 @@ function Mapa() {
 
   const containerStyle = {
     width: "100%",
-    height: "500px",
+    height: promps.tam,
   };
 
   const { isLoaded } = useJsApiLoader({
