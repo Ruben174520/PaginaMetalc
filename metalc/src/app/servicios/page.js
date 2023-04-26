@@ -31,75 +31,6 @@ function page() {
     letra.classList.add("text-white");
   }, []);
 
-  /*const images = [
-    {
-      id: 1,
-      url: "https://aluminioindustrial.mx/blog/wp-content/uploads/2019/09/perfiles-aluminio-varios.jpg",
-    },
-    {
-      id: 2,
-      url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH4rF_6ZqA0PtDxX9G8iENwAlR9zGaQUO6VA&usqp=CAU",
-    },
-    { id: 3, url: "https://i.blogs.es/14d603/cobre1/1366_2000.jpeg" },
-    {
-      id: 4,
-      url: "https://media.istockphoto.com/id/868926884/es/foto/viejas-partes-de-coches-oxidados-oxidados-en-desguace-de-coches-coche-reciclado-piezas-de.jpg?s=612x612&w=0&k=20&c=hyTIObkdAxG-bMxWATlMNcY6F5_cIGdwtpFB-wU5pTU=",
-    },
-    {
-      id: 5,
-      url: "https://www.elchatarrero.com/wp-content/uploads/2017/06/tulio.jpg",
-    },
-    {
-      id: 6,
-      url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc3awL11Mn9j-DPSo500_AEBKS1IlGyojC2Q&usqp=CAU",
-    },
-  ];
-
-  const names = [
-    {
-      id: "1",
-      metal: "Aluminio",
-      estilo: "font-bmw",
-      posicion: "display: 'flex' align-text: 'end'",
-    },
-    {
-      id: "2",
-      metal: "Bronce",
-      estilo: "font-bmw",
-      posicion: "display: 'flex' align-text: 'end'",
-    },
-    {
-      id: "3",
-      metal: "Cobre",
-      estilo: "font-bmw",
-      posicion: "display: 'flex' align-text: 'end'",
-    },
-    {
-      id: "4",
-      metal: "Chatarra",
-      estilo: "font-bmw",
-      posicion: "display: 'flex' align-text: 'end'",
-    },
-    {
-      id: "5",
-      metal: "Rebabas",
-      estilo: "font-bmw",
-      posicion: "display: 'flex' align-text: 'end'",
-    },
-    {
-      id: "6",
-      metal: "Metales Raros",
-      estilo: "font-bmw",
-      posicion: "display: 'flex' align-text: 'end'",
-    },
-    {
-      id: "7",
-      metal: "Aceros inoxidables",
-      estilo: "font-bmw",
-      posicion: "display: 'flex' align-text: 'end'",
-    },
-  ];*/
-
   
     return (
         <div>
@@ -131,10 +62,10 @@ function page() {
                         </div>
                     </div>
                     <div className={servicios.textoScrap}>
-                        <div className="w-[50%] border-2 border-blue-500">
-                            <Form />
+                        <div className="w-[50%] ">
+                            <Form  className='border-none'/>
                         </div>
-                        <div className="w-[500px] border-2 border-yellow-500">
+                        <div className="w-[500px] ">
                             <h1 className="font-bmw text-2xl ">ADEMÁS ...</h1><br />
                             <p className="justify-text-left">
                                 Puedes realizar tu cotización correspondiente en el siguiente formulario.<br/> 
@@ -143,7 +74,7 @@ function page() {
                             </p>
                             <h1 className="font-bmw text-2xl">UBICACIÓN</h1><br/><br/>
                             <div className="w-[100%] h-[150px]">
-                                <Mapa tam='200px'/>
+                                <Mapa tam='300px'/>
                             </div>
                         </div>
                         
@@ -154,6 +85,9 @@ function page() {
                     <div className={servicios.textoScrap}>
                       <div className={servicios.navSecundario}>
                           <NavSecond />
+                          <div className="w-[100%], h-[400px] " id="qmh">
+
+                          </div>
                       </div>
                     </div>
                     
