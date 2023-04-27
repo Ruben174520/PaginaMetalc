@@ -2,4 +2,14 @@
 .border-bottom-color:hover{
     border-bottom-color: rgb(26, 112, 182);
 }
+.div-con-fondo-preguntas {
+    background-image: url('../icon/background/image.png');
+    background-size: cover;
+    background-position: center;
+  }
 
+  .div-con-fondo-servicios {
+    background-image: url('../icon/background/image.png');
+    background-size: cover;
+    background-position: center;
+  }

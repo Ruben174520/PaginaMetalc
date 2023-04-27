@@ -11,10 +11,10 @@ import whats from "|/boxicons/svg/logos/bxl-whatsapp.svg";
 import casa from "|/boxicons/svg/solid/bxs-building-house.svg";
 import correo from "|/boxicons/svg/solid/bxs-envelope.svg";
 import mark from "|/boxicons/svg/solid/bxs-bookmark.svg";
-import background from "|/background/image.png"
+import background from "|/background/image.png";
 import style from "../../components/Bootstrap.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import "../page.css";
 function page() {
   const [paddingTop, setPaddingTop] = useState(0);
   const [ancho, setAncho] = useState(0);
@@ -34,13 +34,14 @@ function page() {
     letra.classList.add("text-white");
   }, []);
   return (
-    <div className="w-5/6 mx-auto mb-5 mt-7 ">
-      <div className="w-screen h-2/4 flex flex-wrap">
-        {/* <div className="bg-cover bg-center h-screen">
-          <Image src={background} height={100} width={100}/>
-        </div> */}
+    <div className="w-5/6 mx-auto mb-5 ">
+      <div className="div-con-fondo-preguntas h-40 flex justify-center align-middle items-center text-white text-5xl">
+        {" "}
+        MAPA
+      </div>
+      <div className="w-screen h-2/4 flex flex-wrap mt-3">
         <div className="w-1/3 flex justify-center align-middle h-full">
-          <Mapa tam='400px' />
+          <Mapa tam="400px" />
         </div>
         <div className="w-3/6 p-6">
           <h1 className="text-4xl border-b-2 border-gray-900">Contactanos</h1>

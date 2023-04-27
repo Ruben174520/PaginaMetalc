@@ -31,9 +31,6 @@ export function page() {
     navbar.classList.remove('bg-sky-500')
     const pos = document.getElementById('div_navbar');
     const letra = document.getElementById('text');
-    const logo = document.getElementById('logoNav');
-    const icon = document.getElementById('iconos')
-    var url = window.location.pathname;
     pos.classList.remove('relative')
     pos.classList.add('absolute');
     navbar.classList.remove('bg-[#1a7ab6]');

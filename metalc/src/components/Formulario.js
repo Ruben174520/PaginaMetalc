@@ -62,7 +62,7 @@ const Formulario = () => {
                 *Opcional
             </Form.Text>
         </FormGroup>
-        <Button variant="primary" type="submit" className='bg-cyan-600 p-3 rounded-md my-2 w-full hover:bg-cyan-700'>
+        <Button variant="primary" type="submit" className='bg-cyan-600 p-1 rounded-md my-2 w-full hover:bg-cyan-700'>
             Enviar
         </Button>
     </Form>

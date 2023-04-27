@@ -7,6 +7,7 @@ import { useMaterials } from "@/context/MaterialContext";
 import Image from "next/image";
 import icono from "|/boxicons/svg/regular/bx-leaf.svg";
 
+import "../page.css";
 
 function page() {
   const { materials } = useMaterials();
@@ -26,10 +27,13 @@ function page() {
     letra.classList.add("text-white");
   }, []);
   return (
-    <div className="pt-46 w-5/6 mx-auto mb-5 mt-7">
-      <div className="">
-        <h1 className="text-4xl">PREGUNTAS FRECUENTES</h1>
-        <p>
+    <div className="pt-42 w-5/6 mx-auto mb-5">
+      <div className="div-con-fondo-preguntas h-40 flex justify-center align-middle items-center text-white text-5xl">
+        {" "}
+        PREGUNTAS FRECUENTES
+      </div>
+      <div className="my-9">
+        <p className="text-center">
           Tienes alguna duda acerca de nuestros servicios? Echale un vistazo a
           esta página
         </p>
