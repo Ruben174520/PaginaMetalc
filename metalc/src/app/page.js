@@ -51,7 +51,7 @@ export function page() {
   );
   return (
     <div className="flex flex-wrap">
-      <h1 className="flex w-10/12 z-0 font-bmw text-white justify-between py-4 pt-6 absolute  left-1/2 -translate-x-1/2 div_navbar mt-[8%] font-['Oswald'] text-xl">Gente como tú, por un futuro sustentable.</h1>
+      <h1 className="flex w-10/12 z-0 font-bmw text-white justify-between py-4 pt-6 absolute  left-1/2 -translate-x-1/2 div_navbar mt-[8%] text-xl">Gente como tú, por un futuro sustentable.</h1>
       <div className={styles.videoWrapper}>
         <div className={styles.negro}></div>
         <Video />

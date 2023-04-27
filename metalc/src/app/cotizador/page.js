@@ -2,6 +2,7 @@
 import React from "react";
 import { useEffect } from "react";
 import { useMaterials } from "@/context/MaterialContext";
+import { useState } from "react";
 import TarjetaCotizacion from "@/components/TarjetaCotizacion";
 import { Form } from "react-bootstrap";
 import Formulario from "@/components/Formulario";
@@ -9,6 +10,11 @@ import '../page.css'
 
 export function page() {
   const { materials } = useMaterials();
+  const [materialSeleccionado, setMaterialSeleccionado] = useState(null);
+
+  const setearDatos = (material) => {
+    setMaterialSeleccionado(material);
+  };
 
   useEffect(() => {
     // Obtener la altura de otro-div
@@ -45,11 +51,11 @@ export function page() {
       <div className="flex border-t-2 m-1">
         <div className="w-3/5 flex flex-wrap p-6 justify-start">
           {materials.map((material) => (
-            <TarjetaCotizacion material={material} key={material.id} />
+            <TarjetaCotizacion material={material} key={material.id} setearDatos={setearDatos}/>
           ))}
         </div>
         <div className=" w-2/3 my-6">
-          <Formulario />
+          <Formulario materialSelecto={materialSeleccionado}/>
         </div>
       </div>
     </div>

@@ -1,7 +1,6 @@
 "use client";
 import { Navbar } from "@/components/Navbar";
 import "./globals.css";
-import { TaskProvider } from "@/context/TaskContext";
 import Video from "@/components/Video";
 import styles from "../components/Video.module.css";
 import Mapa from "@/components/Mapa";

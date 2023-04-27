@@ -1,8 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
-const TarjetaCotizacion = ({material})=> {
+const TarjetaCotizacion = ({material, setearDatos})=> {
   return (
-    <div className=' w-1/4 p-5 border-2 rounded-lg m-1 align-middle hover:bg-green-100 flex flex-wrap justify-center' >
+    <div className=' w-1/4 p-5 border-2 rounded-lg m-1 align-middle hover:bg-green-100 flex flex-wrap justify-center cursor-pointer'
+    onClick={() => setearDatos(material)} >
         <div className='flex items-center justify-center w-full'>
             <Image src={material.icono} width={50} height={50} className='' alt=''/>
         </div>
