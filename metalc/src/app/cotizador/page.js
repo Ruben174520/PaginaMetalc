@@ -33,11 +33,13 @@ export function page() {
   }, []);
 
   return (
-    <div className="pt-46 w-5/6 mx-auto mb-5 ">
-      <div className="div-con-fondo-preguntas h-40 flex justify-center align-middle items-center text-white text-5xl">
+    <div className="w-[100%]">
+      <div className="div-con-fondo-preguntas h-40 flex justify-center align-middle items-center text-white text-5xl w-[100%]">
         {" "}
         COTIZADOR
       </div>
+    <div className="pt-46 w-5/6 mx-auto mb-5 ">
+      
       <div className="mt-5">
         <h1 className="text-4xl">¿QUE DESEAS VENDER?</h1>
         <p>
@@ -58,6 +60,7 @@ export function page() {
           <Formulario materialSelecto={materialSeleccionado}/>
         </div>
       </div>
+    </div>
     </div>
   );
 }

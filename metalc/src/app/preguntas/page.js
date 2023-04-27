@@ -27,11 +27,13 @@ function page() {
     letra.classList.add("text-white");
   }, []);
   return (
-    <div className="pt-42 w-5/6 mx-auto mb-5">
-      <div className="div-con-fondo-preguntas h-40 flex justify-center align-middle items-center text-white text-5xl">
+    <div className="w-[100%]">
+      <div className="div-con-fondo-preguntas h-40 flex justify-center align-middle items-center text-white text-5xl w-[100%]">
         {" "}
         PREGUNTAS FRECUENTES
       </div>
+    <div className="pt-42 w-5/6 mx-auto mb-5 ">
+      
       <div className="my-9">
         <p className="text-center">
           Tienes alguna duda acerca de nuestros servicios? Echale un vistazo a
@@ -93,6 +95,7 @@ function page() {
           </Accordion.Item>
         </Accordion>
       </div>
+    </div>
     </div>
   );
 }

@@ -9,6 +9,7 @@ import { useState, useEffect } from "react";
 import styles from "../components/Video.module.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Resp from "../components/RespSocial";
+import Carrusel from "../components/ImageCarousel";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
@@ -54,7 +55,7 @@ export function page() {
       <h1 className="flex w-10/12 z-0 font-bmw text-white justify-between py-4 pt-6 absolute  left-1/2 -translate-x-1/2 div_navbar mt-[8%] text-xl">Gente como tú, por un futuro sustentable.</h1>
       <div className={styles.videoWrapper}>
         <div className={styles.negro}></div>
-        <Video />
+        <Carrusel />
         
       </div>
       <div className="w-screen h-16 text-5xl text-center mt-20">

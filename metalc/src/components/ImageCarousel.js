@@ -1,60 +1,47 @@
-import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import confArrow from "./ConfArrow.module.css";
+import 'bootstrap/dist/css/bootstrap.min.css';  
+import Carousel from 'react-bootstrap/Carousel';
+import Image from 'next/image';
+import img1 from '../img/foto1.png'
 
-function SampleNextArrow(props) {
-  
-  const { className, style, onClick } = props;
+function ImageCarousel() {
   return (
-    <div
-      className={className}
-      style={{
-        ...style,
-        display: "block",
-        background: "black",
-        color: "black"
-      }}
-      onClick={onClick}
-    />
-  );
-}
+    <Carousel className='h-[100vh]' controls={false} indicators={false}>
+      <Carousel.Item className='h-[100vh]'>
+        <img
+          className="d-block w-100"
+          src="https://img.freepik.com/fotos-premium/deposito-chatarra-metal-maquina-elevacion-hidraulica-accesorio-garra-reciclaje-chatarra_308072-1477.jpg?w=2000"
+          alt="First slide"
+        />
+        <Carousel.Caption >
+          {/*<h1 className='text-white'>PRUEBA DE TEXTO 1</h1>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>*/}
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item className='h-[100vh]'>
+        <img
+          className="d-block w-100"
+          src="https://metalc.com.mx/wp-content/uploads/2022/12/heavy-excavator-for-digging-on-day-light-1024x683.jpg"
+          alt="Second slide"
+        />
 
-function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", background: "black" }}
-      onClick={onClick}
-    />
-  );
-}
+        <Carousel.Caption>
+          {/*<h1 className='text-white'>PRUEBA DE TEXTO 1</h1>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>*/}
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item className='h-[100vh]'>
+        <img
+          className="d-block w-100"
+          src="https://www.arcedianorecuperaciones.com/wp-content/uploads/2021/02/reciclaje-chatarra.jpg"
+          alt="Third slide"
+        />
 
-function ImageCarousel({ images }) {
-  const slider = React.useRef(null);
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
-  };
-
-  return (
-    <Slider ref={slider} {...settings}>
-      {images.map((image) => (
-        <div key={image.id}>
-          <img src={image.url} className="h-[400px] w-[100%] object-fit " />
-          <h1></h1>
-        </div>
-      ))}
-      
-    </Slider>
+        <Carousel.Caption>
+          {/*<h1 className='text-white'>PRUEBA DE TEXTO 1</h1>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>*/}
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
   );
 }
 

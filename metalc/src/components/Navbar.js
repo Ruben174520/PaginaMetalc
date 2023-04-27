@@ -29,10 +29,10 @@ export function Navbar() {
   
   return (
     <header 
-      className="flex w-10/12 z-0 font-bmw justify-between py-4 pt-6 border-b-2 border-cyan-800 absolute text-base text-center left-1/2 -translate-x-1/2 div_navbar" 
+      className="w-[100%] absolute flex justify-center" 
       id="div_navbar"
     >
-      
+     <div className="flex w-10/12 z-0 font-bmw justify-between py-4 pt-6 border-b-2 border-cyan-800  text-base text-center  div_navbar "> 
       <div className="flex px-[5%]">
         <div className="cursor-pointer" id="logoNav" onClick={() => router.push("/")}>
           <Image src={logo} width={80} height={80} alt="Metalc Logo" />
@@ -72,6 +72,7 @@ export function Navbar() {
         <Link href="/">
           <Image src={lupa} height={32} width={32} />
         </Link>
+      </div>
       </div>
     </header>
   );

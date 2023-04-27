@@ -32,14 +32,16 @@ function page() {
   }, []);
 
   return (
-    <div className="pt-42 w-5/6 mx-auto mb-5">
-
-      <div className={servicios.contenido}>
-      <div className="div-con-fondo-preguntas h-40 flex justify-center align-middle items-center text-white text-5xl">
+    <div className="w-[100%]">
+      <div className="div-con-fondo-preguntas h-40 flex justify-center align-middle items-center text-white text-5xl w-[100%] ">
         {" "}
         SERVICIOS
       </div>
-        <div className="text-4xl my-4">SERVICIOS QUE OFRECEMOS</div>
+    <div className="pt-42 w-5/6 mx-auto mb-5 ">
+
+      <div className={servicios.contenido}>
+      
+        <div className="text-4xl mb-[70px] mt-5">SERVICIOS QUE OFRECEMOS</div>
         <div className="justify-between">
           <div className="flex justify-between">
             <div className=" w-[50%] ">
@@ -79,11 +81,8 @@ function page() {
               <Slider />
             </div>
           </div>
-          <div className="flex justify-between my-3">
-            <div className="w-[50%] ">
-              <Form className="border-none" />
-            </div>
-            <div className="w-[500px] mt-3">
+          <div className="flex justify-between my-[70px] ">
+            <div className="w-[50%] mt-3">
               <h1 className="font-bmw text-2xl ">ADEMÁS ...</h1>
               <br />
               <p className="justify-text-left">
@@ -103,6 +102,9 @@ function page() {
                 <Mapa tam="300px" />
               </div>
             </div>
+            <div className="w-[500px] ">
+              <Form className="border-none" />
+            </div>
           </div>
           <div className="flex justify-between my-2">
             <h1 className="font-bmw text-2xl">¿QUÉ MÁS HACEMOS?</h1>
@@ -115,6 +117,7 @@ function page() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }
