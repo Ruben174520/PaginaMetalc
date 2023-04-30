@@ -9,6 +9,7 @@ import ubi from "../icon/boxicons/svg/regular/bx-mapGreen.svg";
 import reloj from "../icon/boxicons/svg/regular/bx-time-fiveGreen.svg";
 import tel from "../icon/boxicons/svg/regular/bx-phone-callGreen.svg";
 import email from "../icon/boxicons/svg/regular/bx-envelopeGreen.svg";
+import logo from "../icon/logo.png";
 
 
 function Footer(){
@@ -44,6 +45,10 @@ function Footer(){
           </div >
           
           <div className={styles.redes}>
+          <div className={styles.slogan}>
+              <Image src={logo} width={60} height={60} />
+              <h1 className="font-bmw self-center">"Gente como tú, por un futuro sustentable"</h1>
+            </div>
             <div className={styles.redHijo}>
               <li className={styles.redHijoli}><Link href=""><Image src={face} typeof="logo" height={25} width={25} className={styles.logo} /></Link></li>
               <li className={styles.redHijoli}><Link href=""><Image src={insta} height={25} width={25} className={"color='#ffffff'"} /></Link></li>

@@ -30,15 +30,17 @@ function page() {
     // Actualizar el estado con el valor de padding-top
     pos.classList.remove("absolute");
     pos.classList.add("relative");
-    navbar.classList.add("bg-[#1a7ab6]");
+    navbar.classList.add("bg-[#083552]");
     letra.classList.add("text-white");
   }, []);
   return (
-    <div className="w-5/6 mx-auto mb-5 ">
+    <div className="w-[100%]">
       <div className="div-con-fondo-preguntas h-40 flex justify-center align-middle items-center text-white text-5xl">
         {" "}
         MAPA
       </div>
+    <div className="w-5/6 mx-auto mb-5 ">
+      
       <div className="w-screen h-2/4 flex flex-wrap mt-3">
         <div className="w-1/3 flex justify-center align-middle h-full">
           <Mapa tam="400px" />
@@ -95,6 +97,7 @@ function page() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

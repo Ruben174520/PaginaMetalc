@@ -34,7 +34,7 @@ export function page() {
     const letra = document.getElementById('text');
     pos.classList.remove('relative')
     pos.classList.add('absolute');
-    navbar.classList.remove('bg-[#1a7ab6]');
+    navbar.classList.remove('bg-[#083552]');
     letra.classList.add('text-white');
 
   }, []);
@@ -52,17 +52,17 @@ export function page() {
   );
   return (
     <div className="flex flex-wrap">
-      <h1 className="flex w-10/12 z-0 font-bmw text-white justify-between py-4 pt-6 absolute  left-1/2 -translate-x-1/2 div_navbar mt-[8%] text-xl">Gente como tú, por un futuro sustentable.</h1>
+      <h1 className="flex w-10/12 z-0 font-bmw text-white justify-between py-4 pt-6 absolute  left-1/2 -translate-x-1/2 div_navbar mt-[8%] text-xl"></h1>
       <div className={styles.videoWrapper}>
         <div className={styles.negro}></div>
         <Carrusel />
         
       </div>
-      <div className="w-screen h-16 text-5xl text-center mt-20">
+      <div className="w-[100%] h-16 text-5xl text-center mt-20">
         <h1>ESPECIALIZADOS EN EL RECICLAJE</h1>
       </div>
       {tarjetaMaterial}
-      <div className="w-screen h-2/4 flex items-stretch flex-wrap justify-evenly mb-20">
+      <div className="w-[100%] h-2/4 flex items-stretch flex-wrap justify-evenly mb-20">
         {mostrarGaleria && (
           <MaterialSeleccionado materialSelecto={materialSeleccionado} materials={materials}></MaterialSeleccionado>
         )}
