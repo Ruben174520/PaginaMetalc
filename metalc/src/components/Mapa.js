@@ -3,10 +3,9 @@ import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
 import style from "../app/page.module.css";
 function Mapa(promps) {
   const zoom = 10;
-  const AnyReactComponent = ({ text }) => <div>{text}</div>;
   const center = {
-    lat: 22.120930754655156,
-    lng: -100.9050073762789,
+    lat: 22.133607605661613 ,
+    lng: -100.95909167743125,
   };
 
   const containerStyle = {
@@ -53,7 +52,7 @@ function Mapa(promps) {
       }}
     >
       <Marker
-        position={{ lat: 22.120930754655156, lng: -100.9050073762789 }}
+        position={{ lat: 22.133547976423497, lng: -100.95900584674825 }}
       ></Marker>
     </GoogleMap>
   ) : (

@@ -15,12 +15,7 @@ export function Navbar() {
     console.log(a);
     for (var i = 0; i < a.length; i++) a[i].classList.remove("text-stone-950");
     /*var pos = document.getElementById('div_navbar');*/
-    
-    const navbar = document.getElementById('div_navbar');
-    const logo = document.getElementById('logoNav');
-    const icon = document.getElementById('iconos');
-    const texto = document.getElementById('text');
-    var url = window.location.pathname;
+  
     
   }, []);
 
