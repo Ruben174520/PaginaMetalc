@@ -27,7 +27,7 @@ function page() {
     // Actualizar el estado con el valor de padding-top
     pos.classList.remove("absolute");
     pos.classList.add("relative");
-    navbar.classList.add("bg-[#1a7ab6]");
+    navbar.classList.add("bg-[#083552]");
     letra.classList.add("text-white");
   }, []);
 
@@ -68,7 +68,7 @@ function page() {
                 <Button
                   variant="primary"
                   size="sm"
-                  className="text-white font-bmw bg-[#1a7ab6] hover:bg-[#8bba1f] align-center"
+                  className="text-white font-bmw bg-[#083552] hover:bg-[#8bba1f] align-center"
                 >
                   Materiales que recolectamos
                 </Button>

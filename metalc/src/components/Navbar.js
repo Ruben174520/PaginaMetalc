@@ -29,7 +29,7 @@ export function Navbar() {
   
   return (
     <header 
-      className="w-[100%] absolute flex justify-center" 
+      className="w-[100%] absolute flex justify-center text-white" 
       id="div_navbar"
     >
      <div className="flex w-10/12 z-0 font-bmw justify-between py-4 pt-6 border-b-2 border-cyan-800  text-base text-center  div_navbar "> 

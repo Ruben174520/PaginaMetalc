@@ -23,7 +23,7 @@ function page() {
     // Actualizar el estado con el valor de padding-top
     pos.classList.remove("absolute");
     pos.classList.add("relative");
-    navbar.classList.add("bg-[#1a7ab6]");
+    navbar.classList.add("bg-[#083552]");
     letra.classList.add("text-white");
   }, []);
   return (
@@ -36,7 +36,7 @@ function page() {
       
       <div className="my-9">
         <p className="text-center">
-          Tienes alguna duda acerca de nuestros servicios? Echale un vistazo a
+          ¿Tienes alguna duda acerca de nuestros servicios? Echale un vistazo a
           esta página
         </p>
       </div>
