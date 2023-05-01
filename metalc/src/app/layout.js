@@ -7,6 +7,7 @@ import Mapa from "@/components/Mapa";
 import Foot from "@/components/Footer";
 import { MaterialProvider } from "@/context/MaterialContext";
 import Head from "next/head";
+import { useEffect } from "react";
 
 
 export const metadata = {

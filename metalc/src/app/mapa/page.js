@@ -18,35 +18,19 @@ import "../page.css";
 function page() {
   const [paddingTop, setPaddingTop] = useState(0);
   const [ancho, setAncho] = useState(0);
-  useEffect(() => {
-    // Obtener la altura de otro-div
-    const navbar = document.getElementById("div_navbar");
-    const a = document.getElementsByClassName("h1_navbar");
-    for (var i = 0; i < a.length; i++) a[i].classList.add("text-stone-950");
-    const pos = document.getElementById("div_navbar");
-    const letra = document.getElementById("text");
-    const logo = document.getElementById("logoNav");
-    const icon = document.getElementById("iconos");
-    // Actualizar el estado con el valor de padding-top
-    pos.classList.remove("absolute");
-    pos.classList.add("relative");
-    navbar.classList.add("bg-[#083552]");
-    letra.classList.add("text-white");
-  }, []);
   return (
     <div className="w-[100%]">
-      <div className="div-con-fondo-preguntas h-40 flex justify-center align-middle items-center text-white text-5xl">
+      <div className="div-con-fondo-preguntas h-80 flex justify-center align-bottom items-end text-white text-5xl pb-5">
         {" "}
-        MAPA
+        <h1 className="border-b-4 border-white">CONTACTO</h1>
       </div>
     <div className="w-5/6 mx-auto mb-5 ">
-      
-      <div className="w-screen h-2/4 flex flex-wrap mt-3">
-        <div className="w-1/3 flex justify-center align-middle h-full">
-          <Mapa tam="400px" />
+    <h1 className="text-6xl border-b-2 border-gray-900 mt-4">Contactanos</h1>
+      <div className="w-[100%] h-2/4 flex flex-wrap mt-3 justify-between">
+        <div className="w-2/5 flex justify-center align-middle h-full mt-6 pt-2">
+          <Mapa tam="400px"/>
         </div>
-        <div className="w-3/6 p-6">
-          <h1 className="text-4xl border-b-2 border-gray-900">Contactanos</h1>
+        <div className="w-3/6 p-3">
           <div className="w-full">
             <Card className="mt-3 bg-[#1a7ab6] text-white border-4 border-cyan-900">
               <Card.Body>

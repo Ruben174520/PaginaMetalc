@@ -2,7 +2,6 @@ import React from "react";
 import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
 import style from "../app/page.module.css";
 function Mapa(promps) {
-  const zoom = 10;
   const center = {
     lat: 22.133607605661613 ,
     lng: -100.95909167743125,
@@ -36,10 +35,10 @@ function Mapa(promps) {
       center={center}
       onLoad={onLoad}
       onUnmount={unMount}
-      zoom={14}
+      zoom={12}
       id="place"
       options={{
-        zoom:14,
+        zoom:12,
         mapTypeControl: true,
         mapTypeControlOptions: {
           position: window.google.maps.ControlPosition.TOP_LEFT,

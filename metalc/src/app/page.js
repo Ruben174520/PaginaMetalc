@@ -23,24 +23,9 @@ export function page() {
     setMaterialSeleccionado(material);
   };
 
-  useEffect(() => {
-    // Obtener la altura de otro-div
-    const navbar = document.getElementById('div_navbar')
-    const a = document.getElementsByClassName("h1_navbar");
-    for (var i = 0; i < a.length; i++) a[i].classList.remove('text-stone-950');
-    // Actualizar el estado con el valor de padding-top
-    navbar.classList.remove('bg-sky-500')
-    const pos = document.getElementById('div_navbar');
-    const letra = document.getElementById('text');
-    pos.classList.remove('relative')
-    pos.classList.add('absolute');
-    navbar.classList.remove('bg-[#083552]');
-    letra.classList.add('text-white');
-
-  }, []);
 
   const tarjetaMaterial = mostrarGaleria ? null : (
-    <div className="w-screen h-2/4  flex items-stretch flex-wrap justify-evenly mb-20">
+    <div className="w-[100%] h-2/4  flex items-stretch flex-wrap justify-evenly mb-20">
       {materials.map((material) => (
         <TarjetaMaterial
           key={material.nombre}
@@ -68,7 +53,7 @@ export function page() {
         )}
       </div>
       <Call />
-      <div className="w-screen p-[10px] h-[650px]">
+      <div className="w-[100%] p-[10px] h-[650px]">
           <Resp />
       </div>
     </div>

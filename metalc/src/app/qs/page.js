@@ -7,21 +7,6 @@ import "../page.css";
 import logo from "../../icon/logo.png";
 
 export function page() {
-    useEffect(() => {
-        // Obtener la altura de otro-div
-        const navbar = document.getElementById("div_navbar");
-        const a = document.getElementsByClassName("h1_navbar");
-        for (var i = 0; i < a.length; i++) a[i].classList.add("text-stone-950");
-        const pos = document.getElementById("div_navbar");
-        const letra = document.getElementById("text");
-        const logo = document.getElementById("logoNav");
-        const icon = document.getElementById("iconos");
-        // Actualizar el estado con el valor de padding-top
-        pos.classList.remove("absolute");
-        pos.classList.add("relative");
-        navbar.classList.add("bg-[#083552]");
-        letra.classList.add("text-white");
-    }, []);
     return (
         <div className="w-[100%] h-[100%]">
             <div className="div-con-fondo-preguntas h-40 flex justify-center align-middle items-center text-white text-5xl w-[100%]">

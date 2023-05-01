@@ -10,16 +10,6 @@ var position;
 export function Navbar() {
   const router = useRouter();
   const [ posicion, setPosition] = useState(0);
-  useEffect(() => {
-    const a = document.getElementsByClassName("h1_navbar");
-    console.log(a);
-    for (var i = 0; i < a.length; i++) a[i].classList.remove("text-stone-950");
-    /*var pos = document.getElementById('div_navbar');*/
-  
-    
-  }, []);
-
-  
 
   
   return (
