@@ -43,7 +43,7 @@ export function page() {
         <Carrusel />
         
       </div>
-      <div className="w-[100%] h-16 text-5xl text-center mt-20">
+      <div className="w-[100%] h-16 text-5xl text-center mt-20" id="materialReciclado">
         <h1>ESPECIALIZADOS EN EL RECICLAJE</h1>
       </div>
       {tarjetaMaterial}

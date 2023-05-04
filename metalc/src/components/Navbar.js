@@ -37,7 +37,7 @@ export function Navbar() {
             <h1 className="my-4 h1_navbar">Cotizador</h1>
           </Link>
           <Link
-            href={"/"}
+            href={"/qs"}
             className="px-6 hover:border-b-4 border-cyan-800 font-semibold"
           >
             <h1 className="my-4 h1_navbar">¿Quienes somos?</h1>
@@ -53,9 +53,6 @@ export function Navbar() {
       <div className="flex items-center mx-10" id="iconos">
         <Link href="/mapa">
           <Image src={mapa} height={32} width={32} className="mx-2" />
-        </Link>
-        <Link href="/">
-          <Image src={lupa} height={32} width={32} />
         </Link>
       </div>
       </div>

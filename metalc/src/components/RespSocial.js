@@ -23,7 +23,7 @@ function RespSocial() {
                 En Metalce nos comprometemos a darle el tratamiento correcto a los materiales para reducir la emisión de gases y sustancias tóxicas.
                 </Card.Text>
                 <div className="d-grid gap-2">
-                    <Button variant="primary" size='sm' className='text-black font-bmw bg-[#1a7ab6] hover:bg-[#8bba1f]'>Materiales que reciclamos</Button>
+                    <Button variant="primary" href='#materialReciclado' size='sm' className='text-black font-bmw bg-[#1a7ab6] hover:bg-[#8bba1f]'>Materiales que reciclamos</Button>
                 </div>
             </Card.Body>
             </Card>
@@ -36,7 +36,7 @@ function RespSocial() {
                 En Metalc nos comprometemos a canalizar correctamente tus materiales para poder darles una segunda vida y asi favorecer al medio ambiente. 
                 </Card.Text>
                 <div className="d-grid gap-2">
-                    <Button variant="primary" size='sm' className='text-black font-bmw bg-[#1a7ab6] hover:bg-[#8bba1f]'>Cotizador de material</Button>
+                    <Button variant="primary" href='/cotizador' size='sm' className='text-black font-bmw bg-[#1a7ab6] hover:bg-[#8bba1f]'>Cotizador de material</Button>
                 </div>
             </Card.Body>
             </Card>
@@ -49,7 +49,7 @@ function RespSocial() {
                 Dentro de las instalaciones de Metalc, ayudamos a la reducción de los servicios básicos con los que cuenta la empresa.(Luz, Agua, Gas).
                 </Card.Text>
                 <div className="d-grid gap-2">
-                    <Button variant="primary" size='sm' className='text-black font-bmw bg-[#1a7ab6] hover:bg-[#8bba1f]'>Contáctanos</Button>
+                    <Button variant="primary" href='/mapa' size='sm' className='text-black font-bmw bg-[#1a7ab6] hover:bg-[#8bba1f]'>Contáctanos</Button>
                 </div>
             </Card.Body>
             </Card>
@@ -62,7 +62,7 @@ function RespSocial() {
                 En nuestra empresa, estamos comprometidos con reducir nuestra huella ambiental y promover prácticas sostenibles en cada aspecto de nuestro negocio. 
                 </Card.Text>
                 <div className="d-grid gap-2">
-                    <Button variant="primary" size='sm' className='text-black font-bmw bg-[#1a7ab6] hover:bg-[#8bba1f]'>Contáctanos</Button>
+                    <Button variant="primary" href='/servicios' size='sm' className='text-black font-bmw bg-[#1a7ab6] hover:bg-[#8bba1f]'>Servicios</Button>
                 </div>
             </Card.Body>
             </Card>
