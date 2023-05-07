@@ -36,7 +36,7 @@ const Formulario = ({ materialSelecto }) => {
       });
   };
   return (
-    <Form onSubmit={handleSubmit} className="p-6 border-2 border-black">
+    <Form onSubmit={handleSubmit} className="p-6 border-2  shadow-2xl">
       <FormGroup controlId="formBasicEmail" className="flex flex-wrap   ">
         <Form.Label className="w-full">Nombre:</Form.Label>
         <FormControl
@@ -118,7 +118,7 @@ const Formulario = ({ materialSelecto }) => {
       <Button
         variant="primary"
         type="submit"
-        className="bg-cyan-600 p-1 rounded-md my-2 w-full hover:bg-cyan-700"
+        className="bg-cyan-600 p-1 rounded-md my-2 w-full hover:bg-cyan-700 animate-pulse"
       >
         Enviar
       </Button>
