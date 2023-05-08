@@ -6,16 +6,20 @@ import { useState } from "react";
 import TarjetaCotizacion from "@/components/TarjetaCotizacion";
 import { Form } from "react-bootstrap";
 import Formulario from "@/components/Formulario";
-import '../page.css'
-
+import "../page.css";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 export function page() {
   const { materials } = useMaterials();
   const [materialSeleccionado, setMaterialSeleccionado] = useState(null);
+  const { ref, inView } = useInView({
+    threshold: 0.5, // define la fracción del elemento que debe estar visible antes de detectar la intersección
+    triggerOnce: true, // hace que la animación se ejecute solo una vez cuando el elemento se encuentra en la vista
+  });
 
   const setearDatos = (material) => {
     setMaterialSeleccionado(material);
   };
-
 
   return (
     <div className="w-[100%]">
@@ -23,28 +27,39 @@ export function page() {
         {" "}
         <h1 className="border-b-4 border-white mb-5">COTIZADOR</h1>
       </div>
-    <div className="w-5/6 mx-auto mb-5 ">
-      <div className="mt-6">
-        <h1 className="text-4xl text-center border-b-8 pt-5 pb-5 border-[#083552]">¿QUE DESEAS VENDER?</h1>
-        <p className="my-5">
-          RELLENA EL FORMULARIO PARA RECIBIR UNA COTIZACION POR CORREO O
-          TELÉFONO
-        </p>
-        <p className="mt-7">
-          *SELECCIONA UN MATERIAL PARA AUTORELLENAR EL FORMULARIO
-        </p>
-      </div>
-      <div className="flex border-t-2 m-1">
-        <div className="w-3/5 flex flex-wrap p-6 justify-start">
-          {materials.map((material) => (
-            <TarjetaCotizacion material={material} key={material.id} setearDatos={setearDatos}/>
-          ))}
+      <div className="w-5/6 mx-auto mb-5 ">
+        <div className="mt-6">
+          <h1 className="text-4xl text-center border-b-8 pb-5 border-[#083552]">
+            ¿QUE DESEAS VENDER?
+          </h1>
+          <p className="my-5">
+            RELLENA EL FORMULARIO PARA RECIBIR UNA COTIZACION POR CORREO O
+            TELÉFONO
+          </p>
+          <p className="mt-7">
+            *SELECCIONA UN MATERIAL PARA AUTORELLENAR EL FORMULARIO
+          </p>
         </div>
-        <div className=" w-2/3 my-6">
-          <Formulario materialSelecto={materialSeleccionado}/>
+        <div className="flex border-t-2 m-1">
+          <div className="w-3/5 flex flex-wrap p-6 justify-start">
+            {materials.map((material) => (
+              <TarjetaCotizacion
+                material={material}
+                key={material.id}
+                setearDatos={setearDatos}
+              />
+            ))}
+          </div>
+          <motion.div
+            className=" w-2/3 my-6"
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+          >
+            <Formulario materialSelecto={materialSeleccionado} />
+          </motion.div>
         </div>
       </div>
-    </div>
     </div>
   );
 }

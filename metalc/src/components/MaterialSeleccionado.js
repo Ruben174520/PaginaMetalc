@@ -4,6 +4,8 @@ import Slider from "react-slick";
 import { ListaMateriales } from "@/components/ListaMateriales";
 import ComponenteGaleria from "./ComponenteGaleria";
 import { useState } from "react";
+
+import { motion } from "framer-motion";
 const MaterialSeleccionado = ({ materials, materialSelecto }) => {
   const [mostrarGaleria, setMostrarGaleria] = useState(true);
   const [materialSeleccionado, setMaterialSeleccionado] = useState(null);
@@ -15,7 +17,7 @@ const MaterialSeleccionado = ({ materials, materialSelecto }) => {
 
   return (
     <div className="w-[100%] h-2/4 flex mt-3 p-4">
-      <div className="w-2/5 flex flex-wrap border-2 rounded-lg pl-6 pb-6 pt-6">
+      <div className="w-2/5 flex flex-wrap border-2 rounded-lg pl-6 pb-6 pt-6 px-5">
         {materials.map((material) => (
           <ListaMateriales material={material} key={material.id} mostrarGaleriaHandler={mostrarGaleriaHandler}/>
         ))}
