@@ -82,6 +82,55 @@ function page() {
                 </div>
               </Accordion.Body>
             </Accordion.Item>
+            <Accordion.Item eventKey="3">
+              <Accordion.Header>¿Por qué METALC Salvador Nava es la M.O?</Accordion.Header>
+              <Accordion.Body>
+                <div className="flex flex-wrap align-middle justify-between">
+                  <Image src={icono} height={50} width={50} />
+                  <ul className="w-11/12 list-disc">
+                    <li>Ubicacion privilegiada</li>
+                    <li>Fácil acceso</li>
+                    <li>Bodega con buena capacidad</li>
+                    <li>Los mejores y mas competitivos precios</li>
+                  </ul>
+                </div>
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="4">
+              <Accordion.Header>¿Cómo determinan el tipo de material?</Accordion.Header>
+              <Accordion.Body>
+                <div className="flex flex-wrap align-middle justify-between">
+                  <Image src={icono} height={50} width={50} />
+                  <ul className="w-11/12 list-disc">
+                    <li>Personal calificado</li>
+                    <li>Utilizacion de la mejor tecnología</li>
+                  </ul>
+                </div>
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="5">
+              <Accordion.Header>¿Qué horarios tienen?</Accordion.Header>
+              <Accordion.Body>
+                <div className="flex flex-wrap align-middle justify-between">
+                  <Image src={icono} height={50} width={50} />
+                  <ul className="w-11/12 list-disc">
+                    <li>Lunes a Viernes: 8:00 am a 6:00 pm</li>
+                    <li>Sabado: 8:00 am a 1:00 pm</li>
+                  </ul>
+                </div>
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="3">
+              <Accordion.Header>¿Además de comprar, pueden vender material?</Accordion.Header>
+              <Accordion.Body>
+                <div className="flex flex-wrap align-middle justify-between">
+                  <Image src={icono} height={50} width={50} />
+                  <p className="w-11/12">
+                    Si, en una gran parte podemos vender material que tenemos en stock.
+                  </p>
+                </div>
+              </Accordion.Body>
+            </Accordion.Item>
           </Accordion>
         </motion.div>
       </div>
