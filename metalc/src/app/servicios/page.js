@@ -20,13 +20,13 @@ function page() {
     <div className="w-[100%]">
       <div className="div-con-fondo-preguntas h-80 flex justify-center align-bottom items-end text-white text-5xl pb-10">
         {" "}
-        <h1 className="border-b-4 border-white my-3">SERVICIOS</h1>
+        <h1 className="border-b-4 border-white mb-5">SERVICIOS</h1>
       </div>
-    <div className="pt-42 w-5/6 mx-auto mb-5 ">
+    <div className="pt-42 w-5/6 mx-auto mb-5  ">
 
       <div className={servicios.contenido}>
       
-        <div className="text-4xl mb-[70px] mt-5 font-bold">SERVICIOS QUE OFRECEMOS</div>
+        <h1 className="text-4xl mb-[70px] mt-5  border-b-8 pb-5 border-[#083552] text-center">SERVICIOS QUE OFRECEMOS</h1>
         <div className="justify-between border-2 border-[#EEEE] shadow-[0_35px_60px_15px_rgba(0,0,0,0.3)] p-5 rounded-xl">
           <div className="flex justify-between">
             <div className=" w-[50%] ">
