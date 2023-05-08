@@ -4,10 +4,10 @@ import Button from 'react-bootstrap/Button';
 import { Card } from 'react-bootstrap';
 import Image from 'next/image';
 import Foto from '../img/cobre.jpg';
-import reciclar from '../img/reciclar.jpg'
-import reutilizar from '../img/reutilizar.jpg'
-import reducir from '../img/reducir.jpg'
-import recuperar from '../img/recuperar.jpg'
+import reciclar from '../img/reciclarM.png'
+import reutilizar from '../img/reutilizarM.png'
+import reducir from '../img/reducirM.jpg'
+import recuperar from '../img/recuperarM.jpg'
 function RespSocial() {
   return (
     
