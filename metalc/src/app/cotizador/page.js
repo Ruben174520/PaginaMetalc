@@ -25,7 +25,7 @@ export function page() {
       </div>
     <div className="w-5/6 mx-auto mb-5 ">
       <div className="mt-6">
-        <h1 className="text-4xl text-center border-b-8 pb-5 border-[#083552]">¿QUE DESEAS VENDER?</h1>
+        <h1 className="text-4xl text-center border-b-8 pt-5 pb-5 border-[#083552]">¿QUE DESEAS VENDER?</h1>
         <p className="my-5">
           RELLENA EL FORMULARIO PARA RECIBIR UNA COTIZACION POR CORREO O
           TELÉFONO

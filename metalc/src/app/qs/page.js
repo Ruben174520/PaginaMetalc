@@ -16,7 +16,7 @@ export function page() {
                 {" "}
                 <h1 className="border-b-4 border-white my-3">¿QUIÉNES SOMOS?</h1>
             </div>
-            <div className="w-[100%] h-[150px]   inline-flex justify-center bg-[#083552]">
+            <div className="w-[100%] h-[150px]    inline-flex justify-center bg-[#083552]">
                 <div className="w-2/3 b h-[100%]  flex  ">
                     <div className="w-[20%] h-[90%]   flex items-center">
                         <Image src={logo} height={30} width={150} />
@@ -30,14 +30,14 @@ export function page() {
             <div className={style.imgen1}>
                 <div className="m-[7%]  inline-block  flex">
                     <div className="w-[50%] items-center grid ">
-                        <div className="w-[100%] h-[65%] items-center align-center ">
-                            <h1 className="text-white text-4xl mb-[40px]">MISIÓN</h1><br />
-                            <p className="text-white font-bmw text-xl">Somos una empresa de reciclaje dedicada a la recolección de metales ferrosos y no-ferrosos, con responsabilidad social, brindando el mejor servicio a nuestros clientes y proveedores.
+                        <div className="w-[100%] h-[100%] items-center align-center ">
+                            <h1 className="text-black text-4xl mb-[40px]">MISIÓN</h1><br />
+                            <p className="text-black font-bmw text-xl">Somos una empresa de reciclaje dedicada a la recolección de metales ferrosos y no-ferrosos, con responsabilidad social, brindando el mejor servicio a nuestros clientes y proveedores.
                                 Cumpliendo en tiempo y forma con los requerimientos de calidad de nuestros consumidores finales.</p>
                         </div>
                     </div>
                     <div className="w-[50%] flex  items-center justify-center  border-b-2 border-[#8bba1f]">
-                        <div className="flex w-[80%] h-[80%] items-center justify-center">
+                        <div className="flex w-[80%] h-[90%] items-center justify-center">
                             <Image className={style.tr1} src={trabajador2} />
                         </div>
                     </div>
@@ -46,14 +46,14 @@ export function page() {
             <div className={style.imgen}>
                 <div className="m-[7%]  inline-block  flex">
                     <div className="w-[50%] flex  items-center justify-center  border-b-2 border-[#8bba1f]">
-                        <div className="flex w-[80%] h-[80%] items-center justify-center">
+                        <div className="flex w-[80%] h-[90%] items-center justify-center">
                             <Image className={style.tr1} src={trabajador3} />
                         </div>
                     </div>
                     <div className="w-[50%] items-center grid  ">
-                        <div className="w-[100%] h-[65%] items-center align-center ">
-                            <h1 className="text-white text-4xl mb-[40px]">VISIÓN</h1><br />
-                            <p className="text-white font-bmw text-xl">Ser una empresa líder en el ramo de reciclaje de
+                        <div className="w-[100%] h-[100%] items-center align-center  ">
+                            <h1 className="text-black text-4xl mb-[40px]">VISIÓN</h1><br />
+                            <p className="text-black font-bmw text-xl">Ser una empresa líder en el ramo de reciclaje de
                              metales no-ferrosos a nivel nacional compitiendo con empresas a nivel internacional con las más altas normas de calidad.</p>
                         </div>
                     </div>
@@ -62,14 +62,14 @@ export function page() {
             <div className={style.imgen2}>
                 <div className="m-[7%]  inline-block  flex">
                     <div className="w-[50%] items-center grid  ">
-                        <div className="w-[100%] h-[65%] items-center align-center ">
-                            <h1 className="text-white text-4xl mb-[40px]">FILOSOFÍA</h1><br />
-                            <p className="text-white font-bmw text-xl">Nuestros colaboradores y su trabajo en equipo, son la clave en el éxito de nuestra empresa, a través de tecnología de punta y herramientas de trabajo;
+                        <div className="w-[100%] h-[100%] items-center align-center ">
+                            <h1 className="text-black text-4xl mb-[40px]">FILOSOFÍA</h1><br />
+                            <p className="text-black font-bmw text-xl">Nuestros colaboradores y su trabajo en equipo, son la clave en el éxito de nuestra empresa, a través de tecnología de punta y herramientas de trabajo;
                              Haciendo énfasis en el servicio al cliente, honestidad y respeto mutuo logrando así los objetivos de la organización.</p>
                         </div>
                     </div>
                     <div className="w-[50%] flex  items-center justify-center  border-b-2 border-[#8bba1f]">
-                        <div className="flex w-[80%] h-[80%] items-center justify-center">
+                        <div className="flex w-[80%] h-[90%] items-center justify-center">
                             <Image className={style.tr1} src={trabajador1} />
                         </div>
                     </div>

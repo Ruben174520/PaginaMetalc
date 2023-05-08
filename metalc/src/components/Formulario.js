@@ -68,6 +68,15 @@ const Formulario = ({ materialSelecto }) => {
           required
         />
       </FormGroup>
+      <FormGroup controlId="formBasicPhone" className="flex flex-wrap   ">
+        <Form.Label className="w-full">Empresa:</Form.Label>
+        <FormControl
+          type="text"
+          placeholder="Empresa proveniente (Solo si aplica)"
+          className="border-2 w-full p-2"
+          
+        />
+      </FormGroup>
       <FormGroup controlId="formBasicEmail" className="flex flex-wrap   ">
         <Form.Label className="w-full">Material:</Form.Label>
         <FormGroup className="w-full flex ">
@@ -118,7 +127,7 @@ const Formulario = ({ materialSelecto }) => {
       <Button
         variant="primary"
         type="submit"
-        className="bg-cyan-600 p-1 rounded-md my-2 w-full hover:bg-cyan-700"
+        className=" bg-[#083552] hover:bg-[#8bba1f] p-1 rounded-md my-2 w-full text-white "
       >
         Enviar
       </Button>
