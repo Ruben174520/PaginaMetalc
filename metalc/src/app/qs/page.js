@@ -8,6 +8,7 @@ import logo from "../../icon/logo.png";
 import trabajador1 from "../../img/filosofia.jpg";
 import trabajador2 from "../../img/mision.jpg";
 import trabajador3 from "../../img/vision.jpg";
+import trabajador4 from "../../img/politica.jpg"
 
 export function page() {
     return (
@@ -49,6 +50,19 @@ export function page() {
                     </div>
                 </div>
             </div>
+            </div>
+            <div className={style.estiloGente}  >
+                <div className="w-2/3 b h-[100%]  flex  " >
+                    <div className="w-[20%] h-[90%]   flex items-center">
+                        <Image src={logo} height={30} width={150} />
+                    </div>
+                    <div className="w-[100%] flex justify-center items-center">
+                        <h1 className="text-2xl font-bmw text-white">"GENTE COMO TÚ, POR UN FUTURO SUSTENTABLE"</h1>
+                    </div>
+
+                </div>
+            </div>
+            <div className="w-[88%] mx-auto mb-5">
             <div className={style.imgen2}>
                 <div className="m-[7%]  inline-block  flex">
                     <div className="w-[50%] items-center grid  ">
@@ -65,18 +79,23 @@ export function page() {
                     </div>
                 </div>
             </div>
-            </div>
-            <div className={style.estiloGente}  >
-                <div className="w-2/3 b h-[100%]  flex  " >
-                    <div className="w-[20%] h-[90%]   flex items-center">
-                        <Image src={logo} height={30} width={150} />
+            <div className={style.imgen}>
+                <div className="m-[7%]  inline-block  flex">
+                    <div className="w-[50%] flex  items-center justify-center  border-b-2 border-[#8bba1f]">
+                    <div className="flex w-[80%] h-[90%] items-center justify-center hover:-translate-y-4 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]" style={{transition: 'transform .3s ease-out' }}>
+                            <Image className={style.tr1} src={trabajador4} />
+                        </div>
                     </div>
-                    <div className="w-[100%] flex justify-center items-center">
-                        <h1 className="text-2xl font-bmw text-white">"GENTE COMO TÚ, POR UN FUTURO SUSTENTABLE"</h1>
+                    <div className="w-[50%] items-center grid  ">
+                        <div className="w-[100%] h-[100%] items-center align-center  ">
+                            <h1 className="text-black text-4xl mb-[40px] w-[50%] border-b-4 pb-[10px] border-[#083552]">POLÍTICA DE CALIDAD</h1><br />
+                            <p className="text-black font-bmw text-xl">En METALC nos comprometemos a satisfacer plenamente las necesidades y expectativas de nuestros clientes y proveedores, en la compra y venta de metales; aplicando la capacidad y creatividad de nuestro equipo de trabajo, con una filosofía de mejora continua como estilo de vida.</p>
+                        </div>
                     </div>
-
                 </div>
             </div>
+            </div>
+            
 
 
 

@@ -31,7 +31,7 @@ function page() {
           transition={{ duration: 1 }}
         >
           <Accordion alwaysOpen defaultActiveKey={["0"]} className="w-[100%]">
-            <Accordion.Item eventKey="0">
+            <Accordion.Item  eventKey="0">
               <Accordion.Header>¿Que servicios ofrecemos?</Accordion.Header>
               <Accordion.Body>
                 <div className="flex flex-wrap align-middle justify-between">
@@ -83,7 +83,7 @@ function page() {
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="3">
-              <Accordion.Header>¿Por qué METALC Salvador Nava es la M.O?</Accordion.Header>
+              <Accordion.Header>¿Por qué METALC Salvador Nava es la mejor opción?</Accordion.Header>
               <Accordion.Body>
                 <div className="flex flex-wrap align-middle justify-between">
                   <Image src={icono} height={50} width={50} />
@@ -102,8 +102,8 @@ function page() {
                 <div className="flex flex-wrap align-middle justify-between">
                   <Image src={icono} height={50} width={50} />
                   <ul className="w-11/12 list-disc">
-                    <li>Personal calificado</li>
-                    <li>Utilizacion de la mejor tecnología</li>
+                    <li>En METALC contamos con el mejor personal calificado y la mejor herramienta para poder determinar correctamente tu material.
+                    </li>
                   </ul>
                 </div>
               </Accordion.Body>
