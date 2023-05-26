@@ -12,7 +12,7 @@ import Resp from "../components/RespSocial";
 import Carrusel from "../components/ImageCarousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { color } from "framer-motion";
-export function page() {
+export function Page() {
   const { materials } = useMaterials();
   const [mostrarGaleria, setMostrarGaleria] = useState(false);
   const [materialSeleccionado, setMaterialSeleccionado] = useState(null);
@@ -71,4 +71,4 @@ export function page() {
   );
 }
 
-export default page;
+export default Page;

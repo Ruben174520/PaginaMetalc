@@ -57,7 +57,7 @@ export function page() {
                         <Image src={logo} height={30} width={150} />
                     </div>
                     <div className="w-[100%] flex justify-center items-center">
-                        <h1 className="text-2xl font-bmw text-white">"GENTE COMO TÚ, POR UN FUTURO SUSTENTABLE"</h1>
+                        <h1 className="text-2xl font-bmw text-white">GENTE COMO TÚ, POR UN FUTURO SUSTENTABLE</h1>
                     </div>
 
                 </div>

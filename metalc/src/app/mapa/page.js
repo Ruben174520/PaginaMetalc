@@ -17,7 +17,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../page.css";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-function page() {
+function Page() {
   const [paddingTop, setPaddingTop] = useState(0);
   const [ancho, setAncho] = useState(0);
   return (
@@ -106,4 +106,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;

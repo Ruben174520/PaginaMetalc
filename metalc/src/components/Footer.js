@@ -47,7 +47,7 @@ function Footer(){
           <div className={styles.redes}>
           <div className={styles.slogan}>
               <Image src={logo} width={60} height={60} />
-              <h1 className="font-bmw self-center">"Gente como tú, por un futuro sustentable"</h1>
+              <h1 className="font-bmw self-center">Gente como tú, por un futuro sustentable</h1>
             </div>
             <div className={styles.redHijo}>
               <li className={styles.redHijoli}><Link href=""><Image src={face} typeof="logo" height={25} width={25} className={styles.logo} /></Link></li>

@@ -9,7 +9,7 @@ import icono from "|/boxicons/svg/regular/bx-leaf.svg";
 import { motion } from "framer-motion";
 import "../page.css";
 
-function page() {
+function Page() {
   const { materials } = useMaterials();
   return (
     <div className="w-[100%]">
@@ -138,4 +138,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
