@@ -1,6 +1,6 @@
 "use client";
 import { Navbar } from "@/components/Navbar";
-import logo from '../icon/logo.png'
+import logo from '../../public/images/logo.png'
 import "./globals.css";
 import Video from "@/components/Video";
 import styles from "../components/Video.module.css";
