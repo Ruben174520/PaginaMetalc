@@ -17,7 +17,7 @@ import Head from "next/head";
 };*/
 
 //Contiene todas las paginas, lo que se agregue aqui aparecera en todas las paginas sss
-export default function RootLayout({ children, Component, pageProps }) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
