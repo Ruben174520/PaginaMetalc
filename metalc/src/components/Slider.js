@@ -3,15 +3,21 @@ import Carousel from 'react-bootstrap/Carousel';
 import estilo from './Bootstrap.module.css';
 import Image from 'next/image';
 import { lazy } from 'react';
-import metal from '../img/aluminio.jpg'
+import aluminio from '../icon/aluminio1.png'
+import bronce from '../icon/bronce3.png'
+import cobre from '../icon/cobre2.jpg'
+import chatarra from '../icon/chatarra2.png'
+import rebaba from '../icon/rebabas1.jpg'
+import metalesR from '../icon/raros3.jpg'
+import acerosIn from '../icon/inoxidables4.png'
 
 function Slider() {
   return (
     <Carousel variant="dark" style={{height: '400px'}} >
       <Carousel.Item  className={estilo.itemP} style={{height: '400px'}} interval={4000}>
         <Image
-          src={metal}
-          alt="First slide"
+          src={aluminio}
+          alt="Compra Aluminio"
           style={{ height: '400px', width: '500px',borderRadius: '10px' }}
           loading='lazy'
           decoding='async'
@@ -23,8 +29,8 @@ function Slider() {
 
       <Carousel.Item className={estilo.itemP} style={{height: '400px'}} interval={4000}>
         <Image      
-          src="https://www.aceromafe.com/wp-content/uploads/2021/10/composicion-del-bronce.png"
-          alt="Second slide"
+          src={bronce}
+          alt="Compra bronce"
           style={{  height: '400px', width: '500px', borderRadius: '10px'}}
           loading='lazy'
           decoding='async'
@@ -35,8 +41,8 @@ function Slider() {
       </Carousel.Item>
       <Carousel.Item className={estilo.itemP} style={{height: '400px'}} interval={4000}>
         <Image
-          src="https://i.blogs.es/14d603/cobre1/1366_2000.jpeg"
-          alt="Third slide"
+          src={cobre}
+          alt="Compra cobre"
           style={{  height: '400px', width: '500px',borderRadius: '10px'}}
           loading='lazy'
           decoding='async'
@@ -48,8 +54,8 @@ function Slider() {
 
       <Carousel.Item className={estilo.itemP} style={{height: '400px'}} interval={4000}>
         <Image
-          src="https://media.istockphoto.com/id/868926884/es/foto/viejas-partes-de-coches-oxidados-oxidados-en-desguace-de-coches-coche-reciclado-piezas-de.jpg?s=612x612&w=0&k=20&c=hyTIObkdAxG-bMxWATlMNcY6F5_cIGdwtpFB-wU5pTU="
-          alt="Third slide"
+          src={chatarra}          
+          alt="Compra chatarra"
           style={{  height: '400px', width: '500px', borderRadius: '10px'}}
           loading='lazy'
           decoding='async'
@@ -61,8 +67,8 @@ function Slider() {
 
       <Carousel.Item className={estilo.itemP} style={{height: '400px'}} interval={4000}>
         <Image
-          src="https://gtaambiental.com/wp-content/uploads/rebaba-larga-de-acero-1.jpg"
-          alt="Third slide"
+          src={rebaba}
+          alt="Compra rebabas"
           style={{  height: '400px', width: '500px',borderRadius: '10px'}}
           loading='lazy'
           decoding='async'
@@ -74,8 +80,8 @@ function Slider() {
 
       <Carousel.Item className={estilo.itemP} style={{height: '400px'}} interval={4000}>
         <Image
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc3awL11Mn9j-DPSo500_AEBKS1IlGyojC2Q&usqp=CAU"
-          alt="Third slide"
+          src={metalesR}
+          alt="Compra metales raros"
           style={{  height: '400px', width: '500px', borderRadius: '10px'}}
           loading='lazy'
           decoding='async'
@@ -87,8 +93,8 @@ function Slider() {
 
       <Carousel.Item className={estilo.itemP} style={{height: '400px'}} interval={4000}>
         <Image
-          src="https://acerossuecos.com/wp-content/uploads/2017/04/INOXIDABLES-304L.jpg"
-          alt="Third slide"
+          src={acerosIn}
+          alt="Compra aceros inoxidables"
           style={{  height: '400px', width: '500px', borderRadius: '10px'}}
           loading='lazy'
           decoding='async'
@@ -98,8 +104,6 @@ function Slider() {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
-
-    
   );
 }
 
