@@ -26,9 +26,9 @@ function Mapa(promps) {
     setMap(map);
   }, [center]);
 
-  // const unMount = React.useCallback(function callback(map) {
-  //   setMap(null);
-  // });
+  const unMount = React.useCallback(function callback(map) {
+    setMap(null);
+  });
   return isLoaded ? (
     <GoogleMap
       mapContainerStyle={containerStyle}
