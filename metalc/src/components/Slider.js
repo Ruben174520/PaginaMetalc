@@ -10,7 +10,7 @@ import chatarra from '../icon/imagenesSlide/chatarra2.png'
 import rebaba from '../icon/imagenesSlide/rebabas1.jpg'
 import metalesR from '../icon/imagenesSlide/raros3.jpg'
 import acerosIn from '../icon/imagenesSlide/inoxidables4.png'
-
+//cambios
 function Slider() {
   return (
     <Carousel variant="dark" style={{height: '400px'}} >
