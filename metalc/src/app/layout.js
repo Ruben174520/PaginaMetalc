@@ -1,5 +1,6 @@
 "use client";
 import { Navbar } from "@/components/Navbar";
+import logo from '../icon/logo.png'
 import "./globals.css";
 import Video from "@/components/Video";
 import styles from "../components/Video.module.css";
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
+      <link rel="icon" type={logo}/>
         <link 
           rel="preconnect"
           href="https://fonts.googleapis.com"
