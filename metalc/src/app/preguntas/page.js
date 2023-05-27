@@ -35,7 +35,7 @@ function Page() {
               <Accordion.Header>¿Que servicios ofrecemos?</Accordion.Header>
               <Accordion.Body>
                 <div className="flex flex-wrap align-middle justify-between">
-                  <Image src={icono} height={50} width={50} />
+                  <Image src={icono} height={50} width={50} alt="image"/>
                   <p className="w-11/12">
                     En METALC nos comprometemos a satisfacer plenamente las
                     necesidades y expectativas de nuestros clientes y
