@@ -21,7 +21,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
-      <link rel="icon" type={logo}/>
+      <title>Metalc</title>
+      <link rel="icon" href={logo} />
         <link 
           rel="preconnect"
           href="https://fonts.googleapis.com"
