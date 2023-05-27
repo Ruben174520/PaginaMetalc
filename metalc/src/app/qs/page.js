@@ -29,7 +29,7 @@ export function page() {
                     </div>
                     <div className="w-[50%] flex  items-center justify-center  border-b-2 border-[#8bba1f]">
                         <div className="flex w-[80%] h-[90%] items-center justify-center hover:-translate-y-4 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]" style={{transition: 'transform .3s ease-out' }}>
-                            <Image className={style.tr1} src={trabajador2} />
+                            <Image className={style.tr1} src={trabajador2} alt="image"/>
                         </div>
                     </div>
                 </div>
@@ -38,7 +38,7 @@ export function page() {
                 <div className="m-[7%]  inline-block  flex">
                     <div className="w-[50%] flex  items-center justify-center  border-b-2 border-[#8bba1f]">
                     <div className="flex w-[80%] h-[90%] items-center justify-center hover:-translate-y-4 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]" style={{transition: 'transform .3s ease-out' }}>
-                            <Image className={style.tr1} src={trabajador3} />
+                            <Image className={style.tr1} src={trabajador3} alt="image"/>
                         </div>
                     </div>
                     <div className="w-[50%] items-center grid  ">
@@ -54,7 +54,7 @@ export function page() {
             <div className={style.estiloGente}  >
                 <div className="w-2/3 b h-[100%]  flex  " >
                     <div className="w-[20%] h-[90%]   flex items-center">
-                        <Image src={logo} height={30} width={150} />
+                        <Image src={logo} height={30} width={150} alt="image"/>
                     </div>
                     <div className="w-[100%] flex justify-center items-center">
                         <h1 className="text-2xl font-bmw text-white">GENTE COMO TÚ, POR UN FUTURO SUSTENTABLE</h1>
@@ -74,7 +74,7 @@ export function page() {
                     </div>
                     <div className="w-[50%] flex  items-center justify-center  border-b-2 border-[#8bba1f]">
                     <div className="flex w-[80%] h-[90%] items-center justify-center hover:-translate-y-4 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]" style={{transition: 'transform .3s ease-out' }}>
-                            <Image className={style.tr1} src={trabajador1} />
+                            <Image className={style.tr1} src={trabajador1} alt="image"/>
                         </div>
                     </div>
                 </div>
@@ -83,7 +83,7 @@ export function page() {
                 <div className="m-[7%]  inline-block  flex">
                     <div className="w-[50%] flex  items-center justify-center  border-b-2 border-[#8bba1f]">
                     <div className="flex w-[80%] h-[90%] items-center justify-center hover:-translate-y-4 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]" style={{transition: 'transform .3s ease-out' }}>
-                            <Image className={style.tr1} src={trabajador4} />
+                            <Image className={style.tr1} src={trabajador4} alt="image"/>
                         </div>
                     </div>
                     <div className="w-[50%] items-center grid  ">

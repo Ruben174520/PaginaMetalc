@@ -56,7 +56,7 @@ function Page() {
                       <Accordion.Header>{material.nombre}</Accordion.Header>
                       <Accordion.Body>
                         <div className="flex wrap justify-between">
-                          <Image src={material.icono} height={50} width={50} />
+                          <Image src={material.icono} height={50} width={50} alt="image"/>
                           <p className="w-10/12">{material.descripcion}</p>
                         </div>
                       </Accordion.Body>
@@ -71,7 +71,7 @@ function Page() {
               </Accordion.Header>
               <Accordion.Body>
                 <div className="flex flex-wrap align-middle justify-between">
-                  <Image src={icono} height={50} width={50} />
+                  <Image src={icono} height={50} width={50} alt="image"/>
                   <p className="w-11/12">
                     En METALC nos comprometemos a satisfacer plenamente las
                     necesidades y expectativas de nuestros clientes y
@@ -86,7 +86,7 @@ function Page() {
               <Accordion.Header>¿Por qué METALC Salvador Nava es la M.O?</Accordion.Header>
               <Accordion.Body>
                 <div className="flex flex-wrap align-middle justify-between">
-                  <Image src={icono} height={50} width={50} />
+                  <Image src={icono} height={50} width={50} alt="image"/>
                   <ul className="w-11/12 list-disc">
                     <li>Ubicacion privilegiada</li>
                     <li>Fácil acceso</li>
@@ -100,7 +100,7 @@ function Page() {
               <Accordion.Header>¿Cómo determinan el tipo de material?</Accordion.Header>
               <Accordion.Body>
                 <div className="flex flex-wrap align-middle justify-between">
-                  <Image src={icono} height={50} width={50} />
+                  <Image src={icono} height={50} width={50} alt="image"/>
                   <ul className="w-11/12 list-disc">
                     <li>Personal calificado</li>
                     <li>Utilizacion de la mejor tecnología</li>
@@ -112,7 +112,7 @@ function Page() {
               <Accordion.Header>¿Qué horarios tienen?</Accordion.Header>
               <Accordion.Body>
                 <div className="flex flex-wrap align-middle justify-between">
-                  <Image src={icono} height={50} width={50} />
+                  <Image src={icono} height={50} width={50} alt="image"/>
                   <ul className="w-11/12 list-disc">
                     <li>Lunes a Viernes: 8:00 am a 6:00 pm</li>
                     <li>Sabado: 8:00 am a 1:00 pm</li>
@@ -124,7 +124,7 @@ function Page() {
               <Accordion.Header>¿Además de comprar, pueden vender material?</Accordion.Header>
               <Accordion.Body>
                 <div className="flex flex-wrap align-middle justify-between">
-                  <Image src={icono} height={50} width={50} />
+                  <Image src={icono} height={50} width={50} alt="image"/>
                   <p className="w-11/12">
                     Si, en una gran parte podemos vender material que tenemos en stock.
                   </p>
