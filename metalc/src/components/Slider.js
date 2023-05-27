@@ -3,13 +3,13 @@ import Carousel from 'react-bootstrap/Carousel';
 import estilo from './Bootstrap.module.css';
 import Image from 'next/image';
 import { lazy } from 'react';
-import aluminio from '../icon/imagenesSlide/aluminio1.png'
-import bronce from '../icon/imagenesSlide/bronce3.png'
-import cobre from '../icon/imagenesSlide/cobre2.jpg'
-import chatarra from '../icon/imagenesSlide/chatarra2.png'
-import rebaba from '../icon/imagenesSlide/rebabas1.jpg'
-import metalesR from '../icon/imagenesSlide/raros3.jpg'
-import acerosIn from '../icon/imagenesSlide/inoxidables4.png'
+import aluminio from '../icon/imagesSlide/aluminio1.png'
+import bronce from '../icon/imagesSlide/bronce3.png'
+import cobre from '../icon/imagesSlide/cobre2.jpg'
+import chatarra from '../icon/imagesSlide/chatarra2.png'
+import rebaba from '../icon/imagesSlide/rebabas1.jpg'
+import metalesR from '../icon/imagesSlide/raros3.jpg'
+import acerosIn from '../icon/imagesSlide/inoxidables4.png'
 //cambios
 function Slider() {
   return (
