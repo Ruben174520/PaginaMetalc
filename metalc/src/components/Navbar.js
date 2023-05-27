@@ -52,7 +52,7 @@ export function Navbar() {
       </div>
       <div className="flex items-center mx-10" id="iconos">
         <Link href="/mapa">
-          <Image src={mapa} height={32} width={32} className="mx-2" />
+          <Image src={mapa} height={32} width={32} className="mx-2" alt='imagen'/>
         </Link>
       </div>
       </div>

@@ -49,7 +49,7 @@ function Page() {
               <Card className="mt-3 bg-[#1a7ab6] text-white border-4 border-cyan-900">
                 <Card.Body>
                   <Card.Title className="flex flex-wrap justify-start text-center align-middle border-b-2">
-                    <Image src={mapa} height={30} width={30} className="m-1" />
+                    <Image src={mapa} height={30} width={30} className="m-1" alt="image"/>
                     <p className="m-1 align-middle flex">Ubicación</p>
                   </Card.Title>
                   <Card.Text>
@@ -62,16 +62,16 @@ function Page() {
               <Card className="mt-3 bg-[#1a7ab6] text-white border-4 border-cyan-900">
                 <Card.Body>
                   <Card.Title className="flex flex-wrap justify-start text-center align-middle border-b-2">
-                    <Image src={tel} height={30} width={30} className="m-1" />
+                    <Image src={tel} height={30} width={30} className="m-1" alt="image"/>
                     <p className="m-1 align-middle flex">Teléfonos</p>
                   </Card.Title>
                   <div>
                     <div className="flex fle-wrap align-middle ">
-                      <Image src={whats} height={25} width={25} />
+                      <Image src={whats} height={25} width={25} alt="image"/>
                       <p className="ml-2"> Whatsapp: 444 655 5651 </p>
                     </div>
                     <div className="flex fle-wrap align-middle ">
-                      <Image src={casa} height={25} width={25} />
+                      <Image src={casa} height={25} width={25} alt="image"/>
                       <p className="ml-2"> Oficina: 444 111 1111 </p>
                     </div>
                   </div>
@@ -86,12 +86,13 @@ function Page() {
                       height={30}
                       width={30}
                       className="m-1"
+                      alt="image"
                     />
                     <p className="m-1 align-middle flex">Correo</p>
                   </Card.Title>
                   <div>
                     <div className="flex fle-wrap align-middle ">
-                      <Image src={mark} height={25} width={25} className="" />
+                      <Image src={mark} height={25} width={25} className="" alt="image"/>
                       <p className="ml-2">vero.metalc@gmail.com </p>
                     </div>
                   </div>

@@ -16,7 +16,7 @@ function RespSocial() {
         
         <div className='flex justify-between h-[80%] '>
             <Card style={{ width: '18rem', height: '100%', transition: 'transform .5s ease-out' }} className='hover:-translate-y-4 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)]'>
-            <Image variant="top" src={reciclar}  className='h-[180px] object-cover'/> 
+            <Image variant="top" src={reciclar}  className='h-[180px] object-cover' alt='imagen'/> 
             <Card.Body>
                 <Card.Title className='mb-4'>Reciclar</Card.Title>
                 <Card.Text className='font-bmw mb-4'>
@@ -29,7 +29,7 @@ function RespSocial() {
             </Card>
 
             <Card style={{ width: '18rem', height: '100%', transition: 'transform .5s ease-out' }} className='hover:-translate-y-4 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]'>
-            <Image variant="top" src={reutilizar}  className='h-[180px] object-cover'/> 
+            <Image variant="top" src={reutilizar}  className='h-[180px] object-cover' alt='imagen'/> 
             <Card.Body>
                 <Card.Title className='mb-4'>Reutilizar</Card.Title>
                 <Card.Text className='font-bmw mb-4'>
@@ -42,7 +42,7 @@ function RespSocial() {
             </Card>
 
             <Card style={{ width: '18rem', height: '100%', transition: 'transform .5s ease-out' }} className='hover:-translate-y-4 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]'>
-            <Image variant="top" src={reducir}  className='h-[180px] object-cover'/> 
+            <Image variant="top" src={reducir}  className='h-[180px] object-cover' alt='imagen'/> 
             <Card.Body>
                 <Card.Title className='mb-4' >Reducir</Card.Title>
                 <Card.Text className='font-bmw mb-4'>
@@ -55,7 +55,7 @@ function RespSocial() {
             </Card>
 
             <Card style={{ width: '18rem', height: '100%', transition: 'transform .3s ease-out' }} className='hover:-translate-y-4 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]'>
-            <Image variant="top" src={recuperar}  className='h-[180px] object-cover'/> 
+            <Image variant="top" src={recuperar}  className='h-[180px] object-cover' alt='imagen'/> 
             <Card.Body>
                 <Card.Title className='mb-4' >Recuperar</Card.Title>
                 <Card.Text className='font-bmw mb-4'>

@@ -13,7 +13,7 @@ function Tabs(){
     const boton1 =( 
     <div className=' h-[90%] flex m-[2%]'>
         <div className='w-[40%] '>
-            <Image src={desm} className='w-[100%] h-[100%] object-cover' />
+            <Image src={desm} className='w-[100%] h-[100%] object-cover' alt='imagen'/>
         </div>
         <div className='w-[60%] p-[2%] '>
             <h1 className='font-bmw text-2xl'>Desmantelamiento de naves industriales</h1>
@@ -30,7 +30,7 @@ function Tabs(){
     const boton2 =( 
         <div className=' h-[90%] flex m-[2%]'>
             <div className='w-[40%] '>
-                <Image src={recol} className='w-[100%] h-[100%] object-cover' />
+                <Image src={recol} className='w-[100%] h-[100%] object-cover' alt='imagen'/>
             </div>
             <div className='w-[60%] p-[2%] '>
                 <h1 className='font-bmw text-2xl'>Recoleccion de residuos industriales no peligrosos</h1>
@@ -47,7 +47,7 @@ function Tabs(){
      const boton3 =( 
         <div className=' h-[90%] flex m-[2%]'>
             <div className='w-[40%] '>
-                <Image src={dest} className='w-[100%] h-[100%] object-cover' />
+                <Image src={dest} className='w-[100%] h-[100%] object-cover' alt='imagen' />
             </div>
             <div className='w-[60%] p-[2%] '>
                 <h1 className='font-bmw text-2xl'>Destruccion fiscal</h1>

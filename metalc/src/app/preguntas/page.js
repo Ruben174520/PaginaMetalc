@@ -52,7 +52,7 @@ function Page() {
               <Accordion.Body>
                 <Accordion defaultActiveKey="0" flush alwaysOpen>
                   {materials.map((material) => (
-                    <Accordion.Item eventKey={material.id}>
+                    <Accordion.Item eventKey={material.id} key={material.id}>
                       <Accordion.Header>{material.nombre}</Accordion.Header>
                       <Accordion.Body>
                         <div className="flex wrap justify-between">

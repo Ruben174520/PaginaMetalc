@@ -23,7 +23,7 @@ const Formulario = ({ materialSelecto }) => {
       setMaterial(materialSelecto.nombre)
       setDescripcion(materialSelecto.descripcion)
     }
-  });
+  },[materialSelecto]);
   
   // setMessage("Nombre: " + name + " " + "Telefono: " + telefono + " "+
   // "Material que deseo vender: " + material + " " + "Cantidad: " + cantidad + " "+

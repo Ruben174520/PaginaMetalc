@@ -18,19 +18,19 @@ function callToAction(){
             <div className={styles.father}>
                 <div className={styles.hijo}>
                     <div className="flex justify-center mb-8">
-                        <Image src={cot} width={70} height={70}/>
+                        <Image src={cot} width={70} height={70} alt='imagen'/>
                     </div>
                     <button className={"bg-blue-500 hover:bg-lime-500 py-2 px-4 text-white font-bold rounded-lg"}>Cotizar</button>
                 </div>
                 <div className={styles.hijo}>
                     <div className="flex justify-center mb-8">
-                        <Image src={mat} width={70} height={70}/>
+                        <Image src={mat} width={70} height={70} alt='imagen' />
                     </div>
                     <button className={"bg-blue-500 hover:bg-lime-500 py-2 px-4 text-white font-bold rounded-lg"}>Materiales</button>
                 </div>
                 <div className={styles.hijo}>
                     <div className="flex justify-center mb-8">
-                        <Image src={serv} width={70} height={70}/>
+                        <Image src={serv} width={70} height={70} alt='imagen'/>
                     </div>
                     <button className={"bg-blue-500 hover:bg-lime-500 py-2 px-4 text-white font-bold rounded-lg"}>Servicios</button>
                 </div>
