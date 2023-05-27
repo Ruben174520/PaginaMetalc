@@ -4,10 +4,10 @@ import Button from 'react-bootstrap/Button';
 import { Card } from 'react-bootstrap';
 import Image from 'next/image';
 import Foto from '../img/cobre.jpg';
-import reciclar from '../img/reciclar.jpg'
-import reutilizar from '../img/reutilizar.jpg'
-import reducir from '../img/reducir.jpg'
-import recuperar from '../img/recuperar.jpg'
+import reciclar from '../img/reciclarM.png'
+import reutilizar from '../img/reutilizarM.png'
+import reducir from '../img/reducirM.jpg'
+import recuperar from '../img/recuperarM.jpg'
 function RespSocial() {
   return (
     
@@ -15,7 +15,7 @@ function RespSocial() {
         <div className='font-bmw  text-[40px] flex justify-center h-[20%]'>RESPONSABILIDAD SOCIAL</div>
         
         <div className='flex justify-between h-[80%] '>
-            <Card style={{ width: '18rem', height: '100%', transition: 'transform .3s ease-out' }} className='hover:-translate-y-4'>
+            <Card style={{ width: '18rem', height: '100%', transition: 'transform .5s ease-out' }} className='hover:-translate-y-4 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)]'>
             <Image variant="top" src={reciclar}  className='h-[180px] object-cover'/> 
             <Card.Body>
                 <Card.Title className='mb-4'>Reciclar</Card.Title>
@@ -28,7 +28,7 @@ function RespSocial() {
             </Card.Body>
             </Card>
 
-            <Card style={{ width: '18rem', height: '100%', transition: 'transform .3s ease-out' }} className='hover:-translate-y-4'>
+            <Card style={{ width: '18rem', height: '100%', transition: 'transform .5s ease-out' }} className='hover:-translate-y-4 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]'>
             <Image variant="top" src={reutilizar}  className='h-[180px] object-cover'/> 
             <Card.Body>
                 <Card.Title className='mb-4'>Reutilizar</Card.Title>
@@ -41,7 +41,7 @@ function RespSocial() {
             </Card.Body>
             </Card>
 
-            <Card style={{ width: '18rem', height: '100%', transition: 'transform .3s ease-out' }} className='hover:-translate-y-4'>
+            <Card style={{ width: '18rem', height: '100%', transition: 'transform .5s ease-out' }} className='hover:-translate-y-4 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]'>
             <Image variant="top" src={reducir}  className='h-[180px] object-cover'/> 
             <Card.Body>
                 <Card.Title className='mb-4' >Reducir</Card.Title>
@@ -54,7 +54,7 @@ function RespSocial() {
             </Card.Body>
             </Card>
 
-            <Card style={{ width: '18rem', height: '100%', transition: 'transform .3s ease-out' }} className='hover:-translate-y-4'>
+            <Card style={{ width: '18rem', height: '100%', transition: 'transform .3s ease-out' }} className='hover:-translate-y-4 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]'>
             <Image variant="top" src={recuperar}  className='h-[180px] object-cover'/> 
             <Card.Body>
                 <Card.Title className='mb-4' >Recuperar</Card.Title>

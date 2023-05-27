@@ -20,17 +20,17 @@ function page() {
     <div className="w-[100%]">
       <div className="div-con-fondo-preguntas h-80 flex justify-center align-bottom items-end text-white text-5xl pb-10">
         {" "}
-        <h1 className="border-b-4 border-white my-3">SERVICIOS</h1>
+        <h1 className="border-b-4 border-white mb-5">SERVICIOS</h1>
       </div>
-    <div className="pt-42 w-5/6 mx-auto mb-5 ">
+    <div className="pt-42 w-5/6 mx-auto mb-5  ">
 
       <div className={servicios.contenido}>
       
-        <div className="text-4xl mb-[70px] mt-5">SERVICIOS QUE OFRECEMOS</div>
-        <div className="justify-between">
+        <h1 className="text-4xl mb-[70px] mt-5  border-b-8 pb-5 border-[#083552] text-center">SERVICIOS QUE OFRECEMOS</h1>
+        <div className="justify-between border-2 border-[#EEEE] shadow-[0_35px_60px_15px_rgba(0,0,0,0.3)] p-5 rounded-xl">
           <div className="flex justify-between">
             <div className=" w-[50%] ">
-              <h1 className="font-bmw text-2xl ">RECOLECCIÓN DE SCRAPT</h1>
+              <h1 className="font-bmw text-2xl font-bold ">RECOLECCIÓN DE SCRAPT</h1>
               <br />
               <p className="justify-text-left">
                 En METALC nos comprometemos a satisfacer plenamente las
@@ -68,7 +68,7 @@ function page() {
           </div>
           <div className="flex justify-between my-[70px] ">
             <div className="w-[50%] mt-3">
-              <h1 className="font-bmw text-2xl ">ADEMÁS ...</h1>
+              <h1 className="font-bmw text-2xl font-bold ">ADEMÁS ...</h1>
               <br />
               <p className="justify-text-left">
                 Puedes realizar tu cotización correspondiente en el siguiente
@@ -80,24 +80,15 @@ function page() {
                 <br />
                 <br />
               </p>
-              <h1 className="font-bmw text-2xl">UBICACIÓN</h1>
+              <h1 className="font-bmw text-2xl font-bold">UBICACIÓN</h1>
               <br />
               <br />
               <div className="w-[100%] h-[150px]">
-                <Mapa tam="300px" />
+                <Mapa tam="250px" />
               </div>
             </div>
             <div className="w-[500px] ">
               <Form className="border-none" />
-            </div>
-          </div>
-          <div className="flex justify-between my-2">
-            <h1 className="font-bmw text-2xl">¿QUÉ MÁS HACEMOS?</h1>
-          </div>
-          <div className="flex justify-between">
-            <div className={servicios.navSecundario}>
-              <NavSecond />
-              <div className="w-[100%], h-[400px] " id="qmh"></div>
             </div>
           </div>
         </div>

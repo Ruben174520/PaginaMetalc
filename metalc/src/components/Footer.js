@@ -1,10 +1,10 @@
 import Link from "next/link"
 import Image from "next/image";
 import styles from "./Footer.module.css"
-import face from "../icon/boxicons/svg/logos/bxl-facebook-circle.svg";
+import face from "../icon/boxicons/svg/logos/bxl-facebook-circle-black.svg";
 import insta from "../icon/boxicons/svg/logos/bxl-instagram.svg";
 import twitter from "../icon/boxicons/svg/logos/bxl-twitter.svg";
-import whats from "../icon/boxicons/svg/logos/bxl-whatsapp.svg";
+import whats from "../icon/boxicons/svg/logos/bxl-whatsapp-black.svg";
 import ubi from "../icon/boxicons/svg/regular/bx-mapGreen.svg";
 import reloj from "../icon/boxicons/svg/regular/bx-time-fiveGreen.svg";
 import tel from "../icon/boxicons/svg/regular/bx-phone-callGreen.svg";
@@ -47,11 +47,11 @@ function Footer(){
           <div className={styles.redes}>
           <div className={styles.slogan}>
               <Image src={logo} width={60} height={60} />
-              <h1 className="font-bmw self-center">"Gente como tú, por un futuro sustentable"</h1>
+              <h1 className="font-bmw self-center">Gente como tú, por un futuro sustentable</h1>
             </div>
             <div className={styles.redHijo}>
               <li className={styles.redHijoli}><Link href=""><Image src={face} typeof="logo" height={25} width={25} className={styles.logo} /></Link></li>
-              <li className={styles.redHijoli}><Link href=""><Image src={whats} height={25} width={25} className={"color='#ffffff'"} /></Link></li>            
+              <li className={styles.redHijoli}><Link href=""><Image src={whats} height={25} width={25} className={"fill-black]"} /></Link></li>            
             </div>
           </div>
           

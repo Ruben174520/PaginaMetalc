@@ -9,7 +9,7 @@ import Formulario from "@/components/Formulario";
 import "../page.css";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-export function page() {
+export function Page() {
   const { materials } = useMaterials();
   const [materialSeleccionado, setMaterialSeleccionado] = useState(null);
   const { ref, inView } = useInView({
@@ -64,4 +64,4 @@ export function page() {
   );
 }
 
-export default page;
+export default Page;

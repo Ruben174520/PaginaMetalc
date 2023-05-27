@@ -11,7 +11,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Resp from "../components/RespSocial";
 import Carrusel from "../components/ImageCarousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-export function page() {
+import { color } from "framer-motion";
+export function Page() {
   const { materials } = useMaterials();
   const [mostrarGaleria, setMostrarGaleria] = useState(false);
   const [materialSeleccionado, setMaterialSeleccionado] = useState(null);
@@ -34,7 +35,13 @@ export function page() {
   );
   return (
     <div className="flex flex-wrap justify-center">
-      <h1 className="flex w-10/12 z-0 font-bmw text-white justify-between py-4 pt-6 absolute  left-1/2 -translate-x-1/2 div_navbar mt-[8%] text-xl"></h1>
+      <div className="flex w-[50%] z-0 font-bmw text-white justify-between py-4 pt-6 absolute ml-[12%]  -translate-x-1/2 div_navbar mt-[10%] text-xl  ">
+        <div className="m-[20px] w-[80%] h-[250px]  p-[7%] rounded-tr-[30px]" style={{backgroundColor: 'rgba(241, 243, 244, 0.5)', textAlign: 'center'}}>
+          <h1 className="text-black font-bmw font-bold text-4xl">Bienvenido a METALC</h1><br></br>
+          <h2 className="text-black font-bmw">Expertos en compra y venta de metales</h2><br></br>
+           <button variant="primary" type="submit" className="bg-[#083552] hover:bg-[#8bba1f] p-1 rounded-md my-2 w-[50%] text-white">CONOCE MÁS</button>
+        </div>
+      </div>
       <div className={styles.videoWrapper}>
         <div className={styles.negro}></div>
         <Carrusel />
@@ -64,4 +71,4 @@ export function page() {
   );
 }
 
-export default page;
+export default Page;
