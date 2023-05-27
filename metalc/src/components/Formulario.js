@@ -154,7 +154,7 @@ const Formulario = ({ materialSelecto }) => {
         )}
         <Form.Text className="text-muted text-gray-300">*Opcional</Form.Text>
       </FormGroup>
-      <FormGroup controlId="formBasicEmail" className="flex flex-wrap   ">
+      <FormGroup controlId="formBasicEmail" className="flex flex-wrap   hidden">
         <Form.Label className="w-full">Teléfono:</Form.Label>
         <FormControl
             type="text"
