@@ -11,17 +11,14 @@ import Head from "next/head";
 import { Metadata } from "next";
 
 
-
-/** @type {import("next").Metadata} */
-export const metadata = {
-  title: 'Next.js',
-};
-
 //Contiene todas las paginas, lo que se agregue aqui aparecera en todas las paginas sss
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
+        <metadata>
+          <title>Metalc</title>
+        </metadata>
         <link 
           rel="preconnect"
           href="https://fonts.googleapis.com"
