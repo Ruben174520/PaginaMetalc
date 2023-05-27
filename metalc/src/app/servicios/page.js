@@ -12,6 +12,7 @@ import ImageCarousel from "../../components/ImageCarousel";
 import { Button } from "react-bootstrap";
 import Mapa from "@/components/Mapa";
 import NavSecond from "@/components/Tabs";
+import Head from 'next/head';
 
 import "../page.css";
 function Page() {
