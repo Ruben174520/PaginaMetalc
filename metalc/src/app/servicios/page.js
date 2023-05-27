@@ -14,7 +14,7 @@ import Mapa from "@/components/Mapa";
 import NavSecond from "@/components/Tabs";
 
 import "../page.css";
-function page() {
+function Page() {
 
   return (
     <div className="w-[100%]">
@@ -98,4 +98,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
