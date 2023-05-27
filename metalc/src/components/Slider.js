@@ -3,13 +3,14 @@ import Carousel from 'react-bootstrap/Carousel';
 import estilo from './Bootstrap.module.css';
 import Image from 'next/image';
 import { lazy } from 'react';
+import metal from '../img/aluminio.jpg'
 
 function Slider() {
   return (
     <Carousel variant="dark" style={{height: '400px'}} >
       <Carousel.Item  className={estilo.itemP} style={{height: '400px'}} interval={4000}>
         <Image
-          src="https://aluminioindustrial.mx/blog/wp-content/uploads/2019/09/perfiles-aluminio-varios.jpg"
+          src={metal}
           alt="First slide"
           style={{ height: '400px', width: '500px',borderRadius: '10px' }}
           loading='lazy'
