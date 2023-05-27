@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <Head>
         
-        <title>Mi Página Web - {Component.title || 'Inicio'}</title>
+       
         
         <link 
           rel="preconnect"
