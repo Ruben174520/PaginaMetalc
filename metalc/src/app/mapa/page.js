@@ -22,12 +22,12 @@ function Page() {
   const [ancho, setAncho] = useState(0);
   return (
     <div className="w-[100%]">
-      <div className="div-con-fondo-preguntas h-80 flex justify-center align-bottom items-end text-white text-5xl pb-5">
+      <div className="div-con-fondo-preguntas h-80 flex justify-center align-bottom items-end text-2xl pb-5 text-white md:text-5xl md:pb-8">
         {" "}
-        <h1 className="border-b-4 border-white">CONTACTO</h1>
+        <h1 className="border-b-4 border-white  mb-5">CONTACTO</h1>
       </div>
       <div className="w-5/6 mx-auto mb-5 ">
-        <h1 className="text-6xl border-b-8 border-[#083552] mt-4 pb-3">
+        <h1 className="border-b-8 border-[#083552] text-3xl mt-4 md:pb-3 md:text-6xl">
           Contactanos
         </h1>
         <div
@@ -36,16 +36,17 @@ function Page() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          <motion.div className="w-2/5 flex justify-center align-middle h-full mt-6 pt-2 shadow-2xl">
+          <motion.div className=" w-[100%] flex justify-center align-middle h-full mt-6 pt-2 shadow-2xl
+          md:w-2/5">
             <Mapa tam="400px" />
           </motion.div>
           <motion.div
-            className="w-3/6 p-3"
+            className="w-[100%] p-3 md:w-3/6"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            <div className="w-full">
+            <div className="w-[100%]">
               <Card className="mt-3 bg-[#1a7ab6] text-white border-4 border-cyan-900">
                 <Card.Body>
                   <Card.Title className="flex flex-wrap justify-start text-center align-middle border-b-2">
