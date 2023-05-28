@@ -7,10 +7,10 @@ import img3 from '../img/trabajdorCarrusel.jpg';
 
 function ImageCarousel() {
   return (
-    <Carousel className='h-[100vh]' controls={false} indicators={false}>
-      <Carousel.Item className='h-[100vh]'>
+    <Carousel className='h-[300px] md:h-[100vh]' controls={false} indicators={false}>
+      <Carousel.Item className='h-[300px] md:h-[100vh]'>
         <Image
-          className="d-block w-100"
+          className=" d-block w-100"
           src={img1}
           alt="First slide"
         />
@@ -19,7 +19,7 @@ function ImageCarousel() {
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>*/}
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item className='h-[100vh]'>
+      <Carousel.Item className='h-[300px] md:h-[100vh]'>
         <Image
           className="d-block w-100"
           src={img2}
@@ -31,7 +31,7 @@ function ImageCarousel() {
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>*/}
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item className='h-[100vh]'>
+      <Carousel.Item className='h-[300px] md:h-[100vh]'>
         <Image
           className="d-block w-100"
           src={img3}
