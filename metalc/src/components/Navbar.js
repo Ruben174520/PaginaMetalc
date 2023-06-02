@@ -69,7 +69,7 @@ export function Navbar() {
               className="block px-6 hover:border-b-4 border-cyan-800 font-semibold
               md:hidden "
             >
-              <h1 className="my-4 h1_navbar">Mapa</h1>
+              <h1 className="my-4 h1_navbar">Contacto</h1>
             </Link>
           </div>
         </div>
