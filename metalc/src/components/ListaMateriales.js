@@ -8,8 +8,8 @@ export const ListaMateriales = ({ material, mostrarGaleriaHandler }) => {
       className=" flex border-2 w-[100%] justify-evenly m-1 p-4 rounded-md cursor-pointer shadow-md hover:border-pink-900 hover:shadow-pink-900 hover:shadow-md"
       onClick={() => mostrarGaleriaHandler(material)}
       initial={{ opacity: 0, x: -50 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 1 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 2 }}
       whileHover={{
         scale: 1.1,
         transition: { duration: 0.5 },
