@@ -29,8 +29,8 @@ function Page() {
         {" "}
         <h1 className="border-b-4 border-white  mb-5">CONTACTO</h1>
       </div>
-      <div className="w-5/6 mx-auto mb-5 mt-10 ">
-        <h1 className="lg:text-6xl border-b-8 border-[#083552] mt-10 pb-3 lg:text-start md:text-5xl md:text-center ">
+      <div className="w-5/6 mx-auto mb-5 mt-10 h-auto ">
+        <h1 className="lg:text-6xl md:text-5xl mb-[70px] mt-5 border-b-8 pb-5 border-[#083552] ">
           Contáctanos
         </h1>
       </div>
