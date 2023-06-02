@@ -33,7 +33,7 @@ function Page() {
       </div>
       <div className="w-5/6 mx-auto lg:flex h-auto">
         <div id="info" className="lg:w-[50%] bg-[#083552] md:w-[100%] p-[15px]">
-          <div className="lg:m-[40px] lg:ml-[50px] lg:m-[30px]   ">
+          <div className="lg:m-[40px] lg:ml-[50px] ">
             <div className="border-b-4 border-[#8bba1f] w-fit text-white text-3xl mb-[20px]  ">
               Ubicación
             </div>
@@ -68,16 +68,13 @@ function Page() {
                   <div className="mt-2">
                     <input
                       type="text"
-                      name="first-name"
+                      name="name"
                       id="first-name"
                       autoComplete="given-name"
                       className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                     />
                   </div>
                 </div>
-
-
-
                 <div className="sm:col-span-4">
                   <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
                     Correo electrónico:
@@ -100,7 +97,7 @@ function Page() {
                   <div className="mt-2">
                     <input
                       type="text"
-                      name="number"
+                      name="phone"
                       id="number"
                       autoComplete="street-address"
                       className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -115,7 +112,7 @@ function Page() {
                   <div className="mt-2">
                     <input
                       type="text"
-                      name="empresa"
+                      name="company"
                       id="empresa"
                       autoComplete="address-level2"
                       className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
