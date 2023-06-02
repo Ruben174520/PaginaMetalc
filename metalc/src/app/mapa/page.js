@@ -25,25 +25,25 @@ function Page() {
   const [ancho, setAncho] = useState(0);
   return (
     <div className="w-[100%] mb-[50px]">
-      <div className="div-con-fondo-preguntas h-80 flex justify-center align-bottom items-end text-white text-5xl pb-5">
+      <div className="div-con-fondo-preguntas h-80 flex justify-center align-bottom items-end text-2xl pb-12 text-white md:text-5xl md:pb-10">
         {" "}
         <h1 className="border-b-4 border-white  mb-5">CONTACTO</h1>
       </div>
       <div className="w-5/6 mx-auto mb-5 mt-10 ">
-        <h1 className="text-6xl border-b-8 border-[#083552] mt-10 pb-3">
+        <h1 className="lg:text-6xl border-b-8 border-[#083552] mt-10 pb-3 lg:text-start md:text-5xl md:text-center ">
           Contáctanos
         </h1>
       </div>
-      <div className="w-5/6 mx-auto flex">
-        <div id="info" className="w-[50%] bg-[#083552]">
-          <div className="m-[40px] ml-[50px]">
-            <div className="border-b-4 border-[#8bba1f] w-min text-white text-3xl mb-[20px]">
+      <div className="w-5/6 mx-auto lg:flex">
+        <div id="info" className="lg:w-[50%] bg-[#083552] md:w-[100%] p-[30px]">
+          <div className="lg:m-[40px] lg:ml-[50px] lg:m-[30px] md:m-[15px] md:ml-[25px]  ">
+            <div className="border-b-4 border-[#8bba1f] w-fit text-white text-3xl mb-[20px]  ">
               Ubicación
             </div>
             <Mapa tam="250px" />
           </div>
-          <div className="m-[40px] ml-[50px]">
-            <div className="border-b-4 border-[#8bba1f] w-fit text-white text-3xl mb-[20px]">
+          <div className="lg:m-[40px] lg:ml-[50px] md:m-[20px] pt-[30px] pt-15 md:pl-15 lg:pl-2">
+            <div className="border-b-4 border-[#8bba1f] w-fit text-white text-3xl mb-[20px] ">
               Redes Sociales
             </div>
             <div className="flex ">
@@ -56,13 +56,13 @@ function Page() {
             </div>
           </div>
         </div>
-        <form className="w-[50%] border-2 border-[#EEEE] shadow-[0_35px_60px_15px_rgba(0,0,0,0.3)] p-[30px]">
+        <form className="lg:w-[50%] border-2 border-[#EEEE] shadow-[0_35px_60px_15px_rgba(0,0,0,0.3)] p-[30px] md:w-[100%]">
           <div id="formulario" className="">
             <div className="border-b border-gray-900/10 pb-12">
               <h2 className="text-base font-semibold leading-7 text-gray-900">Permitenos establecer comunicacion contigo</h2>
               <p className="mt-1 text-sm leading-6 text-gray-600">Rellena la informacion con tus datos y en breve nos comunicaremos</p>
 
-              <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+              <div className="mt-10 lg:grid lg:grid-cols-1 lg:gap-x-6 gap-y-8 sm:grid-cols-6 md:block ">
                 <div className="sm:col-span-5">
                   <label htmlFor="first-name" className="block text-sm font-medium leading-6 text-gray-900">
                     Nombre Completo:
