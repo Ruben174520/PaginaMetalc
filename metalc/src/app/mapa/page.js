@@ -27,7 +27,7 @@ function Page() {
     <div className="w-[100%] mb-[50px]">
       <div className="div-con-fondo-preguntas h-80 flex justify-center align-bottom items-end text-white text-5xl pb-5">
         {" "}
-        <h1 className="border-b-4 border-white">CONTACTO</h1>
+        <h1 className="border-b-4 border-white  mb-5">CONTACTO</h1>
       </div>
       <div className="w-5/6 mx-auto mb-5 mt-10 ">
         <h1 className="text-6xl border-b-8 border-[#083552] mt-10 pb-3">
