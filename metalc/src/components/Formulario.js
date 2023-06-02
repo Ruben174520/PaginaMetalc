@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Form,
   FormGroup,
@@ -7,34 +6,55 @@ import {
   InputGroup,
 } from "react-bootstrap";
 import axios from "axios";
-import { useState } from "react";
+import { useForm, ValidationError } from '@formspree/react';
+import { useState, useEffect } from "react";
 const Formulario = ({ materialSelecto }) => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-
+  const [name, setName] = useState('')
+  const [state, handleSubmit] = useForm("xlekkpqg");
+  const [material, setMaterial] = useState("")
+  const [telefono, setTelefono] = useState("")
+  const [cantidad, setCantidad] = useState(0)
+  const [descripcion, setDescripcion] = useState("")
   console.log(materialSelecto);
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const data = {
-      to: "destinatario@example.com", // dirección de correo electrónico del destinatario
-      from: email,
-      subject: "Nuevo mensaje de formulario", // asunto del correo electrónico
-      text: message, // contenido del correo electrónico
-    };
-    axios
-      .post("https://api.sendgrid.com/v3/mail/send", data, {
-        headers: {
-          Authorization: `Bearer ${process.env.REACT_APP_SENDGRID_API_KEY}`,
-          "Content-Type": "application/json",
-        },
-      })
-      .then((response) => {
-        console.log(response);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  };
+  useEffect(() => {
+    if (materialSelecto != null){
+      setMaterial(materialSelecto.nombre)
+      setDescripcion(materialSelecto.descripcion)
+    }
+  },[materialSelecto]);
+  
+  // setMessage("Nombre: " + name + " " + "Telefono: " + telefono + " "+
+  // "Material que deseo vender: " + material + " " + "Cantidad: " + cantidad + " "+
+  // "Descripcion: " + descripcion)
+  const cambiaMaterial =(e) =>{
+    setMaterial(e)
+    setMessage(
+        "Material que deseo vender: " + material + " " + "Cantidad: " + cantidad + " "+
+        "Descripcion: " + descripcion)
+  }
+  const cambiaCantidad =(e) =>{
+    setCantidad(e)
+    setMessage(
+        "Material que deseo vender: " + material + " " + "Cantidad: " + cantidad + " "+
+        "Descripcion: " + descripcion)
+  }
+  const cambiaDescripcion =(e) =>{
+    setDescripcion(e)
+    setMessage(
+        "Material que deseo vender: " + material + " " + "Cantidad: " + cantidad + " "+
+        "Descripcion: " + descripcion)
+  }
+  const cambiaMensaje = (e) =>{
+    setMessage(
+    "Material que deseo vender: " + material + " " + "Cantidad: " + cantidad + " "+
+    "Descripcion: " + descripcion + " " + "MAS: " + e)
+    console.log(message)
+  }
+  if (state.succeeded) {
+    return <p>FORMULARIO ENVIADO!</p>;
+}
   return (
     <Form onSubmit={handleSubmit} className="p-6 border-2  shadow-2xl">
       <FormGroup controlId="formBasicEmail" className="flex flex-wrap   ">
@@ -42,8 +62,8 @@ const Formulario = ({ materialSelecto }) => {
         <FormControl
           type="text"
           placeholder="Ingresa Nombre"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          name= "name"
+          onChange={(e) => setName(e.target.value)}
           className="border-2 w-full p-2"
         />
       </FormGroup>
@@ -51,8 +71,10 @@ const Formulario = ({ materialSelecto }) => {
         <Form.Label className="w-full">Correo:</Form.Label>
         <Form.Control
           type="email"
+          name="email"
           placeholder="Ingresa Email"
           className="w-full border-2 p-2"
+          onChange={(e) => setEmail(e.target.value)}
           required
         />
         <Form.Text className="text-muted text-gray-300">
@@ -63,8 +85,10 @@ const Formulario = ({ materialSelecto }) => {
         <Form.Label className="w-full">Teléfono:</Form.Label>
         <FormControl
           type="phone"
+          name="phone"
           placeholder="Ingresa teléfono"
           className="border-2 w-full p-2"
+          onChange={(e) => setTelefono(e.target.value)}
           required
         />
       </FormGroup>
@@ -84,6 +108,7 @@ const Formulario = ({ materialSelecto }) => {
             <FormControl
               type="text"
               placeholder="Tipo"
+              onChange={(e) => cambiaMaterial(e.target.value)}
               className="border-2 w-full p-2"
             />
           ) : (
@@ -91,12 +116,15 @@ const Formulario = ({ materialSelecto }) => {
               type="text"
               placeholder="Tipo"
               value={materialSelecto.nombre}
+              onChange={(e) => cambiaMaterial(e.target.value)}
               className="border-2 w-full p-2"
             />
           )}
           <FormControl
             type="text"
             placeholder="Cantidad"
+            required
+            onChange={(e) => cambiaCantidad(e.target.value)}
             className="border-2 w-full p-2"
           />
         </FormGroup>
@@ -110,6 +138,7 @@ const Formulario = ({ materialSelecto }) => {
           <Form.Control
             type="textarea"
             placeholder="Descripción"
+            onChange={(e) => cambiaDescripcion(e.target.value)}
             className="w-full border-2 p-2"
             required
           />
@@ -119,15 +148,28 @@ const Formulario = ({ materialSelecto }) => {
             placeholder="Descripción"
             className="w-full border-2 p-2"
             value={materialSelecto.descripcion}
+            onChange={(e) => cambiaDescripcion(e.target.value)}
             required
           />
         )}
         <Form.Text className="text-muted text-gray-300">*Opcional</Form.Text>
       </FormGroup>
+      <FormGroup controlId="formBasicEmail" className="flex flex-wrap   hidden">
+        <Form.Label className="w-full">Teléfono:</Form.Label>
+        <FormControl
+            type="text"
+          name="message"
+          value={message}
+          className="border-2 w-full p-2"
+          onChange={(e) => cambiaMensaje(e.target.value)}
+          required
+        />
+      </FormGroup>
       <Button
         variant="primary"
         type="submit"
-        className="bg-[#083552] hover:bg-[#8bba1f] p-1 rounded-md my-2 w-full text-white  animate-pulse"
+        disabled={state.submitting}
+        className="bg-[#083552] p-1 rounded-md my-2 w-full hover:bg-[#8bba1f] animate-pulse border-none"
       >
         Enviar
       </Button>

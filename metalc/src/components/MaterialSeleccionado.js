@@ -16,13 +16,13 @@ const MaterialSeleccionado = ({ materials, materialSelecto }) => {
   };
 
   return (
-    <div className="w-[100%] h-2/4 flex mt-3 p-4">
-      <div className="w-2/5 flex flex-wrap border-2 rounded-lg pl-6 pb-6 pt-6 px-5">
+    <div className="w-[100%] h-2/4 flex flex-wrap mt-3 p-4 md:flex-none">
+      <div className="flex flex-wrap rounded-lg pl-6 pb-6 pt-6 px-5 md:w-2/5 md:border-2 ">
         {materials.map((material) => (
           <ListaMateriales material={material} key={material.id} mostrarGaleriaHandler={mostrarGaleriaHandler}/>
         ))}
       </div>
-      <div className="w-6/12 ml-5 rounded-md">
+      <div className=" ml-5 rounded-md md:w-6/12">
         { mostrarGaleria ?
           <ComponenteGaleria materialSeleccionado={materialSelecto}/> : <ComponenteGaleria materialSeleccionado={materialSeleccionado}/> 
         }

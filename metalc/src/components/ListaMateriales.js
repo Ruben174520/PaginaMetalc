@@ -15,7 +15,7 @@ export const ListaMateriales = ({ material, mostrarGaleriaHandler }) => {
         transition: { duration: 0.5 },
       }}
     >
-      <div className="flex items-center justify-center mx-5">
+      <div className="flex items-center justify-center ml-3 md:mx-5">
         <Image
           src={material.icono}
           width={40}
@@ -24,8 +24,8 @@ export const ListaMateriales = ({ material, mostrarGaleriaHandler }) => {
           alt=""
         />
       </div>
-      <div className="flex font-bold w-full align-middle text-center items-center text-2xl">
-        <h1 className="text-center flex align-middle justify-center">
+      <div className="flex font-bold w-full align-middle mr-2 text-center items-center md:mr-0">
+        <h1 className="text-center flex align-middle justify-centern text-sm ml-2 md:text-2xl">
           {material.nombre}
         </h1>
       </div>

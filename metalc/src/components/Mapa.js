@@ -2,11 +2,11 @@ import React from "react";
 import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
 import style from "../app/page.module.css";
 function Mapa(promps) {
-  const center = {
-    lat: 22.133607605661613 ,
-    lng: -100.95909167743125,
-  };
 
+  const center = React.useMemo(() => {
+    // Calculate the center object here
+    return { lat: 22.133607605661613 , lng: -100.95909167743125}; // Replace with your actual calculation
+  }, []);
   const containerStyle = {
     width: "100%",
     height: promps.tam,
@@ -24,7 +24,7 @@ function Mapa(promps) {
     map.fitBounds(bounds);
     console.log(map.getZoom())
     setMap(map);
-  }, []);
+  }, [center]);
 
   const unMount = React.useCallback(function callback(map) {
     setMap(null);

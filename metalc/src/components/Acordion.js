@@ -10,7 +10,7 @@ export const Acordion = ({ pregunta, respuesta }) => {
         <Accordion.Header>{pregunta}</Accordion.Header>
         <Accordion.Body>
           <div className="flex flex-wrap align-middle justify-between">
-          <Image src={icono} height={50} width={50} />
+          <Image src={icono} height={50} width={50} alt="image"/>
             <p className="w-11/12">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut

@@ -11,7 +11,8 @@ export const TarjetaMaterial = ({ material, mostrarGaleriaHandler }) => {
   });
   return (
     <motion.div
-      className=" w-1/4 h-2/3 p-5 border-2 rounded-lg m-3 shadow-lg"
+      className="w-[300px] border-2 rounded-lg m-3 shadow-lg flex flex-wrap justify-center
+      md:w-1/4 md:h-2/3 md:p-5 md:m-0 md:block"
       ref={ref}
       initial={{ opacity: 0, y: -50 }}
       animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
@@ -22,7 +23,7 @@ export const TarjetaMaterial = ({ material, mostrarGaleriaHandler }) => {
         transition: { duration: 0.5 },
       }}
     >
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center m-2 md:m-0">
         <Image
           src={material.icono}
           width={50}
@@ -31,12 +32,13 @@ export const TarjetaMaterial = ({ material, mostrarGaleriaHandler }) => {
           alt=""
         />
       </div>
-      <div className="flex items-center  justify-center m-2 font-bold">
+      <div className="flex items-center  justify-center m-2 font-bold w-[100%]">
         <h1>{material.nombre}</h1>
       </div>
-      <div className="h-9 p-3 m-2 flex items-center justify-center border-2  rounded self-center border-blue-500 bg-blue-500 hover:bg-lime-500 hover:border-lime-500">
+      <div className="w-[80%] h-9 p-3 m-2 flex items-center justify-center align-middle border-2  rounded self-center border-[#083552] bg-[#083552] hover:bg-[#8bba1f] hover:border-[#8bba1f]
+      md:w-[100%]">
         <button
-          className="rounded-lg text-stone-950 block font-bmw font-semibold animate-pulse"
+          className="w-[80%] rounded-lg text-white block font-bmw font-semibold animate-pulse md:w-[100%]"
           onClick={() => mostrarGaleriaHandler(material)}
         >
           DETALLES

@@ -1,15 +1,17 @@
 import 'bootstrap/dist/css/bootstrap.min.css';  
 import Carousel from 'react-bootstrap/Carousel';
 import Image from 'next/image';
-import img1 from '../img/foto1.png'
+import img1 from '../img/garraSlider.jpg';
+import img2 from '../img/escavado.jpg';
+import img3 from '../img/trabajdorCarrusel.jpg';
 
 function ImageCarousel() {
   return (
-    <Carousel className='h-[100vh]' controls={false} indicators={false}>
-      <Carousel.Item className='h-[100vh]'>
-        <img
-          className="d-block w-100"
-          src="https://img.freepik.com/fotos-premium/deposito-chatarra-metal-maquina-elevacion-hidraulica-accesorio-garra-reciclaje-chatarra_308072-1477.jpg?w=2000"
+    <Carousel className='h-[300px] md:h-[100vh]' controls={false} indicators={false}>
+      <Carousel.Item className='h-[300px] md:h-[100vh]'>
+        <Image
+          className=" d-block w-100"
+          src={img1}
           alt="First slide"
         />
         <Carousel.Caption >
@@ -17,10 +19,10 @@ function ImageCarousel() {
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>*/}
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item className='h-[100vh]'>
-        <img
+      <Carousel.Item className='h-[300px] md:h-[100vh]'>
+        <Image
           className="d-block w-100"
-          src="https://metalc.com.mx/wp-content/uploads/2022/12/heavy-excavator-for-digging-on-day-light-1024x683.jpg"
+          src={img2}
           alt="Second slide"
         />
 
@@ -29,10 +31,10 @@ function ImageCarousel() {
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>*/}
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item className='h-[100vh]'>
-        <img
+      <Carousel.Item className='h-[300px] md:h-[100vh]'>
+        <Image
           className="d-block w-100"
-          src="https://www.arcedianorecuperaciones.com/wp-content/uploads/2021/02/reciclaje-chatarra.jpg"
+          src={img3}
           alt="Third slide"
         />
 
