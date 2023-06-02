@@ -3,7 +3,7 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "../icon/logo.png";
-import mapa from "../icon/boxicons/svg/regular/bx-map.svg";
+import mapa from "../icon/boxicons/svg/solid/bxs-contactWhite.svg";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 var position;

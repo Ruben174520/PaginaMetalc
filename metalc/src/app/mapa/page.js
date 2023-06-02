@@ -30,13 +30,13 @@ function Page() {
         <h1 className="border-b-4 border-white  mb-5">CONTACTO</h1>
       </div>
       <div className="w-5/6 mx-auto mb-5 mt-10 h-auto ">
-        <h1 className="lg:text-6xl md:text-5xl mb-[70px] mt-5 border-b-8 pb-5 border-[#083552] ">
+        <h1 className="text-4xl md:text-6xl lg:mb-[70px] mt-5 border-b-8 lg:pb-5 border-[#083552] ">
           Contáctanos
         </h1>
       </div>
-      <div className="w-5/6 mx-auto lg:flex">
-        <div id="info" className="lg:w-[50%] bg-[#083552] md:w-[100%] p-[30px]">
-          <div className="lg:m-[40px] lg:ml-[50px] lg:m-[30px] md:m-[15px] md:ml-[25px]  ">
+      <div className="w-5/6 mx-auto lg:flex h-auto">
+        <div id="info" className="lg:w-[50%] bg-[#083552] md:w-[100%] p-[15px]">
+          <div className="lg:m-[40px] lg:ml-[50px] lg:m-[30px]   ">
             <div className="border-b-4 border-[#8bba1f] w-fit text-white text-3xl mb-[20px]  ">
               Ubicación
             </div>

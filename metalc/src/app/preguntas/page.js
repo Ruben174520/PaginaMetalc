@@ -83,7 +83,7 @@ function Page() {
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="3">
-              <Accordion.Header>¿Por qué METALC Salvador Nava es la M.O?</Accordion.Header>
+              <Accordion.Header>¿Por qué METALC Salvador Nava es la mejor opción?</Accordion.Header>
               <Accordion.Body>
                 <div className="flex flex-wrap align-middle justify-between">
                   <Image src={icono} height={50} width={50} alt="image" className="hidden md:block"/>
@@ -102,8 +102,7 @@ function Page() {
                 <div className="flex flex-wrap align-middle justify-between">
                   <Image src={icono} height={50} width={50} alt="image" className="hidden md:block"/>
                   <ul className="w-11/12 list-disc text-xs md:text-base">
-                    <li>Personal calificado</li>
-                    <li>Utilizacion de la mejor tecnología</li>
+                    <li>Contamos con el mejor personal calificado equipado con la mejor herramienta para poder determinar correctamente el material brindado</li>
                   </ul>
                 </div>
               </Accordion.Body>

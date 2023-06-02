@@ -62,8 +62,9 @@ export function Page() {
             type="submit"
             className="bg-[#083552] hover:bg-[#8bba1f] p-1 rounded-md my-2 w-[50%] text-white text-sm
             md:text-lg"
+            onClick={() => window.location.href = '/qs'}
           >
-            CONOCE MÁS
+            Conoce más
           </button>
         </div>
       </div>
@@ -79,7 +80,7 @@ export function Page() {
         <Carrusel />
       </div>
       <div className=" h-16 text-5xl text-center mt-10 mx-3 md:mx-0" id="materialReciclado">
-        <h1 className="border-b-8 border-[#083552] text-3xl mb-3 mt-4 md:pb-3 md:text-5xl md:mb-0">
+        <h1 className="border-b-8 border-[#083552] text-2xl mb-3 mt-4 md:pb-3 md:text-5xl md:mb-0">
           ESPECIALIZADOS EN EL RECICLAJE
         </h1>
       </div>

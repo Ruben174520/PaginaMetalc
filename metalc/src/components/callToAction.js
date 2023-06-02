@@ -20,19 +20,19 @@ function callToAction(){
                     <div className="flex justify-center mb-8">
                         <Image src={cot} width={70} height={70} alt='imagen'/>
                     </div>
-                    <button className={"bg-blue-500 hover:bg-lime-500 py-2 px-4 text-white font-bold rounded-lg"}>Cotizar</button>
+                    <button className={"bg-[#083552] hover:bg-lime-500 py-2 px-4 text-white font-bold rounded-lg"} onClick={() => window.location.href = '/cotizador'}>Cotizar</button>
                 </div>
                 <div className="w-[100%] flex flex-col justify-center p-6 md:w-[30%]">
                     <div className="flex justify-center mb-8">
                         <Image src={mat} width={70} height={70} alt='imagen' />
                     </div>
-                    <button className={"bg-blue-500 hover:bg-lime-500 py-2 px-4 text-white font-bold rounded-lg"}>Materiales</button>
+                    <button className={"bg-[#083552] hover:bg-lime-500 py-2 px-4 text-white font-bold rounded-lg"} onClick={() => window.location.href = '#materialReciclado'}>Materiales</button>
                 </div>
                 <div className="w-[100%] flex flex-col justify-center p-6 md:w-[30%]">
                     <div className="flex justify-center mb-8">
                         <Image src={serv} width={70} height={70} alt='imagen'/>
                     </div>
-                    <button className={"bg-blue-500 hover:bg-lime-500 py-2 px-4 text-white font-bold rounded-lg"}>Servicios</button>
+                    <button className={"bg-[#083552] hover:bg-lime-500 py-2 px-4 text-white font-bold rounded-lg"} onClick={() => window.location.href = '/servicios'}>Servicios</button>
                 </div>
             </div>
 

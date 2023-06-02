@@ -32,7 +32,7 @@ function Page() {
         <div className="justify-between md:border-2 md:border-[#EEEE] md:shadow-[0_35px_60px_15px_rgba(0,0,0,0.3)] md:p-5 md:rounded-xl">
           <div className="flex flex-wrap justify-between md:flex-none">
             <div className="w-[100%] md:w-[50%] ">
-              <h1 className="font-bmw text-2xl font-bold ">RECOLECCIÓN DE SCRAPT</h1>
+              <h1 className="font-bmw text-2xl font-bold border-b-4  border-[#8bba1f] ">RECOLECCIÓN DE SCRAPT</h1>
               <br />
               <p className="justify-text-left">
                 En METALC nos comprometemos a satisfacer plenamente las
@@ -55,7 +55,8 @@ function Page() {
                 <Button
                   variant="primary"
                   size="sm"
-                  className="text-white font-bmw bg-[#083552] hover:bg-[#8bba1f] align-center"
+                  className="text-white font-bmw bg-[#083552] hover:bg-[#8bba1f] align-center border-none"
+                  onClick={() => window.location.href = '/#materialReciclado'}
                 >
                   Materiales que recolectamos
                 </Button>
@@ -70,7 +71,7 @@ function Page() {
           </div>
           <div className="flex flex-wrap justify-between my-[70px] md:flex-none">
             <div className="w-[100%] mt-3 md:w-[50%] ">
-              <h1 className="font-bmw text-2xl font-bold ">ADEMÁS ...</h1>
+              <h1 className="font-bmw text-2xl font-bold border-b-4  border-[#8bba1f] ">ADEMÁS ...</h1>
               <br />
               <p className="justify-text-left">
                 Puedes realizar tu cotización correspondiente en el siguiente
@@ -82,7 +83,7 @@ function Page() {
                 <br />
                 <br />
               </p>
-              <h1 className="font-bmw text-2xl font-bold">UBICACIÓN</h1>
+              <h1 className="font-bmw text-2xl font-bold border-b-4  border-[#8bba1f]">UBICACIÓN</h1>
               <br />
               <br />
               <div className="w-[100%] md:h-[150px]">

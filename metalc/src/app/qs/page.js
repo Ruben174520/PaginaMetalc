@@ -5,10 +5,10 @@ import { useEffect } from "react";
 import Image from "next/image";
 import "../page.css";
 import logo from "../../icon/logo.png";
-import trabajador1 from "../../img/filosofia.jpg";
-import trabajador2 from "../../img/mision.jpg";
-import trabajador3 from "../../img/vision.jpg";
-import trabajador4 from "../../img/politica.jpg";
+import trabajador1 from "../../img/filosofia.png";
+import trabajador2 from "../../img/mision.png";
+import trabajador3 from "../../img/vision.png";
+import trabajador4 from "../../img/politica.png";
 
 export function page() {
   return (

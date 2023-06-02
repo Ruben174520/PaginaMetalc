@@ -169,7 +169,7 @@ const Formulario = ({ materialSelecto }) => {
         variant="primary"
         type="submit"
         disabled={state.submitting}
-        className="bg-cyan-600 p-1 rounded-md my-2 w-full hover:bg-cyan-700 animate-pulse"
+        className="bg-[#083552] p-1 rounded-md my-2 w-full hover:bg-[#8bba1f] animate-pulse border-none"
       >
         Enviar
       </Button>
