@@ -1,18 +1,11 @@
 "use client";
 import Mapa from "@/components/Mapa";
 import React from "react";
-import logo from "../../icon/logo.png"
 import { Card, Button } from "react-bootstrap";
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import icono from "|/boxicons/svg/regular/bx-leaf.svg";
-import mapa from "|/boxicons/svg/solid/bxs-map.svg";
-import tel from "|/boxicons/svg/solid/bxs-phone.svg";
 import whats from "|/boxicons/svg/logos/bxl-whatsapp.svg";
-import casa from "|/boxicons/svg/solid/bxs-building-house.svg";
 import correo from "|/boxicons/svg/regular/bx-envelopeWhite.svg";
-import mark from "|/boxicons/svg/solid/bxs-bookmark.svg";
-import background from "|/background/image.png";
 import style from "../../components/Bootstrap.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../page.css";

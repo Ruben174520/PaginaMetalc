@@ -49,7 +49,7 @@ export function Page() {
             textAlign: "center",
           }}
         >
-          <h1 className="text-black font-bmw font-bold text-base md:text-4xl">
+          <h1 className="text-black font-bmw font-bold text-base md:text-4xl border-b-4 border-[#8bba1f] ">
             Bienvenido a METALC
           </h1>
           <br></br>
