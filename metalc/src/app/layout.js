@@ -16,9 +16,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
-        <metadata>
-          <title>Metalc</title>
-        </metadata>
+        <title>Metalc Salvador Nava</title>
+        <meta property="og:title" content="Metalc Salvador Nava" key="title" />
         <link 
           rel="preconnect"
           href="https://fonts.googleapis.com"
