@@ -18,11 +18,15 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../page.css";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-
+import {useForm} from '@formspree/react';
 
 function Page() {
   const [paddingTop, setPaddingTop] = useState(0);
   const [ancho, setAncho] = useState(0);
+  const [state, handleSubmit] = useForm("xgebjvjo")
+  if(state.succeeded){
+    return <p>Correo enviado</p>
+  }
   return (
     <div className="w-[100%] mb-[50px]">
       <div className="div-con-fondo-preguntas h-80 flex justify-center align-bottom items-end text-2xl pb-12 text-white md:text-5xl md:pb-10">
@@ -56,7 +60,8 @@ function Page() {
             </div>
           </div>
         </div>
-        <form className="lg:w-[50%] border-2 border-[#EEEE] shadow-[0_35px_60px_15px_rgba(0,0,0,0.3)] p-[30px] md:w-[100%]">
+        <form className="lg:w-[50%] border-2 border-[#EEEE] shadow-[0_35px_60px_15px_rgba(0,0,0,0.3)] p-[30px] md:w-[100%]"
+            onSubmit={handleSubmit}>
           <div id="formulario" className="">
             <div className="border-b border-gray-900/10 pb-12">
               <h2 className="text-base font-semibold leading-7 text-gray-900">Permitenos establecer comunicacion contigo</h2>
@@ -128,6 +133,7 @@ function Page() {
                 <div className="w-[200px] mt-6 flex items-center justify-start">
                   <button
                     type="submit"
+                    disabled= {state.submitting}
                     className="rounded-md bg-[#083552] hover:bg-[#8bba1f] px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   >
                     Enviar informacion
