@@ -32,7 +32,7 @@ function Footer() {
               </li>
               <li className="no-underline list-none mt-2">
                 <Link className="no-underline list-none" href="#">
-                  Luis Pasteur #256 Col. Las Pilitas, 78379 San Luis, S.L.P.
+                   Luis Pasteur #256 Col. Las Pilitas, 78379 San Luis, S.L.P.
                 </Link>
               </li>
             </div>
