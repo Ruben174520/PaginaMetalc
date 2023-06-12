@@ -45,7 +45,7 @@ function Page() {
             </div>
             <div className="flex ">
               <Image src={whats} />
-              <li className="ml-[5px] text-white list-none"><p><a href='https://wa.link/q261l7' className="hover:text-[#8bba1f]">Contactanos por Whatsapp</a></p></li>
+              <li className="ml-[5px] text-white list-none"><p className="hover:text-[#8bba1f]"><a href='https://wa.link/q261l7' className="hover:text-[#8bba1f]">Contactanos por Whatsapp</a></p></li>
             </div><br/>
             <div className="flex ">
               <Image src={correo} />
