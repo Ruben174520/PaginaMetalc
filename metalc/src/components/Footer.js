@@ -32,7 +32,7 @@ function Footer() {
               </li>
               <li className="no-underline list-none mt-2">
                 <Link className="no-underline list-none" href="#">
-                  Av. Seminario 256 Fracc, Las Mercedes, 78394 San Luis, S.L.P.
+                  Luis Pasteur #256 Col. Las Pilitas, 78379 San Luis, S.L.P.
                 </Link>
               </li>
             </div>
@@ -50,7 +50,7 @@ function Footer() {
                 />
               </li>
               <li className="no-underline list-none mt-2
-              md:mt-1">Lun-Vie:8:00 hrs a 18:00 hrs Sabado: 8:00 hrs a 14:00 hrs</li>
+              md:mt-1">Lun-Vie:8:00 hrs a 18:00 hrs Sabado: 8:00 hrs a 13:00 hrs</li>
             </div>
           </div>
           <div className="text-center flex flex-wrap text-black justify-between w-[100%]
@@ -67,7 +67,7 @@ function Footer() {
               </li>
               <li className="no-underline list-none mt-2">
                 Whatsapp: 487 116 3873 
-                Oficina: 444 111 1111
+                Oficina: 444 139 4461
               </li>
             </div>
           </div>
