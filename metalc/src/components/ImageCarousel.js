@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
 import Image from 'next/image';
 import img1 from '../img/garraSlider.jpg';
-import img2 from '../img/escavado.jpg';
+import img2 from '../img/plastico.jpg';
 import img3 from '../img/trabajdorCarrusel.jpg';
 
 function ImageCarousel() {

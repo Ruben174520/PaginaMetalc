@@ -66,7 +66,7 @@ function Footer() {
                 />
               </li>
               <li className="no-underline list-none mt-2">
-                Whatsapp: 444 655 5651 
+                Whatsapp: 487 116 3873 
                 Oficina: 444 111 1111
               </li>
             </div>
@@ -84,7 +84,7 @@ function Footer() {
                 />
               </li>
               <li className="no-underline list-none mt-2
-              md:mt-1">vero.metalc@gmail.com</li>
+              md:mt-1">araceligallegos18@gmail.com</li>
             </div>
           </div>
         </div>
