@@ -9,7 +9,7 @@ import rebabas from "|/materiales/rebabas.png";
 import metalesR from "|/materiales/metalesraros.png";
 
 import chattara1 from "|/imagesSlide/chatarra1.png";
-import chattara2 from "|/imagesSlide/chatarra2.png";
+import chattara2 from "|/imagesSlide/chatarra2.jpg";
 import chattara3 from "|/imagesSlide/chatarra3.png";
 import chattara4 from "|/imagesSlide/chatarra4.png";
 import inoxidables1 from "|/imagesSlide/inoxidables1.png";
@@ -17,7 +17,7 @@ import inoxidables2 from "|/imagesSlide/inoxidables2.png";
 import inoxidables3 from "|/imagesSlide/inoxidables3.png";
 import inoxidables4 from "|/imagesSlide/inoxidables4.png";
 import aluminio1 from "|/imagesSlide/aluminio1.png";
-import aluminio2 from "|/imagesSlide/aluminio2.png";
+import aluminio2 from "|/imagesSlide/aluminio2.jpg";
 import aluminio3 from "|/imagesSlide/aluminio3.png";
 import aluminio4 from "|/imagesSlide/aluminio4.jpg";
 import rebabas1 from "|/imagesSlide/rebabas1.jpg";
