@@ -32,7 +32,7 @@ function Footer() {
               </li>
               <li className="no-underline list-none mt-2">
                 <Link className="no-underline list-none" href="#">
-                   Luis Pasteur #256 Col. Las Pilitas, 78379 San Luis, S.L.P.
+                   Luis Pasteur #265 Col. Las Pilitas, 78379 San Luis, S.L.P.
                 </Link>
               </li>
             </div>
@@ -99,7 +99,7 @@ function Footer() {
         </div>
         <div className="bg-[#EEEE] justify-end hidden md:mx-24 md:py-3 md:flex">
           <li className="list-none no-underline inline pr-2">
-            <Link href="">
+            <Link href="https://www.facebook.com/people/Metalc-San-Luis-Potosi/100010252508283/">
               <Image
                 src={face}
                 typeof="logo"
@@ -111,7 +111,7 @@ function Footer() {
             </Link>
           </li>
           <li className="list-none no-underline inline pr-2">
-            <Link href="">
+            <Link href="https://wa.link/q261l7">
               <Image
                 src={whats}
                 height={25}
