@@ -126,7 +126,7 @@ export const MaterialProvider = ({ children }) => {
       imagenes:imagenesRebabas
     },
     {
-      nombre: "ZINC",
+      nombre: "METALES RAROS",
       icono: metalesR,
       descripcion: "Compra de Metales Raros Tipos: Carburo de tungsteno, estaño, niquel, zinc, titanio, etc.",
       imagenes:imagenesRaros
