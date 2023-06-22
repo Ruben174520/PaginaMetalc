@@ -136,8 +136,8 @@ export const MaterialProvider = ({ children }) => {
       icono: acerosI,
       descripcion: "Compra de Acero Inoxidable Tipos: Serie 201, 301, 316, 316 L,hastelloy, inconel y monel.",
       imagenes:imagenesInoxidables
-    },
-    {
+    }
+    /*{
       nombre: "CARBURO",
       icono: acerosI,
       descripcion: "Compra de Carburo: Serie 201, 301, 316, 316 L,hastelloy, inconel y monel.",
@@ -148,7 +148,7 @@ export const MaterialProvider = ({ children }) => {
       icono: acerosI,
       descripcion: "Compra de Estaño: Serie 201, 301, 316, 316 L,hastelloy, inconel y monel.",
       imagenes:imagenesInoxidables
-    }
+    }*/
 
   ]);
   return (
