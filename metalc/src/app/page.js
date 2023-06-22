@@ -77,7 +77,7 @@ export function Page() {
           className="z-[1] border-[1] border-black absolute bg-black top-0 left-0  w-[100%] h-[300px] opacity-50
         md:h-[100%]"
         ></div>
-        <Carrusel />
+        <Video />
       </div>
       <div className=" h-16 text-5xl text-center mt-10 mx-3 md:mx-0" id="materialReciclado">
         <h1 className="border-b-8 border-[#083552] text-2xl mb-3 mt-4 md:pb-3 md:text-5xl md:mb-0">

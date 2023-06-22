@@ -126,7 +126,7 @@ export const MaterialProvider = ({ children }) => {
       imagenes:imagenesRebabas
     },
     {
-      nombre: "METALES RAROS",
+      nombre: "ZINC",
       icono: metalesR,
       descripcion: "Compra de Metales Raros Tipos: Carburo de tungsteno, estaño, niquel, zinc, titanio, etc.",
       imagenes:imagenesRaros
@@ -136,7 +136,20 @@ export const MaterialProvider = ({ children }) => {
       icono: acerosI,
       descripcion: "Compra de Acero Inoxidable Tipos: Serie 201, 301, 316, 316 L,hastelloy, inconel y monel.",
       imagenes:imagenesInoxidables
+    },
+    {
+      nombre: "CARBURO",
+      icono: acerosI,
+      descripcion: "Compra de Carburo: Serie 201, 301, 316, 316 L,hastelloy, inconel y monel.",
+      imagenes:imagenesInoxidables
+    },
+    {
+      nombre: "ESTAÑO",
+      icono: acerosI,
+      descripcion: "Compra de Estaño: Serie 201, 301, 316, 316 L,hastelloy, inconel y monel.",
+      imagenes:imagenesInoxidables
     }
+
   ]);
   return (
     <MaterialsContext.Provider
