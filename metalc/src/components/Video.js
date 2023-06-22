@@ -2,7 +2,7 @@ import styles from "./Video.module.css";
 
 const Video = () => {
   return (
-    <video className='video' controls={false} autoPlay loop muted>
+    <video className={styles.video} controls={false} autoPlay loop muted>
       <source
         src="https://aventourslp.com.mx/Inicio.mp4"
         type="video/mp4"
