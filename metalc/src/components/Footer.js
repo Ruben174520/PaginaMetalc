@@ -14,7 +14,7 @@ import logo from "../icon/logo.png";
 function Footer() {
   return (
     <footer className="md:h-[150px] text-xs md:text-sm">
-      <div className="w-[100%] bg-[#EEEE] flex justify-between align-middle
+      <div className="w-[100%] bg-[#EEEE] flex justify-center align-center
       md:h-[120px]">
         <div className="flex flex-wrap border-b-[1px] border-b-black justify-between align-middle mt-5
         md:mx-24 md:mt-4 md:flex-nowrap" id="fid">
