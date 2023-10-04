@@ -51,7 +51,7 @@ export function Page() {
             ))}
           </div>
           <motion.div
-            className="w-[100%] my-6  md:w-2/3"
+            className="w-[100%] my-6  md:w-[60%]"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}

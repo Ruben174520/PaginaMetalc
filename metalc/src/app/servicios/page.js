@@ -32,7 +32,7 @@ function Page() {
         <div className="justify-between md:border-2 md:border-[#EEEE] md:shadow-[0_35px_60px_15px_rgba(0,0,0,0.3)] md:p-5 md:rounded-xl">
           <div className="flex flex-wrap justify-between md:flex-none">
             <div className="w-[100%] md:w-[50%] ">
-              <h1 className="font-bmw text-2xl font-bold border-b-4  border-[#8bba1f] ">RECOLECCIÓN DE SCRAPT</h1>
+              <h1 className="font-bmw text-2xl font-bold border-b-4  border-[#8bba1f] ">RECOLECCIÓN DE SCRAP</h1>
               <br />
               <p className="justify-text-left">
                 En METALC nos comprometemos a satisfacer plenamente las

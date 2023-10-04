@@ -19,6 +19,12 @@
     
   }
 
+  @media only screen and (max-width: 768px) {
+    .video{
+      height: 300px;
+    }
+  }
+
   .negro{
     z-index: 1;
     border: solid 1pt black;

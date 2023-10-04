@@ -32,7 +32,7 @@ function Footer() {
               </li>
               <li className="no-underline list-none mt-2">
                 <Link className="no-underline list-none" href="#">
-                  Av. Seminario 256 Fracc, Las Mercedes, 78394 San Luis, S.L.P.
+                   Luis Pasteur #265 Col. Las Pilitas, 78379 San Luis, S.L.P.
                 </Link>
               </li>
             </div>
@@ -50,7 +50,7 @@ function Footer() {
                 />
               </li>
               <li className="no-underline list-none mt-2
-              md:mt-1">Lun-Vie:8:00 hrs a 18:00 hrs Sabado: 8:00 hrs a 14:00 hrs</li>
+              md:mt-1">Lun-Vie:8:00 hrs a 18:00 hrs Sabado: 8:00 hrs a 13:00 hrs</li>
             </div>
           </div>
           <div className="text-center flex flex-wrap text-black justify-between w-[100%]
@@ -66,8 +66,8 @@ function Footer() {
                 />
               </li>
               <li className="no-underline list-none mt-2">
-                Whatsapp: 444 655 5651 
-                Oficina: 444 111 1111
+                Whatsapp: 487 116 3873 
+                Oficina: 444 139 4461
               </li>
             </div>
           </div>
@@ -84,7 +84,7 @@ function Footer() {
                 />
               </li>
               <li className="no-underline list-none mt-2
-              md:mt-1">vero.metalc@gmail.com</li>
+              md:mt-1">araceligallegos18@gmail.com</li>
             </div>
           </div>
         </div>
@@ -99,7 +99,7 @@ function Footer() {
         </div>
         <div className="bg-[#EEEE] justify-end hidden md:mx-24 md:py-3 md:flex">
           <li className="list-none no-underline inline pr-2">
-            <Link href="">
+            <Link href="https://www.facebook.com/people/Metalc-San-Luis-Potosi/100010252508283/">
               <Image
                 src={face}
                 typeof="logo"
@@ -111,7 +111,7 @@ function Footer() {
             </Link>
           </li>
           <li className="list-none no-underline inline pr-2">
-            <Link href="">
+            <Link href="https://wa.link/q261l7">
               <Image
                 src={whats}
                 height={25}
