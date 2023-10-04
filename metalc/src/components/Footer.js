@@ -32,7 +32,7 @@ function Footer() {
               </li>
               <li className="no-underline list-none mt-2">
                 <Link className="no-underline list-none" href="#">
-                   Luis Pasteur #265 Col. Las Pilitas, 78379 San Luis, S.L.P.
+                   Boulevard Cd. Fernandez El refugio, 79657 Rio Verde, S.L.P.
                 </Link>
               </li>
             </div>
@@ -66,8 +66,7 @@ function Footer() {
                 />
               </li>
               <li className="no-underline list-none mt-2">
-                Whatsapp: 487 116 3873 
-                Oficina: 444 139 4461
+                Whatsapp: 487 121 1657 
               </li>
             </div>
           </div>
