@@ -5,7 +5,7 @@ function Mapa(promps) {
 
   const center = React.useMemo(() => {
     // Calculate the center object here
-    return { lat: 22.133607605661613 , lng: -100.95909167743125}; // Replace with your actual calculation
+    return { lat: 21.939867, lng: -100.0361256}; // Replace with your actual calculation
   }, []);
   const containerStyle = {
     width: "100%",
@@ -51,7 +51,7 @@ function Mapa(promps) {
       }}
     >
       <Marker
-        position={{ lat: 22.133547976423497, lng: -100.95900584674825 }}
+        position={{ lat: 21.939867, lng: -100.0361256 }}
       ></Marker>
     </GoogleMap>
   ) : (
