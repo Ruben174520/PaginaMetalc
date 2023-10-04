@@ -50,7 +50,7 @@ function Footer() {
                 />
               </li>
               <li className="no-underline list-none mt-2
-              md:mt-1">Lun-Vie:8:00 hrs a 18:00 hrs Sabado: 8:00 hrs a 13:00 hrs</li>
+              md:mt-1">Lun-Vie:7:00-14:00 y 15:00-18:30 Sabado: 7:00 hrs a 13:00 hrs</li>
             </div>
           </div>
           <div className="text-center flex flex-wrap text-black justify-between w-[100%]
@@ -83,7 +83,7 @@ function Footer() {
                 />
               </li>
               <li className="no-underline list-none mt-2
-              md:mt-1">araceligallegos18@gmail.com</li>
+              md:mt-1">metalc_yes@hotmail.com</li>
             </div>
           </div>
         </div>
