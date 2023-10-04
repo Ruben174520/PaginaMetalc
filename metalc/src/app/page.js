@@ -12,6 +12,7 @@ import Resp from "../components/RespSocial";
 import Carrusel from "../components/ImageCarousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { color } from "framer-motion";
+import Head from "next/head";
 
 export function Page() {
   const { materials } = useMaterials();
@@ -36,6 +37,10 @@ export function Page() {
   );
   return (
     <div className="flex flex-wrap justify-center">
+      <Head>
+        <title>Metalc</title>
+        <meta property="og:title" content="Metalc" key="title" />
+      </Head>
       <div
         className=" w-[100%] hidden z-0 font-bmw text-white justify-between absolute ml-[12%] 
         mt-[25%] div_navbar text-xl  
