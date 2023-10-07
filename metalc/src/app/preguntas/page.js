@@ -83,7 +83,7 @@ function Page() {
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="3">
-              <Accordion.Header>¿Por qué METALC Salvador Nava es la mejor opción?</Accordion.Header>
+              <Accordion.Header>¿Por qué METALC Media Luna es la mejor opción?</Accordion.Header>
               <Accordion.Body>
                 <div className="flex flex-wrap align-middle justify-between">
                   <Image src={icono} height={50} width={50} alt="image" className="hidden md:block"/>
