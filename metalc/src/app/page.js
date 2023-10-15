@@ -13,6 +13,7 @@ import Carrusel from "../components/ImageCarousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { color } from "framer-motion";
 import Head from "next/head";
+import metalsData from '../app/api/metals.json';
 
 export function Page() {
   const { materials } = useMaterials();
@@ -23,6 +24,16 @@ export function Page() {
     setMostrarGaleria(true);
     setMaterialSeleccionado(material);
   };
+  const [metalPrices, setMetalPrices] = useState(null);
+
+  const obtenerPrecioAluminio = async () => {
+    console.log(metalsData)
+  };
+
+  // Llama a obtenerPrecioAluminio cuando la página se carga o se recarga
+  useEffect(() => {
+    obtenerPrecioAluminio();
+  }, []);
 
   const tarjetaMaterial = mostrarGaleria ? null : (
     <div className="w-[100%] h-2/4  flex items-stretch flex-wrap justify-center mb-20  mt-20 md:mt-0 md:p-10">
