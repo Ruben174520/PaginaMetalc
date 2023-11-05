@@ -22,6 +22,8 @@ export const ListaMateriales = ({ material, mostrarGaleriaHandler }) => {
           height={40}
           className=""
           alt=""
+          priority
+          quality={50}
         />
       </div>
       <div className="flex font-bold w-full align-middle mr-2 text-center items-center md:mr-0">
