@@ -50,7 +50,9 @@ const imagenesCobre = [
   cobre1,
   cobre2,
   cobre3,
-  cobre4
+  cobre4,
+  cobre5,
+  cobre6
 ]
 const imagenesBronce = [
   bronce1,
@@ -80,7 +82,9 @@ const imagenesAluminio = [
   aluminio1,
   aluminio2,
   aluminio3,
-  aluminio4
+  aluminio4,
+  aluminio5,
+  aluminio6
 ]
 // const imageObjs = imagenesChatarra.map((image) => {
 //   const img = new Image();
