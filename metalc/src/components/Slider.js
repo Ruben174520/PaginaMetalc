@@ -3,7 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import estilo from './Bootstrap.module.css';
 import Image from 'next/image';
 import { lazy } from 'react';
-import aluminio from '../icon/imagesSlide/aluminio1.png'
+import aluminio from '../icon/imagesSlide/aluminio1.jpg'
 import bronce from '../icon/imagesSlide/bronce3.jpg'
 import cobre from '../icon/imagesSlide/cobre2.jpg'
 import chatarra from '../icon/imagesSlide/chatarra2.jpg'
