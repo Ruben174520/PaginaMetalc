@@ -110,7 +110,7 @@ export function Page() {
         )}
       </div>
       <Call />
-      <div className="w-[100%] p-[10px] md:h-[650px]">
+      <div className="w-[90%] p-[10px] md:h-[650px]">
         <Resp />
       </div>
     </div>
