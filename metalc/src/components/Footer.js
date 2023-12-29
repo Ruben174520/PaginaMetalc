@@ -90,7 +90,7 @@ function Footer() {
       </div>
 
       <div className="bg-[#EEEE] text-black align-middle text-center px-5 flex md:flex-none md:w-[100%]">
-        <div className="flex  w-[100%] py-1 md:text-base md:mx-24 md:py-3 md:w-[70%] sm:w-[100%] sm:justify-center ">
+        <div className="flex  w-[100%] py-1 md:text-base md:mx-24 md:py-3 md:w-[70%] sm:w-[100%] sm:justify-center md:justify-start ">
           <Image src={logo} width={60} height={60} />
           <h1 className="font-bmw self-center text-xs md:text-base md:ml-6">
             Gente como tú, por un futuro sustentable
