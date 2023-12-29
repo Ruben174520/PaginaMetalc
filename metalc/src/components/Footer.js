@@ -13,14 +13,14 @@ import logo from "../icon/logo.png";
 
 function Footer() {
   return (
-    <footer className="md:h-[150px] text-xs md:text-sm">
+    <footer className="lg:h-[150px] text-xs md:text-sm sm:text-xs">
       <div className="w-[100%] bg-[#EEEE] flex justify-center align-center
-      md:h-[120px]">
+      lg:h-[120px]">
         <div className="flex flex-wrap border-b-[1px] border-b-black justify-between align-middle mt-5
         md:mx-24 md:mt-4 md:flex-nowrap" id="fid">
           <div className="text-center flex flex-wrap text-black justify-between w-[100%]
-          md:w-[23%] md:flex-nowrap ">
-            <div className="flex m-1 justify-center w-[100%] align-middle jus md:mt-5">
+          lg:w-[23%] lg:flex-nowrap ">
+            <div className="flex m-1 justify-center w-[100%] align-middle  md:mt-5">
               <li className="pb-2 no-underline list-none">
                 <Image
                   src={ubi}
@@ -38,7 +38,7 @@ function Footer() {
             </div>
           </div>
           <div className="text-center flex flex-wrap text-black  justify-between w-[100%]
-          md:w-[23%] md:flex-nowrap">
+          lg:w-[23%] lg:flex-nowrap">
             <div className="flex m-1 justify-center w-[100%] md:mt-5">
               <li className="pb-2 no-underline list-none">
                 <Image
@@ -54,7 +54,7 @@ function Footer() {
             </div>
           </div>
           <div className="text-center flex flex-wrap text-black justify-between w-[100%]
-          md:w-[23%] md:flex-nowrap">
+          lg:w-[23%] lg:flex-nowrap">
             <div className="flex m-1 justify-center w-[100%] md:mt-5">
               <li className="pb-2 no-underline list-none">
                 <Image
@@ -71,7 +71,7 @@ function Footer() {
             </div>
           </div>
           <div className="text-center flex flex-wrap text-black justify-evenly w-[100%]
-          md:w-[23%] md:flex-nowrap">
+          lg:w-[23%] lg:flex-nowrap">
             <div className="flex m-1 justify-center  w-[100%] md:mt-5">
               <li className="pb-2 no-underline list-none">
                 <Image
@@ -90,7 +90,7 @@ function Footer() {
       </div>
 
       <div className="bg-[#EEEE] text-black align-middle text-center px-5 flex md:flex-none md:w-[100%]">
-        <div className="flex  w-[100%] py-1 md:text-base md:mx-24 md:py-3 md:w-[70%]">
+        <div className="flex  w-[100%] py-1 md:text-base md:mx-24 md:py-3 md:w-[70%] sm:w-[100%] sm:justify-center ">
           <Image src={logo} width={60} height={60} />
           <h1 className="font-bmw self-center text-xs md:text-base md:ml-6">
             Gente como tú, por un futuro sustentable

@@ -26,7 +26,7 @@ function RespSocial() {
         transition={{ duration: 2 }}
         
       >
-        <Card className="my-3 transition-transform duration-500 ease-out hover:-translate-y-4 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)] md:w-72">
+        <Card className="my-3 transition-transform duration-500 ease-out hover:-translate-y-4 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)] md:w-72 xl:w-60 lg:w-60">
           <Image
             variant="top"
             src={reciclar}
@@ -54,7 +54,7 @@ function RespSocial() {
           </Card.Body>
         </Card>
 
-        <Card className="my-3 transition-transform duration-500 ease-out hover:-translate-y-4 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)] md:w-72">
+        <Card className="my-3 transition-transform duration-500 ease-out hover:-translate-y-4 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)] md:w-72 xl:w-60 lg:w-60">
           <Image
             variant="top"
             src={reutilizar}
@@ -83,7 +83,7 @@ function RespSocial() {
           </Card.Body>
         </Card>
 
-        <Card className="my-3 transition-transform duration-500 ease-out hover:-translate-y-4 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)] md:w-72">
+        <Card className="my-3 transition-transform duration-500 ease-out hover:-translate-y-4 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)] md:w-72 xl:w-60 lg:w-60">
           <Image
             variant="top"
             src={reducir}
@@ -112,7 +112,7 @@ function RespSocial() {
           </Card.Body>
         </Card>
 
-        <Card className="my-3 transition-transform duration-500 ease-out hover:-translate-y-4 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)] md:w-72">
+        <Card className="my-3 transition-transform duration-500 ease-out hover:-translate-y-4 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)] md:w-72 xl:w-60 lg:w-60">
           <Image
             variant="top"
             src={recuperar}
